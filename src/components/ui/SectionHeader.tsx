@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 interface SectionHeaderProps {
   badge: string;
   title: string;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
   accentColor?: "gold" | "blue" | "silver" | "emerald";
   className?: string;
 }

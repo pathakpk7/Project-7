@@ -5,7 +5,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { KpiCard } from "@/components/ui/KpiCard";
 import chasingStatsData from "@/data/chasing_stats.json";
 import finishingStatsData from "@/data/finishing_stats.json";
-import { Zap, Flame, Target, Award, ShieldAlert, CheckCircle, Info } from "lucide-react";
+import { Zap, Flame, Target, Award, ShieldAlert, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const TheFinisherSection: React.FC = () => {
@@ -75,28 +75,11 @@ export const TheFinisherSection: React.FC = () => {
       </div>
 
       {/* Death Over Statistics Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <KpiCard label="Death Overs SR" value={currentDeathStats.strike_rate} subtext={currentDeathStats.death_overs_definition} accent="gold" icon={Zap} />
         <KpiCard label="Boundary %" value={currentDeathStats.boundary_percentage} subtext={`${currentDeathStats.fours} Fours • ${currentDeathStats.sixes} Sixes`} accent="emerald" icon={Flame} />
         <KpiCard label="Dot Ball %" value={currentDeathStats.dot_ball_percentage} subtext={`${currentDeathStats.dot_balls} Dot deliveries`} accent="silver" icon={ShieldAlert} />
-        <KpiCard label="Finisher Index" value={currentDeathStats.finisher_index} subtext="Original Project Derived Metric" accent="blue" icon={Award} />
-      </div>
-
-      {/* Transparent Finisher Index Methodology Card */}
-      <div className="rounded-3xl bg-surface/80 border border-white/10 p-6 sm:p-8 backdrop-blur-md space-y-4">
-        <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-400 uppercase tracking-wider">
-          <Info className="w-4 h-4" />
-          <span>PROJECT METRICS TRANSPARENCY: FINISHER INDEX FORMULA</span>
-        </div>
-        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-          The <strong>Finisher Index</strong> is a project-derived analytical score engineered to quantify clutch lower-order acceleration without arbitrary rankings.
-        </p>
-        <div className="p-4 rounded-2xl bg-black/50 border border-white/10 font-mono text-xs text-csk-gold overflow-x-auto">
-          <code>Finisher Index = (Death_Strike_Rate × 0.50) + (Boundary_Percentage × 1.50) + ((100 - Dot_Ball_Percentage) × 0.20)</code>
-        </div>
-        <p className="text-xs text-slate-400">
-          Fully documented in <code className="text-slate-200">docs/METRICS.md</code>. Never presented as an official ICC statistic.
-        </p>
+        <KpiCard label="Death Overs Runs" value={currentDeathStats.runs_scored} subtext={`Off ${currentDeathStats.balls_faced} balls faced`} accent="blue" icon={Award} />
       </div>
     </section>
   );

@@ -70,64 +70,64 @@ export const TheCaptainSection: React.FC = () => {
       </div>
 
       {/* Captaincy Overview Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
-        <KpiCard label="Matches Captained" value={totalCaptained} subtext={`Across ${selectedTeam} tenures`} accent="gold" icon={Crown} />
-        <KpiCard label="Matches Won" value={totalWins} subtext="Clinical Victories" accent="emerald" icon={CheckCircle2} />
-        <KpiCard label="Win Rate" value={winRate} subtext="Excluding No Results" accent="blue" icon={Target} />
-        <KpiCard label="Major Trophies" value={selectedTeam === "India" ? "3 ICC + #1 Mace" : "5 IPL + 2 CLT20"} subtext="Title Pedigree" accent="gold" icon={Trophy} />
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+        <KpiCard className="p-3.5 sm:p-4 rounded-xl" label="Matches Captained" value={totalCaptained} subtext={`Across ${selectedTeam} tenures`} accent="gold" icon={Crown} />
+        <KpiCard className="p-3.5 sm:p-4 rounded-xl" label="Matches Won" value={totalWins} subtext="Clinical Victories" accent="emerald" icon={CheckCircle2} />
+        <KpiCard className="p-3.5 sm:p-4 rounded-xl" label="Win Rate" value={winRate} subtext="Excluding No Results" accent="blue" icon={Target} />
+        <KpiCard className="p-3.5 sm:p-4 rounded-xl" label="Major Trophies" value={selectedTeam === "India" ? "3 ICC + #1 Mace" : "5 IPL + 2 CLT20"} subtext="Title Pedigree" accent="gold" icon={Trophy} />
       </div>
 
       {/* Detailed Format Records Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 mb-10">
         {selectedTeam === "India" ? (
           <>
             {/* ODIs */}
-            <div className="rounded-3xl bg-surface/80 border border-white/10 p-6 backdrop-blur-md space-y-4">
+            <div className="rounded-2xl bg-surface/80 border border-white/10 p-4 sm:p-5 backdrop-blur-md space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold uppercase text-sky-400">ONE DAY INTERNATIONALS</span>
-                <span className="text-xs font-mono text-slate-400">2007–2018</span>
+                <span className="text-[11px] font-mono font-bold uppercase text-sky-400">ONE DAY INTERNATIONALS</span>
+                <span className="text-[10px] font-mono text-slate-400">2007–2018</span>
               </div>
-              <div className="text-3xl font-extrabold font-mono text-white">200 Matches</div>
-              <div className="grid grid-cols-3 gap-2 text-center font-mono text-xs pt-2 border-t border-white/5">
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-emerald-400 font-bold">110</div><div className="text-[10px] text-slate-400">Wins</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-rose-400 font-bold">74</div><div className="text-[10px] text-slate-400">Losses</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-csk-gold font-bold">59.5%</div><div className="text-[10px] text-slate-400">Win %</div></div>
+              <div className="text-xl sm:text-2xl font-bold font-mono text-white">200 Matches</div>
+              <div className="grid grid-cols-3 gap-1.5 text-center font-mono text-xs pt-2 border-t border-white/5">
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-emerald-400 font-bold text-sm">110</div><div className="text-[9px] text-slate-400">Wins</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-rose-400 font-bold text-sm">74</div><div className="text-[9px] text-slate-400">Losses</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-csk-gold font-bold text-sm">59.5%</div><div className="text-[9px] text-slate-400">Win %</div></div>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-slate-400 leading-relaxed">
                 Led India to 2011 World Cup, 2013 Champions Trophy, and 2008 CB Series triumph in Australia.
               </p>
             </div>
 
             {/* Tests */}
-            <div className="rounded-3xl bg-surface/80 border border-white/10 p-6 backdrop-blur-md space-y-4">
+            <div className="rounded-2xl bg-surface/80 border border-white/10 p-4 sm:p-5 backdrop-blur-md space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold uppercase text-sky-400">TEST MATCHES</span>
-                <span className="text-xs font-mono text-slate-400">2008–2014</span>
+                <span className="text-[11px] font-mono font-bold uppercase text-sky-400">TEST MATCHES</span>
+                <span className="text-[10px] font-mono text-slate-400">2008–2014</span>
               </div>
-              <div className="text-3xl font-extrabold font-mono text-white">60 Matches</div>
-              <div className="grid grid-cols-3 gap-2 text-center font-mono text-xs pt-2 border-t border-white/5">
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-emerald-400 font-bold">27</div><div className="text-[10px] text-slate-400">Wins</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-rose-400 font-bold">18</div><div className="text-[10px] text-slate-400">Losses</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-sky-400 font-bold">15</div><div className="text-[10px] text-slate-400">Draws</div></div>
+              <div className="text-xl sm:text-2xl font-bold font-mono text-white">60 Matches</div>
+              <div className="grid grid-cols-3 gap-1.5 text-center font-mono text-xs pt-2 border-t border-white/5">
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-emerald-400 font-bold text-sm">27</div><div className="text-[9px] text-slate-400">Wins</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-rose-400 font-bold text-sm">18</div><div className="text-[9px] text-slate-400">Losses</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-sky-400 font-bold text-sm">15</div><div className="text-[9px] text-slate-400">Draws</div></div>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-slate-400 leading-relaxed">
                 Propelled India to ICC Test Ranking No. 1 for the first time (2009). 21 home Test victories.
               </p>
             </div>
 
             {/* T20Is */}
-            <div className="rounded-3xl bg-surface/80 border border-white/10 p-6 backdrop-blur-md space-y-4">
+            <div className="rounded-2xl bg-surface/80 border border-white/10 p-4 sm:p-5 backdrop-blur-md space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold uppercase text-sky-400">T20 INTERNATIONALS</span>
-                <span className="text-xs font-mono text-slate-400">2007–2016</span>
+                <span className="text-[11px] font-mono font-bold uppercase text-sky-400">T20 INTERNATIONALS</span>
+                <span className="text-[10px] font-mono text-slate-400">2007–2016</span>
               </div>
-              <div className="text-3xl font-extrabold font-mono text-white">72 Matches</div>
-              <div className="grid grid-cols-3 gap-2 text-center font-mono text-xs pt-2 border-t border-white/5">
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-emerald-400 font-bold">41</div><div className="text-[10px] text-slate-400">Wins</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-rose-400 font-bold">28</div><div className="text-[10px] text-slate-400">Losses</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-csk-gold font-bold">59.3%</div><div className="text-[10px] text-slate-400">Win %</div></div>
+              <div className="text-xl sm:text-2xl font-bold font-mono text-white">72 Matches</div>
+              <div className="grid grid-cols-3 gap-1.5 text-center font-mono text-xs pt-2 border-t border-white/5">
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-emerald-400 font-bold text-sm">41</div><div className="text-[9px] text-slate-400">Wins</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-rose-400 font-bold text-sm">28</div><div className="text-[9px] text-slate-400">Losses</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-csk-gold font-bold text-sm">59.3%</div><div className="text-[9px] text-slate-400">Win %</div></div>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-slate-400 leading-relaxed">
                 Inaugural 2007 T20 World Champions, 2014 T20 WC Finalists, and 2016 Asia Cup Champions.
               </p>
             </div>
@@ -135,43 +135,43 @@ export const TheCaptainSection: React.FC = () => {
         ) : (
           <>
             {/* CSK IPL */}
-            <div className="rounded-3xl bg-surface/80 border border-csk-gold/30 p-6 backdrop-blur-md space-y-4 shadow-glow-gold">
+            <div className="rounded-2xl bg-surface/80 border border-csk-gold/30 p-4 sm:p-5 backdrop-blur-md space-y-3 shadow-glow-gold">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold uppercase text-csk-yellow">IPL CAPTAINCY</span>
-                <span className="text-xs font-mono text-slate-400">2008–2023</span>
+                <span className="text-[11px] font-mono font-bold uppercase text-csk-yellow">IPL CAPTAINCY</span>
+                <span className="text-[10px] font-mono text-slate-400">2008–2023</span>
               </div>
-              <div className="text-3xl font-extrabold font-mono text-white">226 Matches</div>
-              <div className="grid grid-cols-3 gap-2 text-center font-mono text-xs pt-2 border-t border-white/5">
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-csk-yellow font-bold">133</div><div className="text-[10px] text-slate-400">Wins</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-slate-400 font-bold">91</div><div className="text-[10px] text-slate-400">Losses</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-csk-gold font-bold">58.8%</div><div className="text-[10px] text-slate-400">Win %</div></div>
+              <div className="text-xl sm:text-2xl font-bold font-mono text-white">226 Matches</div>
+              <div className="grid grid-cols-3 gap-1.5 text-center font-mono text-xs pt-2 border-t border-white/5">
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-csk-yellow font-bold text-sm">133</div><div className="text-[9px] text-slate-400">Wins</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-slate-400 font-bold text-sm">91</div><div className="text-[9px] text-slate-400">Losses</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-csk-gold font-bold text-sm">58.8%</div><div className="text-[9px] text-slate-400">Win %</div></div>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-slate-400 leading-relaxed">
                 5 IPL Trophies (2010, 2011, 2018, 2021, 2023), 10 Finals, 12 Playoffs appearances.
               </p>
             </div>
 
             {/* CSK CLT20 */}
-            <div className="rounded-3xl bg-surface/80 border border-white/10 p-6 backdrop-blur-md space-y-4">
+            <div className="rounded-2xl bg-surface/80 border border-white/10 p-4 sm:p-5 backdrop-blur-md space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold uppercase text-csk-yellow">CHAMPIONS LEAGUE T20</span>
-                <span className="text-xs font-mono text-slate-400">2010–2014</span>
+                <span className="text-[11px] font-mono font-bold uppercase text-csk-yellow">CHAMPIONS LEAGUE T20</span>
+                <span className="text-[10px] font-mono text-slate-400">2010–2014</span>
               </div>
-              <div className="text-3xl font-extrabold font-mono text-white">24 Matches</div>
-              <div className="grid grid-cols-3 gap-2 text-center font-mono text-xs pt-2 border-t border-white/5">
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-csk-yellow font-bold">15</div><div className="text-[10px] text-slate-400">Wins</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-slate-400 font-bold">8</div><div className="text-[10px] text-slate-400">Losses</div></div>
-                <div className="p-2 rounded-lg bg-white/5"><div className="text-csk-gold font-bold">65.2%</div><div className="text-[10px] text-slate-400">Win %</div></div>
+              <div className="text-xl sm:text-2xl font-bold font-mono text-white">24 Matches</div>
+              <div className="grid grid-cols-3 gap-1.5 text-center font-mono text-xs pt-2 border-t border-white/5">
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-csk-yellow font-bold text-sm">15</div><div className="text-[9px] text-slate-400">Wins</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-slate-400 font-bold text-sm">8</div><div className="text-[9px] text-slate-400">Losses</div></div>
+                <div className="p-1.5 rounded-lg bg-white/5"><div className="text-csk-gold font-bold text-sm">65.2%</div><div className="text-[9px] text-slate-400">Win %</div></div>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-slate-400 leading-relaxed">
                 2x Champions League T20 Titles (2010 in South Africa, 2014 in India).
               </p>
             </div>
 
             {/* Tactical Philosophy */}
-            <div className="rounded-3xl bg-surface/80 border border-white/10 p-6 backdrop-blur-md space-y-3 font-mono text-xs text-slate-300">
-              <div className="text-sm font-bold text-white uppercase mb-2">CSK CULTURE & LEADERSHIP</div>
-              <p className="leading-relaxed">
+            <div className="rounded-2xl bg-surface/80 border border-white/10 p-4 sm:p-5 backdrop-blur-md space-y-2.5 font-mono text-xs text-slate-300">
+              <div className="text-xs font-bold text-white uppercase mb-1">CSK CULTURE & LEADERSHIP</div>
+              <p className="text-[11px] leading-relaxed text-slate-400">
                 &ldquo;Process is more important than the result.&rdquo; Dhoni created the most stable franchise in global T20 cricket through backing players through slumps and defining roles with crystal clarity.
               </p>
             </div>

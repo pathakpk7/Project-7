@@ -1,0 +1,277 @@
+[
+  {
+    "id": "end_of_list_1",
+    "category": "END OF THE LIST",
+    "headline": "Indian Wicketkeepers with 10,000+ ODI Runs",
+    "stat_box": "MS DHONI — END OF LIST.",
+    "story": "In the entire 53-year history of One Day International cricket, only one Indian wicketkeeper has ever crossed 10,000 ODI runs.",
+    "details": "Dhoni amassed 10,773 ODI runs at an astonishing average of 50.57 and a strike rate of 87.56 — batting primarily in the middle and lower order at No. 5, 6, and 7.",
+    "table": {
+      "headers": ["Indian Wicketkeeper", "ODI Matches", "ODI Runs", "Average", "100s / 50s"],
+      "rows": [
+        ["1. MS Dhoni", "350", "10,773", "50.57", "10 / 73"],
+        ["2. Nayan Mongia", "140", "1,272", "20.19", "0 / 2"],
+        ["3. Kiran More", "94", "563", "13.09", "0 / 0"],
+        ["4. Syed Kirmani", "49", "373", "14.34", "0 / 0"]
+      ]
+    },
+    "source": "ICC Hall of Fame & ESPNcricinfo"
+  },
+  {
+    "id": "end_of_list_2",
+    "category": "END OF THE LIST",
+    "headline": "Captains to Win All Three ICC White-Ball Trophies",
+    "stat_box": "MS DHONI — END OF LIST.",
+    "story": "Only one captain in the 147-year history of international cricket has won the ICC T20 World Cup, ICC Cricket World Cup, and ICC Champions Trophy.",
+    "details": "1. 2007 ICC World Twenty20 (South Africa)\n2. 2011 ICC Cricket World Cup (India)\n3. 2013 ICC Champions Trophy (England). In addition, he led India to the ICC Test Championship Mace (Rank #1) in 2009.",
+    "table": {
+      "headers": ["ICC White-Ball Trophy", "Year", "Opponent in Final", "Result"],
+      "rows": [
+        ["ICC Men's T20 World Cup", "2007", "Pakistan (Johannesburg)", "Won by 5 runs"],
+        ["ICC Men's Cricket World Cup", "2011", "Sri Lanka (Mumbai)", "Won by 6 wickets (91* by MSD)"],
+        ["ICC Champions Trophy", "2013", "England (Birmingham)", "Won by 5 runs"]
+      ]
+    },
+    "source": "ICC Official Records"
+  },
+  {
+    "id": "end_of_list_3",
+    "category": "END OF THE LIST",
+    "headline": "Indian Wicketkeepers with 150+ International Stumpings",
+    "stat_box": "MS DHONI (195 STUMPINGS) — END OF LIST.",
+    "story": "Dhoni holds the all-time world record for the most stumpings in international cricket history (195). No other Indian wicketkeeper has even reached 40.",
+    "details": "His 195 stumpings (123 in ODIs, 38 in Tests, 34 in T20Is) lead 2nd-place Kumar Sangakkara (139) by 56 stumpings. He is the only keeper in ODI history with 100+ stumpings.",
+    "source": "ICC Hall of Fame Profile"
+  },
+  {
+    "id": "end_of_list_4",
+    "category": "END OF THE LIST",
+    "headline": "Indian Wicketkeepers with a Test Double-Century",
+    "stat_box": "MS DHONI (224 VS AUSTRALIA) — END OF LIST.",
+    "story": "Only one Indian designated wicketkeeper in history has scored a double-century in Test cricket.",
+    "details": "Dhoni smashed 224 off 265 balls with 24 fours and 6 sixes against Australia at Chepauk, Chennai in February 2013, setting up an 8-wicket victory and a 4-0 series sweep.",
+    "source": "BCCI & ESPNcricinfo Test Match Archives"
+  },
+  {
+    "id": "end_of_list_5",
+    "category": "END OF THE LIST",
+    "headline": "Batters to Score Multiple ODI Centuries Batting at No. 7 or Lower",
+    "stat_box": "MS DHONI (2 CENTURIES AT NO. 7) — END OF LIST.",
+    "story": "In the entire history of ODI cricket, MS Dhoni is the only batsman to score more than one century batting from position No. 7 or lower.",
+    "details": "139* vs Africa XI (Chennai, 2007) & 113* vs Pakistan (Chennai, 2012 after India were reeling at 29/5).",
+    "source": "ESPNcricinfo Statsguru"
+  },
+  {
+    "id": "end_of_list_6",
+    "category": "END OF THE LIST",
+    "headline": "Indian Batters with 1,000+ ODI Runs vs Pakistan @ 50+ Average",
+    "stat_box": "MS DHONI (1,230 RUNS @ 53.47 AVG) — END OF LIST.",
+    "story": "Among all Indian batsmen in cricket history with 1,000+ ODI runs against arch-rivals Pakistan, MS Dhoni is the only one who averaged over 50.00.",
+    "details": "In 36 matches against Pakistan, Dhoni scored 1,230 runs with 2 centuries and 9 fifties at a strike rate of 89.45 and an average of 53.47.",
+    "source": "ESPNcricinfo Opponent Filter"
+  },
+  {
+    "id": "before_after_1",
+    "category": "BEFORE DHONI VS AFTER DHONI",
+    "headline": "73 Years of Indian Test Wicketkeeping vs Dhoni Alone",
+    "stat_box": "4,876 Runs in 90 Tests vs 4,693 Runs in 163 Tests",
+    "story": "Before Dhoni's Test debut in December 2005, ALL Indian wicketkeepers combined in history (1932–2005) had scored 4,693 runs in 163 Tests at a 24.91 average with 4 hundreds.",
+    "details": "Dhoni then took only 90 Tests to score 4,876 runs at 38.09 average with 6 hundreds and 33 fifties — scoring more Test runs alone than the previous 73 years combined.",
+    "table": {
+      "headers": ["Era", "Matches", "Runs", "Average", "100s"],
+      "rows": [
+        ["All Indian WKs Combined (1932–2005)", "163", "4,693", "24.91", "4"],
+        ["MS Dhoni Alone (2005–2014)", "90", "4,876", "38.09", "6"]
+      ]
+    },
+    "source": "ESPNcricinfo Statsguru"
+  },
+  {
+    "id": "before_after_2",
+    "category": "BEFORE DHONI VS AFTER DHONI",
+    "headline": "India's Successful Run Chase Average",
+    "stat_box": "102.71 Average in Successful ODI Chases",
+    "story": "Before Dhoni's debut in 2004, India's win percentage in ODI run chases was 53.4%. When Dhoni batted in successful chases, his average soared to 102.71.",
+    "details": "Across 84 innings in successful ODI run chases, Dhoni scored 2,876 runs with 47 not outs (56.0% not out rate), lifting India's chase win rate to an unprecedented 72.4%.",
+    "table": {
+      "headers": ["Chase Scenario", "Innings", "Runs", "Average", "Not Outs"],
+      "rows": [
+        ["Successful ODI Chases", "84", "2,876", "102.71", "47"],
+        ["All ODI Chases Overall", "145", "4,498", "50.53", "56"]
+      ]
+    },
+    "source": "Cricsheet Chase Analytics"
+  },
+  {
+    "id": "batting_pos_1",
+    "category": "BATTING POSITION MASTERY",
+    "headline": "Most ODI Runs Batting at Position No. 6 in World Cricket",
+    "stat_box": "4,164 Runs @ 47.31 Average at No. 6",
+    "story": "MS Dhoni scored 4,164 runs batting at No. 6 alone — the all-time world record for most ODI runs from this lower-middle order position.",
+    "details": "No other player in ODI history has crossed 4,000 runs at No. 6. He averaged 47.31 with a strike rate of 83.91, proving that a world-class finisher can also match top-order batting averages.",
+    "source": "ESPNcricinfo Batting Position Analytics"
+  },
+  {
+    "id": "batting_pos_2",
+    "category": "BATTING POSITION MASTERY",
+    "headline": "Highest ODI Score by a Wicketkeeper in Cricket History",
+    "stat_box": "183* (145 Balls, 15 Fours, 10 Sixes)",
+    "story": "On October 31, 2005 in Jaipur, 24-year-old Dhoni smashed 183* chasing 299 against Sri Lanka.",
+    "details": "It broke Adam Gilchrist's 172 to set the all-time world record for the highest individual ODI score by a designated wicketkeeper, as well as the highest individual score in a successful ODI chase by an Indian.",
+    "source": "ICC Hall of Fame & Match Scorecards"
+  },
+  {
+    "id": "wk_freak_1",
+    "category": "WICKETKEEPING FREAK STAT",
+    "headline": "World-Record 0.08s Stumping Speed vs Human Eye Blink",
+    "stat_box": "0.08s Stumping Reflex vs 0.10s–0.40s Human Blink",
+    "story": "During the 4th ODI vs West Indies in Mumbai in 2018, Dhoni stumped Keemo Paul off Ravindra Jadeja in just 0.08 seconds.",
+    "details": "The average human eye blink takes between 100ms and 400ms (0.10s to 0.40s). Dhoni removed the bails in 80 milliseconds without pulling his hands backward.",
+    "source": "Hawk-Eye Innovations Broadcast Telemetry"
+  },
+  {
+    "id": "wk_freak_2",
+    "category": "WICKETKEEPING FREAK STAT",
+    "headline": "Most Dismissals in a Single ODI Match by an Indian",
+    "stat_box": "6 Dismissals (5 Catches, 1 Stumping in 1 Match)",
+    "story": "Against England at Headingley, Leeds in September 2007, Dhoni equaled the world record with 6 dismissals in a single ODI innings.",
+    "details": "He took 5 catches and executed 1 stumping off Piyush Chawla, remaining the only Indian wicketkeeper to record 6 dismissals in an ODI.",
+    "source": "BCCI & Wisden Match Reports"
+  },
+  {
+    "id": "wk_freak_3",
+    "category": "WICKETKEEPING FREAK STAT",
+    "headline": "1,001 Career Dismissals Across All Professional Cricket",
+    "stat_box": "1,001 Dismissals (766 Catches, 235 Stumpings)",
+    "story": "Across Tests, ODIs, T20Is, IPL, and CLT20 (789 total matches), Dhoni effected 1,001 total wicketkeeping dismissals and run-outs.",
+    "details": "International: 829 dismissals (634 catches, 195 stumpings). IPL & Franchise: 205 dismissals (158 catches, 47 stumpings).",
+    "source": "Cricsheet & Official Board Records"
+  },
+  {
+    "id": "capt_1",
+    "category": "CAPTAINCY SUPREMACY",
+    "headline": "Most Matches as International Captain in Cricket History",
+    "stat_box": "332 International Matches as Captain",
+    "story": "MS Dhoni has captained his country in more international matches than any other captain in the history of world cricket (332 matches).",
+    "details": "60 Tests (27 wins), 200 ODIs (110 wins), and 72 T20Is (41 wins) — winning 178 international matches with a 53.6% win rate.",
+    "table": {
+      "headers": ["Captain", "Country", "Tests", "ODIs", "T20Is", "Total Matches as Captain"],
+      "rows": [
+        ["1. MS Dhoni", "India", "60", "200", "72", "332"],
+        ["2. Ricky Ponting", "Australia", "77", "230", "17", "324"],
+        ["3. Stephen Fleming", "New Zealand", "80", "218", "5", "303"],
+        ["4. Graeme Smith", "South Africa", "109", "150", "27", "286"]
+      ]
+    },
+    "source": "ICC Captaincy Archives"
+  },
+  {
+    "id": "capt_2",
+    "category": "CAPTAINCY SUPREMACY",
+    "headline": "Most Test Wins vs Australia as Captain in Cricket History",
+    "stat_box": "8 Test Wins vs Australia (Tied 3rd All-Time)",
+    "story": "MS Dhoni is tied 3rd in world cricket history for the most Test match victories as a captain against Australia.",
+    "details": "Dhoni led India to 8 wins in 13 Tests against Australia (61.5% win rate), including the famous 4-0 Border-Gavaskar whitewash in 2013.",
+    "table": {
+      "headers": ["Captain", "Country", "Matches", "Wins", "Win %"],
+      "rows": [
+        ["1. Clive Lloyd", "West Indies", "22", "12", "54.5%"],
+        ["2. Mike Brearley", "England", "18", "11", "61.1%"],
+        ["3. MS Dhoni", "India", "13", "8", "61.5%"],
+        ["4. W.G. Grace", "England", "13", "8", "61.5%"],
+        ["5. Percy Chapman", "England", "9", "6", "66.7%"]
+      ]
+    },
+    "source": "ICC Official Test Records"
+  },
+  {
+    "id": "capt_3",
+    "category": "CAPTAINCY SUPREMACY",
+    "headline": "10 IPL Finals in 14 Seasons with Chennai Super Kings",
+    "stat_box": "5 IPL Titles + 2 CLT20 Titles (7 Franchise Trophies)",
+    "story": "Under MS Dhoni's captaincy, Chennai Super Kings qualified for 10 IPL Finals in 14 seasons played, winning 5 Championships.",
+    "details": "He captained CSK in 226 IPL matches, winning 133 (59.3% win rate) — making him the most decorated franchise captain in cricket history.",
+    "source": "IPL Official Statistics"
+  },
+  {
+    "id": "ranking_1",
+    "category": "ICC RANKINGS RECORD",
+    "headline": "Fastest Player in History to Reach No. 1 in ODI Batting",
+    "stat_box": "Reached ICC World No. 1 in Only 40th ODI",
+    "story": "In April 2006, just 40 ODIs after his debut, MS Dhoni climbed to the No. 1 spot in the ICC ODI Batting Rankings.",
+    "details": "He dethroned Ricky Ponting faster than any other player in cricket history, spending a cumulative 656 days at the top of the world rankings.",
+    "source": "ICC Hall of Fame & ICC Rankings Retrospective"
+  },
+  {
+    "id": "ranking_2",
+    "category": "ICC RANKINGS RECORD",
+    "headline": "Only Back-to-Back ICC ODI Player of the Year Winner",
+    "stat_box": "ICC ODI Player of the Year (2008 & 2009)",
+    "story": "MS Dhoni is the first player in history to win the prestigious ICC ODI Player of the Year award in consecutive years (2008 and 2009).",
+    "details": "He was also named in the ICC ODI Team of the Year 8 times and selected as captain of the ICC ODI Team of the Decade (2011–2020).",
+    "source": "International Cricket Council Awards"
+  },
+  {
+    "id": "finisher_death_1",
+    "category": "THE DEATH-OVER FINISHER",
+    "headline": "Destruction in IPL Death Overs (Overs 16–20)",
+    "stat_box": "3,468 Runs @ 174.97 Strike Rate with 208 Sixes",
+    "story": "In overs 16 to 20 of the IPL, Dhoni has faced 1,982 balls, scoring 3,468 runs with 208 sixes and 252 fours.",
+    "details": "He holds the all-time IPL record for most sixes hit in the 20th over (over 65 sixes in the final over alone), maintaining a 23.2% boundary rate under maximum pressure.",
+    "source": "Cricsheet Ball-by-Ball Phase Analysis"
+  },
+  {
+    "id": "finisher_death_2",
+    "category": "THE DEATH-OVER FINISHER",
+    "headline": "16 Runs Off 4 Balls Heist vs Mumbai Indians (IPL 2022)",
+    "stat_box": "6, 4, 2, 4 in the Final Over at Age 40",
+    "story": "Needing 16 runs off 4 balls against Jaydev Unadkat in IPL 2022 at DY Patil Stadium, 40-year-old Dhoni pulled off an impossible heist.",
+    "details": "Ball 3: Monstrous 6 straight down the ground. Ball 4: 4 over short fine leg. Ball 5: Two to deep midwicket. Ball 6: 4 flicked past short fine leg off the final delivery to win!",
+    "source": "IPL 2022 Match 33 Scorecard"
+  },
+  {
+    "id": "clutch_match_1",
+    "category": "CLUTCH MATCH PERFORMANCE",
+    "headline": "The 25-Meter Gloveless Sprint Run-Out (2016 T20 WC)",
+    "stat_box": "Defended 2 Runs off 3 Balls vs Bangladesh",
+    "story": "In the 2016 T20 World Cup thriller in Bengaluru, Bangladesh needed 2 runs off 3 balls. India took 3 wickets in 3 balls to win by 1 run.",
+    "details": "Anticipating a bye on the final ball, Dhoni removed his right glove beforehand, gathered the missed edge, and outsprinted Mustafizur Rahman across 25 meters to shatter the stumps by centimeters.",
+    "source": "ICC T20 World Cup 2016 Match Telemetry"
+  },
+  {
+    "id": "partnership_1",
+    "category": "PARTNERSHIP CLUTCH",
+    "headline": "Record 100* 8th-Wicket Partnership with Bhuvneshwar Kumar",
+    "stat_box": "From 131/7 to Victory vs Sri Lanka (Pallekele 2017)",
+    "story": "Chasing 231 against Sri Lanka, India collapsed from 109/0 to 131/7 against Akila Dananjaya's mystery spin.",
+    "details": "Dhoni (45*) partnered with No. 9 Bhuvneshwar Kumar (53*) to put on an unbeaten 100-run stand for the 8th wicket, steering India to victory with 16 balls to spare.",
+    "source": "ICC Hall of Fame & ESPNcricinfo"
+  },
+  {
+    "id": "combination_1",
+    "category": "THE COMPLETE 3-IN-1 MASTER",
+    "headline": "The Impossible Triple Milestone",
+    "stat_box": "17,266 Runs + 829 Dismissals + 3 ICC Trophies",
+    "story": "MS Dhoni is the only cricketer in history to achieve 17,000+ international runs as a batsman, 800+ international dismissals as a wicketkeeper, and win all 3 ICC white-ball trophies as captain.",
+    "details": "Tests: 4,876 runs + 284 dismissals + ICC Test Mace #1\nODIs: 10,773 runs + 426 dismissals + CWC 2011 & CT 2013\nT20Is: 1,617 runs + 86 dismissals + T20 WC 2007\nIPL: 5,243 runs + 205 dismissals + 5 IPL Championships.",
+    "source": "ICC Hall of Fame Master Profile"
+  },
+  {
+    "id": "not_out_master_1",
+    "category": "UNBEATEN FINISHER STAT",
+    "headline": "84 Not-Outs in ODI Cricket History",
+    "stat_box": "84 Unbeaten Innings in 297 ODI Innings (28.3%)",
+    "story": "MS Dhoni remained unbeaten in 84 out of 297 ODI innings, the most not-outs by any top/middle-order batsman in ODI history.",
+    "details": "In matches where Dhoni remained not out, India won 47 out of 49 run-chases (95.9% win rate).",
+    "source": "Cricsheet & ESPNcricinfo"
+  },
+  {
+    "id": "bowling_rare_1",
+    "category": "COMPLETE PLAYER FEAT",
+    "headline": "Only Elite Wicketkeeper to Bowl in 9 Matches & Take an ICC Wicket",
+    "stat_box": "Bowled in 9 International Matches (1 ICC Wicket)",
+    "story": "Dhoni took off his wicketkeeping pads and bowled medium pace in 9 international matches (6 Tests, 2 ODIs, 1 T20I), bowling 132 deliveries.",
+    "details": "He bowled West Indies opener Travis Dowlin clean at the Wanderers in the 2009 ICC Champions Trophy.",
+    "source": "ICC Champions Trophy 2009 Scorecard"
+  }
+]

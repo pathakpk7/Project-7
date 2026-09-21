@@ -28,17 +28,17 @@ export const HeatmapVenuesSection: React.FC = () => {
       />
 
       {/* Home vs Away vs Neutral Quick Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 font-mono">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 font-mono">
         {homeAwayOverall.map((ha) => (
-          <div key={ha.home_away} className="p-5 rounded-3xl bg-surface/80 border border-white/10 backdrop-blur-md">
-            <div className="flex items-center justify-between text-xs text-slate-400 uppercase">
+          <div key={ha.home_away} className="p-3.5 sm:p-4 rounded-2xl bg-surface/80 border border-white/10 backdrop-blur-md">
+            <div className="flex items-center justify-between text-[11px] text-slate-400 uppercase">
               <span>{ha.home_away} CONDITIONS</span>
-              <Globe className="w-3.5 h-3.5 text-sky-400" />
+              <Globe className="w-3 h-3 text-sky-400" />
             </div>
-            <div className="text-3xl font-extrabold text-white mt-2">
+            <div className="text-xl sm:text-2xl font-extrabold text-white mt-1">
               {Number(ha.runs).toLocaleString()} runs
             </div>
-            <div className="text-xs text-slate-400 mt-1">
+            <div className="text-[11px] text-slate-400 mt-0.5">
               Avg: <strong className="text-csk-gold">{ha.average}</strong> • {ha.matches} Matches
             </div>
           </div>

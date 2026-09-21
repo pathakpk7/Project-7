@@ -10,6 +10,80 @@ import yearlyStatsData from "@/data/yearly_stats.json";
 import { Activity, Zap, Award, Target, Layers, Sparkles, Flame, Eye } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+interface FormatMediaConfig {
+  pos1_4: {
+    src: string;
+    caption: string;
+  };
+  pos5_7: {
+    src: string;
+    caption: string;
+  };
+}
+
+const FORMAT_POSITION_MEDIA: Record<string, FormatMediaConfig> = {
+  "ODI": {
+    pos1_4: {
+      src: "/images/moments/moment_02_jaipur_183.jpg",
+      caption: "183* vs SL (Jaipur) • 148 vs PAK (Vizag) • 82.75 Avg"
+    },
+    pos5_7: {
+      src: "/images/moments/moment_05_cwc_2011_final.png",
+      caption: "47 Not Outs in Victories • 102.71 Chasing Avg • 2011 Final"
+    }
+  },
+  "TEST": {
+    pos1_4: {
+      src: "/images/test/dhoni_test_pos1_4_faisalabad_148.jpg",
+      caption: "148 vs PAK (Faisalabad 2006) • Counter-Attack Weapon"
+    },
+    pos5_7: {
+      src: "/images/moments/moment_06_chennai_224.png",
+      caption: "224 vs AUS (Chepauk 2013) • 6 Test Centuries at No. 6-7"
+    }
+  },
+  "T20I": {
+    pos1_4: {
+      src: "/images/moments/moment_03_t20_wc_2007.jpg",
+      caption: "45 vs SA (2007 T20 WC) • Fast Powerplay Accelerations"
+    },
+    pos5_7: {
+      src: "/images/moments/moment_09_bangladesh_sprint_2016.jpg",
+      caption: "Death Over Finisher • 42 Not Outs • Lightning Clutches"
+    }
+  },
+  "IPL": {
+    pos1_4: {
+      src: "/images/moments/moment_04_dharamsala_2010.png",
+      caption: "54* vs KXIP (Dharamsala 2010) • 70* vs RCB"
+    },
+    pos5_7: {
+      src: "/images/moments/moment_10_rcb_84_2019.png",
+      caption: "84* vs RCB • 2,500+ Death Overs Runs • 5 IPL Trophies"
+    }
+  },
+  "ALL_INTERNATIONAL": {
+    pos1_4: {
+      src: "/images/moments/moment_01_vizag_148.jpg",
+      caption: "148 Vizag • 183* Jaipur • 148 Faisalabad Top Blitz"
+    },
+    pos5_7: {
+      src: "/images/moments/moment_07_champions_trophy_2013.jpg",
+      caption: "ICC Trifecta Captain & Finisher: 10,000+ Runs at 5–7"
+    }
+  },
+  "OVERALL": {
+    pos1_4: {
+      src: "/images/moments/moment_02_jaipur_183.jpg",
+      caption: "Early Career Breakthroughs Across All Formats"
+    },
+    pos5_7: {
+      src: "/images/moments/moment_10_rcb_84_2019.png",
+      caption: "The Ultimate Crisis Finisher: 17,000+ Career Runs"
+    }
+  }
+};
+
 export const TheBatsmanSection: React.FC = () => {
   const [selectedFormat, setSelectedFormat] = useState<string>("ODI");
   const [roleMode, setRoleMode] = useState<"custom" | "standard">("custom");
@@ -18,6 +92,9 @@ export const TheBatsmanSection: React.FC = () => {
 
   // Format stat for selected format
   const currentFormatStat = formatStatsData.find((f) => f.format === selectedFormat) || formatStatsData[0];
+
+  // Dynamic media for selected format
+  const currentMedia = FORMAT_POSITION_MEDIA[selectedFormat] || FORMAT_POSITION_MEDIA["ODI"];
 
   // Filter positions for selected format
   const currentPositions = positionStatsData
@@ -117,7 +194,7 @@ export const TheBatsmanSection: React.FC = () => {
         {roleMode === "custom" ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Top Order 1-4 with Image */}
-            <div className="p-5 rounded-2xl bg-surface-raised border border-white/10 relative overflow-hidden flex flex-col justify-between">
+            <div className="p-5 rounded-2xl bg-surface-raised border border-white/10 relative overflow-hidden flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-bold px-2.5 py-1 rounded bg-sky-500/10 border border-sky-500/20">
@@ -128,16 +205,21 @@ export const TheBatsmanSection: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Embedded Image */}
-                <div className="relative rounded-xl overflow-hidden aspect-[16/9] border border-white/10 shadow-lg">
+                {/* Embedded Uncropped Image with Ambient Bleed */}
+                <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-950/80 border border-white/10 shadow-lg flex items-center justify-center">
                   <img
-                    src="/images/odi/dhoni_long_hair_bat_raise.jpg"
-                    alt="MS Dhoni Positions 1-4 Early Era"
-                    className="w-full h-full object-cover object-top"
+                    src={currentMedia.pos1_4.src}
+                    alt={`MS Dhoni Positions 1-4 ${selectedFormat}`}
+                    className="absolute inset-0 w-full h-full object-cover blur-lg opacity-25 scale-110 pointer-events-none"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-2 left-3 right-3 text-[11px] font-mono text-slate-200">
-                    183* vs SL (Jaipur) • 148 vs PAK (Vizag)
+                  <img
+                    src={currentMedia.pos1_4.src}
+                    alt={`MS Dhoni Positions 1-4 ${selectedFormat}`}
+                    className="relative z-10 w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none z-20" />
+                  <div className="absolute bottom-2 left-3 right-3 text-[11px] font-mono text-slate-200 truncate z-30 drop-shadow">
+                    {currentMedia.pos1_4.caption}
                   </div>
                 </div>
 
@@ -165,7 +247,7 @@ export const TheBatsmanSection: React.FC = () => {
             </div>
 
             {/* Lower Order 5-7 with Image */}
-            <div className="p-5 rounded-2xl bg-surface-raised border border-csk-gold/30 shadow-glow-gold relative overflow-hidden flex flex-col justify-between">
+            <div className="p-5 rounded-2xl bg-surface-raised border border-csk-gold/30 shadow-glow-gold relative overflow-hidden flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono uppercase tracking-widest text-csk-yellow font-bold px-2.5 py-1 rounded bg-csk-gold/10 border border-csk-gold/30">
@@ -176,16 +258,21 @@ export const TheBatsmanSection: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Embedded Image */}
-                <div className="relative rounded-xl overflow-hidden aspect-[16/9] border border-csk-gold/30 shadow-lg">
+                {/* Embedded Uncropped Image with Ambient Bleed */}
+                <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-950/80 border border-csk-gold/30 shadow-lg flex items-center justify-center">
                   <img
-                    src="/images/odi/dhoni_jersey7_back_walk.jpg"
-                    alt="MS Dhoni Positions 5-7 Finisher Engine"
-                    className="w-full h-full object-cover object-top"
+                    src={currentMedia.pos5_7.src}
+                    alt={`MS Dhoni Positions 5-7 ${selectedFormat}`}
+                    className="absolute inset-0 w-full h-full object-cover blur-lg opacity-25 scale-110 pointer-events-none"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-2 left-3 right-3 text-[11px] font-mono text-csk-yellow">
-                    47 Not Outs in Victories • 102.71 Chasing Avg
+                  <img
+                    src={currentMedia.pos5_7.src}
+                    alt={`MS Dhoni Positions 5-7 ${selectedFormat}`}
+                    className="relative z-10 w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none z-20" />
+                  <div className="absolute bottom-2 left-3 right-3 text-[11px] font-mono text-csk-yellow truncate z-30 drop-shadow">
+                    {currentMedia.pos5_7.caption}
                   </div>
                 </div>
 
@@ -237,11 +324,11 @@ export const TheBatsmanSection: React.FC = () => {
 
         {/* Mechanics Showcase: Pull Shot & Helicopter Shot */}
         <div className="mt-8 pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-          <div className="md:col-span-1 rounded-2xl overflow-hidden border border-white/10 aspect-[3/4] shadow-xl">
+          <div className="md:col-span-1 rounded-2xl overflow-hidden border border-csk-gold/20 aspect-[9/16] max-h-[380px] shadow-xl relative group">
             <img
-              src="/images/odi/dhoni_pull_shot.jpg"
-              alt="MS Dhoni Signature Pull Shot"
-              className="w-full h-full object-cover object-top"
+              src="/images/odi/dhoni_helicopter_mechanics_collage.jpg"
+              alt="MS Dhoni Helicopter Shot and Mechanics Montage"
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
           </div>
           <div className="md:col-span-2 space-y-3 font-mono">

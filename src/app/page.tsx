@@ -17,15 +17,12 @@ import { IconicMomentsSection } from "@/components/sections/IconicMomentsSection
 import { IndiaCsSection } from "@/components/sections/IndiaCsSection";
 import { HeatmapVenuesSection } from "@/components/sections/HeatmapVenuesSection";
 import { DhoniVsEraSection } from "@/components/sections/DhoniVsEraSection";
-import { MahiLabSection } from "@/components/sections/MahiLabSection";
-import { GamificationSection } from "@/components/sections/GamificationSection";
-import { AskMahiSection } from "@/components/sections/AskMahiSection";
 import { PersonalTributeSection } from "@/components/sections/PersonalTributeSection";
-import { DataTransparencySection } from "@/components/sections/DataTransparencySection";
 import { TheLegacySection } from "@/components/sections/TheLegacySection";
 
 import { TriviaCheckpoint, TriviaQuestion } from "@/components/interactive/TriviaCheckpoint";
 import { Number7Modal } from "@/components/easter-eggs/Number7Modal";
+import { MahiFanBadgeModal } from "@/components/easter-eggs/MahiFanBadgeModal";
 import { HelicopterAnimation } from "@/components/easter-eggs/HelicopterAnimation";
 
 const TRIVIA_QUESTIONS: TriviaQuestion[] = [
@@ -106,6 +103,7 @@ const QUESTION_BADGE_MAP: Record<number, string> = {
 
 export default function Home() {
   const [isNo7Open, setIsNo7Open] = useState(false);
+  const [isBadgeOpen, setIsBadgeOpen] = useState(false);
   const [isHelicopterActive, setIsHelicopterActive] = useState(false);
   const [answeredTriviaIds, setAnsweredTriviaIds] = useState<number[]>([]);
   const [unlockedList, setUnlockedList] = useState<string[]>([]);
@@ -189,7 +187,7 @@ export default function Home() {
         const nextList = new Set(uPrev);
         if (mappedBadge) nextList.add(mappedBadge);
 
-        // If all 7 are answered, unlock the 7th crown badge!
+        // If all 7 are answered, unlock the 7th crown badge & trigger 07 Mahi Fan badge celebration!
         if (updated.length === TRIVIA_QUESTIONS.length) {
           nextList.add("trivia_master");
           try {
@@ -200,6 +198,9 @@ export default function Home() {
               colors: ["#FDB913", "#FFD700", "#0081E9", "#FFFFFF"]
             });
           } catch {}
+          setTimeout(() => {
+            setIsBadgeOpen(true);
+          }, 600);
         }
         return Array.from(nextList);
       });
@@ -221,81 +222,82 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-screen text-slate-100 selection:bg-csk-gold selection:text-black overflow-x-hidden">
-      {/* Ambient Lighting & Particles Background */}
+    <main className="min-h-screen bg-surface-dark text-slate-100 selection:bg-csk-gold selection:text-black relative overflow-x-hidden">
+      {/* Dynamic Animated Ambient Stadium Background */}
       <CinematicBackground />
 
-      {/* Navigation Bar */}
-      <Navbar
-        onTriggerNo7={() => setIsNo7Open(true)}
-        unlockedAchievementsCount={unlockedList.length}
+      {/* Global Navigation Header */}
+      <Navbar 
+        onTriggerNo7={() => setIsNo7Open(true)} 
+        onTriggerBadge={() => setIsBadgeOpen(true)}
+        unlockedAchievementsCount={answeredTriviaIds.length} 
       />
 
-      {/* Section 1: Hero Section */}
-      <HeroSection
-        onEnterJourney={handleEnterJourney}
-        onTriggerNo7={() => setIsNo7Open(true)}
+      {/* Section 1: Hero Decoded */}
+      <HeroSection 
+        onEnterJourney={handleEnterJourney} 
+        onTriggerNo7={() => setIsNo7Open(true)} 
       />
 
-      {/* Section 2: Career Journey */}
-      <CareerTimelineSection />
-
-      {/* Trivia Checkpoint 1 (Debut / Roots) */}
+      {/* Trivia Checkpoint 1 (Debut Era 2004) */}
       <TriviaCheckpoint
         question={TRIVIA_QUESTIONS[0]}
         onAnswerCorrect={handleTriviaCorrect}
         isAnsweredCorrect={answeredTriviaIds.includes(1)}
       />
 
-      {/* Section 3: The Batsman */}
-      <TheBatsmanSection />
+      {/* Section 2: Career Journey (2004–2024 Timeline) */}
+      <CareerTimelineSection />
 
-      {/* Trivia Checkpoint 2 (183* Breakthrough) */}
+      {/* Trivia Checkpoint 2 (183* vs Sri Lanka in 2005) */}
       <TriviaCheckpoint
         question={TRIVIA_QUESTIONS[1]}
         onAnswerCorrect={handleTriviaCorrect}
         isAnsweredCorrect={answeredTriviaIds.includes(2)}
       />
 
-      {/* Section 4: The Keeper */}
-      <TheKeeperSection />
+      {/* Section 3: The Batsman */}
+      <TheBatsmanSection />
 
-      {/* Trivia Checkpoint 3 (0.08s Stumping & 2016 Sprint) */}
+      {/* Trivia Checkpoint 3 (2016 T20 WC 1-Run Thriller Sprint) */}
       <TriviaCheckpoint
         question={TRIVIA_QUESTIONS[2]}
         onAnswerCorrect={handleTriviaCorrect}
         isAnsweredCorrect={answeredTriviaIds.includes(3)}
       />
 
-      {/* Section 5: The Captain */}
-      <TheCaptainSection />
+      {/* Section 4: The Keeper */}
+      <TheKeeperSection />
 
-      {/* Trivia Checkpoint 4 (2007 T20 World Cup Final) */}
+      {/* Trivia Checkpoint 4 (2007 T20 World Cup Final Over Joginder) */}
       <TriviaCheckpoint
         question={TRIVIA_QUESTIONS[3]}
         onAnswerCorrect={handleTriviaCorrect}
         isAnsweredCorrect={answeredTriviaIds.includes(4)}
       />
 
-      {/* Section 6: The Finisher */}
-      <TheFinisherSection />
+      {/* Section 5: The Captain */}
+      <TheCaptainSection />
 
-      {/* Trivia Checkpoint 5 (2011 Final Promotion 91*) */}
+      {/* Trivia Checkpoint 5 (2011 CWC Final No. 5 Promotion) */}
       <TriviaCheckpoint
         question={TRIVIA_QUESTIONS[4]}
         onAnswerCorrect={handleTriviaCorrect}
         isAnsweredCorrect={answeredTriviaIds.includes(5)}
       />
 
-      {/* Section 7: Trophy Cabinet */}
-      <TrophyCabinetSection />
+      {/* Section 6: The Finisher */}
+      <TheFinisherSection />
 
-      {/* Trivia Checkpoint 6 (2013 Champions Trophy Trifecta) */}
+      {/* Trivia Checkpoint 6 (2013 Champions Trophy Trifecta Edgbaston) */}
       <TriviaCheckpoint
         question={TRIVIA_QUESTIONS[5]}
         onAnswerCorrect={handleTriviaCorrect}
         isAnsweredCorrect={answeredTriviaIds.includes(6)}
       />
+
+      {/* Section 7: The Golden Vault (Trophy Cabinet) */}
+      <TrophyCabinetSection />
 
       {/* Section 8: Iconic Moments */}
       <IconicMomentsSection />
@@ -316,38 +318,31 @@ export default function Home() {
       {/* Section 11: Dhoni vs Era Neutral Comparison */}
       <DhoniVsEraSection />
 
-      {/* Section 12: Mahi Tactical Lab */}
-      <MahiLabSection />
-
-      {/* Section 13: Gamification & Badges Showcase */}
-      <GamificationSection
-        unlockedList={unlockedList}
-        onResetProgress={handleResetProgress}
-      />
-
-      {/* Section 14: Ask Mahi AI Natural Language Query */}
-      <AskMahiSection />
-
-      {/* Section 15: Personal Tribute */}
+      {/* Section 12: Personal Tribute */}
       <PersonalTributeSection />
 
       {/* Section 16: The Legacy & Career Summary */}
       <TheLegacySection />
 
-      {/* Section 17: Data Engineering Architecture & Automated Pipeline Audit (Placed right before Footer) */}
-      <DataTransparencySection />
-
       {/* Footer */}
       <Footer onTriggerNo7={() => setIsNo7Open(true)} />
 
-      {/* Easter Egg 1: Number 7 Experience Modal */}
+      {/* Easter Egg 1: Number 7 Complete-Player Surprise Station Modal */}
       <Number7Modal
         isOpen={isNo7Open}
         onClose={() => setIsNo7Open(false)}
         onTriggerHelicopter={handleHelicopterShot}
       />
 
-      {/* Easter Egg 2: Helicopter Shot Fireworks Canvas */}
+      {/* Easter Egg 2: 07 Mahi Fan Official Badge Modal (Triggered by 7/7 Tracker) */}
+      <MahiFanBadgeModal
+        isOpen={isBadgeOpen}
+        onClose={() => setIsBadgeOpen(false)}
+        onTriggerHelicopter={handleHelicopterShot}
+        unlockedCount={answeredTriviaIds.length}
+      />
+
+      {/* Easter Egg 3: Helicopter Shot Fireworks Canvas */}
       <HelicopterAnimation
         isActive={isHelicopterActive}
         onComplete={() => setIsHelicopterActive(false)}

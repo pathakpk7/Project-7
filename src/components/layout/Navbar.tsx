@@ -6,10 +6,15 @@ import { cn } from "@/lib/utils";
 
 interface NavbarProps {
   onTriggerNo7: () => void;
+  onTriggerBadge?: () => void;
   unlockedAchievementsCount: number;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onTriggerNo7, unlockedAchievementsCount }) => {
+export const Navbar: React.FC<NavbarProps> = ({ 
+  onTriggerNo7, 
+  onTriggerBadge,
+  unlockedAchievementsCount 
+}) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
@@ -20,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onTriggerNo7, unlockedAchievemen
       
       const sections = [
         "hero", "journey", "batsman", "keeper", "captain",
-        "finisher", "trophies", "moments", "india-csk", "venues", "era", "lab", "ask-mahi", "data-sources"
+        "finisher", "trophies", "moments", "india-csk", "venues", "era"
       ];
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -46,8 +51,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onTriggerNo7, unlockedAchievemen
     { id: "trophies", label: "TROPHIES", icon: Trophy },
     { id: "moments", label: "MOMENTS", icon: Sparkles },
     { id: "india-csk", label: "INDIA × CSK", icon: Target },
-    { id: "lab", label: "MAHI LAB", icon: Zap },
-    { id: "ask-mahi", label: "ASK MAHI", icon: Sparkles },
   ];
 
   return (
@@ -96,30 +99,30 @@ export const Navbar: React.FC<NavbarProps> = ({ onTriggerNo7, unlockedAchievemen
 
         {/* Actions (Easter Egg Trigger & Badges) */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Number 7 Trigger Button */}
+          {/* Number 7 Surprise Trigger Button */}
           <button
             onClick={onTriggerNo7}
-            title="Click to activate Number 7 Experience"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-csk-gold/25 via-csk-yellow/20 to-amber-500/20 border border-csk-gold/50 text-csk-yellow text-xs font-mono font-bold hover:scale-105 active:scale-95 transition-all shadow-glow-gold"
+            title="Helicopter Shot Me! • Surprise MS Dhoni Stats"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-csk-gold/25 via-csk-yellow/20 to-amber-500/20 border border-csk-gold/50 text-csk-yellow text-xs font-mono font-bold hover:scale-105 active:scale-95 transition-all shadow-glow-gold cursor-pointer"
           >
             <Sparkles className="w-3.5 h-3.5 text-csk-gold animate-spin-slow" />
             <span>NO. 7</span>
           </button>
 
-          {/* Badges Counter Pill */}
-          <a
-            href="#achievements"
-            title="View Your 7 Fan Badges"
+          {/* Badges Counter Pill (Clickable trigger for 07 Mahi Fan Badge modal) */}
+          <button
+            onClick={onTriggerBadge || onTriggerNo7}
+            title={unlockedAchievementsCount === 7 ? "Click to view 07 Mahi Fan Badge!" : `${unlockedAchievementsCount} of 7 Trivia Checkpoints Solved - Click to view Badge`}
             className={cn(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-all text-xs font-mono font-bold",
+              "flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-all text-xs font-mono font-bold cursor-pointer",
               unlockedAchievementsCount === 7
-                ? "bg-gradient-to-r from-csk-gold/30 to-amber-500/30 border-csk-yellow text-csk-yellow shadow-glow-gold animate-pulse"
+                ? "bg-gradient-to-r from-csk-gold/30 to-amber-500/30 border-csk-yellow text-csk-yellow shadow-glow-gold animate-pulse hover:scale-105"
                 : "bg-surface-raised/80 border-white/10 text-slate-300 hover:border-csk-gold/40 hover:text-white"
             )}
           >
             <Trophy className={cn("w-3.5 h-3.5", unlockedAchievementsCount === 7 ? "text-csk-yellow" : "text-csk-gold")} />
             <span>{unlockedAchievementsCount} / 7</span>
-          </a>
+          </button>
 
           {/* Mobile Menu Button */}
           <button

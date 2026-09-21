@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ArrowDown, Sparkles, Activity, Compass, Shield, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -13,16 +13,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onEnterJourney,
   onTriggerNo7,
 }) => {
-  const years = [2004, 2005, 2007, 2008, 2009, 2010, 2011, 2013, 2016, 2018, 2020, 2021, 2023, 2024];
-  const [currentYearIndex, setCurrentYearIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentYearIndex((prev) => (prev + 1) % years.length);
-    }, 1800);
-    return () => clearInterval(timer);
-  }, [years.length]);
-
   return (
     <section id="hero" className="relative min-h-[92vh] flex flex-col items-center justify-center text-center px-4 pt-28 pb-16 overflow-hidden">
       {/* Dynamic stadium backdrop lights */}
@@ -62,18 +52,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             From the fearless swashbuckler of 2004 to cricket&apos;s most composed tactician. 
             Explore the verified data warehouse behind one of sport&apos;s greatest minds.
           </p>
-        </div>
-
-        {/* Year Ticker Pill */}
-        <div className="py-2">
-          <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-2xl bg-surface/90 border border-white/10 backdrop-blur-md shadow-2xl">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">ERA</span>
-            <span className="font-mono text-xl sm:text-2xl font-extrabold text-csk-yellow transition-all duration-500">
-              {years[currentYearIndex]}
-            </span>
-            <span className="text-xs font-mono text-slate-500">2004 — 2024</span>
-          </div>
         </div>
 
         {/* CTA Buttons */}

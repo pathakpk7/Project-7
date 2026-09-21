@@ -7,116 +7,121 @@ import milestonesData from "@/data/milestones.json";
 import { Calendar, Trophy, Award, Sparkles, ChevronRight, Filter } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const YEAR_IMAGES: Record<number, { src: string; alt: string; label: string }> = {
+const TIMELINE_IMAGES: Record<number, { src: string; alt: string; caption?: string }> = {
   2004: {
-    src: "/images/odi/dhoni_long_hair_raina.jpg",
-    alt: "MS Dhoni Debut & Early ODI Era",
-    label: "2004: The Rise of Dhoni"
+    src: "/images/timeline/2004.png",
+    alt: "MS Dhoni Debut Year 2004",
+    caption: "2004: International Debut & Early India Wicketkeeping"
   },
   2005: {
-    src: "/images/odi/dhoni_long_hair_bat_raise.jpg",
-    alt: "MS Dhoni 183* & 148 Bat-Raise",
-    label: "2005: 183* vs SL & 148 vs PAK"
+    src: "/images/timeline/2005.jpg",
+    alt: "MS Dhoni 183* & 148 Breakthrough 2005",
+    caption: "2005: 183* vs SL (Jaipur) & 148 vs PAK (Vizag) Masterclass"
   },
   2006: {
-    src: "/images/odi/dhoni_sachin_celebration.jpg",
-    alt: "MS Dhoni Sahara Retro ODI Era",
-    label: "2006: Sahara Retro Series"
+    src: "/images/timeline/2006.jpg",
+    alt: "MS Dhoni & Yuvraj Singh Partnership 2006",
+    caption: "2006: Dhoni & Yuvraj Chasing Masterclass in Pakistan & World No. 1 Ranking"
   },
   2007: {
-    src: "/images/odi/dhoni_pull_shot.jpg",
-    alt: "MS Dhoni Power Mechanics",
-    label: "2007: T20 WC Triumph & Power Arrival"
+    src: "/images/timeline/2007.jpg",
+    alt: "MS Dhoni ICC World Twenty20 Champions 2007",
+    caption: "2007: Inaugural ICC World Twenty20 Champions (Johannesburg)"
   },
   2008: {
-    src: "/images/odi/dhoni_century_celebration.jpg",
-    alt: "MS Dhoni CB Series & Milestones",
-    label: "2008: Historic Australia CB Series"
+    src: "/images/timeline/2008.jpg",
+    alt: "MS Dhoni CSK Captaincy Debut 2008",
+    caption: "2008: Inaugural IPL & Chennai Super Kings Captaincy Era Begins"
   },
   2009: {
-    src: "/images/odi/dhoni_century_celebration.jpg",
-    alt: "MS Dhoni No. 1 ODI Team & Batsman",
-    label: "2009: World No. 1 Peak"
+    src: "/images/timeline/2009.png",
+    alt: "MS Dhoni ICC World No. 1 Test Mace 2009",
+    caption: "2009: India Reaches ICC World No. 1 in Test Cricket (ICC Test Mace)"
   },
   2010: {
-    src: "/images/odi/dhoni_power_lofted.jpg",
-    alt: "MS Dhoni Asia Cup & IPL Double",
-    label: "2010: Asia Cup Champions & Dharamsala"
+    src: "/images/timeline/2010.jpg",
+    alt: "MS Dhoni Maiden IPL Trophy 2010 with CSK",
+    caption: "2010: Maiden IPL Title & Champions League T20 Double Triumph"
   },
   2011: {
-    src: "/images/odi/dhoni_wc_focus.jpg",
-    alt: "MS Dhoni 2011 World Cup Final (91*)",
-    label: "2011: World Cup Glory (91* at Wankhede)"
+    src: "/images/timeline/2011.jpg",
+    alt: "MS Dhoni 2011 World Cup Winning Six at Wankhede",
+    caption: "2011: ICC Cricket World Cup Champions & Iconic 91* Finishing Six"
   },
   2012: {
-    src: "/images/odi/dhoni_power_lofted.jpg",
-    alt: "MS Dhoni Adelaide Last Over Finish",
-    label: "2012: Adelaide 112m Maximum"
+    src: "/images/timeline/2012.png",
+    alt: "MS Dhoni 113* vs Pakistan Chennai 2012",
+    caption: "2012: Heroic 113* vs PAK (Chennai) & Asia Cup Mastery"
   },
   2013: {
-    src: "/images/odi/dhoni_tricolour_profile.jpg",
-    alt: "MS Dhoni ICC Champions Trophy & Celkon Cup",
-    label: "2013: ICC Champions Trophy Trifecta"
+    src: "/images/timeline/2013.png",
+    alt: "MS Dhoni 224 vs Australia in Chennai 2013",
+    caption: "2013: Career-Best 224 vs AUS (Chennai) & ICC Champions Trophy Triumph"
   },
   2014: {
-    src: "/images/odi/dhoni_tricolour_profile.jpg",
-    alt: "MS Dhoni Leadership Transition",
-    label: "2014: Master Tactician"
+    src: "/images/timeline/2014.png",
+    alt: "MS Dhoni Final Test Match at MCG Melbourne 2014",
+    caption: "2014: Final Test Appearance (MCG) & Graceful Test Retirement"
   },
   2015: {
-    src: "/images/odi/dhoni_wc_focus.jpg",
-    alt: "MS Dhoni 2015 World Cup Campaign",
-    label: "2015: Undefeated CWC Group Stage"
+    src: "/images/timeline/2015.jpg",
+    alt: "MS Dhoni 2015 ICC World Cup Campaign in Australia",
+    caption: "2015: ICC World Cup Semi-Final Run & 100 ODI Wins as Captain"
   },
   2016: {
-    src: "/images/odi/dhoni_pull_shot.jpg",
-    alt: "MS Dhoni Power Finishing",
-    label: "2016: 0.08s Glove-Off Sprint & Finish"
+    src: "/images/timeline/2016.png",
+    alt: "MS Dhoni Asia Cup Champions & T20 Mastery 2016",
+    caption: "2016: Asia Cup T20 Champions & Iconic Last-Ball Sprint vs BAN"
   },
   2017: {
-    src: "/images/odi/dhoni_power_lofted.jpg",
-    alt: "MS Dhoni 134 vs England Cuttack",
-    label: "2017: 134 in Cuttack with Yuvraj"
+    src: "/images/timeline/2017.jpg",
+    alt: "MS Dhoni 134 vs England Cuttack 2017",
+    caption: "2017: Masterclass 134 vs ENG (Cuttack) with Yuvraj & Captaincy Transition"
   },
   2018: {
-    src: "/images/odi/dhoni_jersey7_back_walk.jpg",
-    alt: "MS Dhoni 10,000 ODI Runs",
-    label: "2018: 10,000 ODI Runs & CSK Comeback"
+    src: "/images/timeline/2018.jpg",
+    alt: "MS Dhoni 10,000 ODI Runs & 3rd IPL Trophy 2018",
+    caption: "2018: 10,000 ODI Runs Milestone & Fairy Tale 3rd IPL Championship"
   },
   2019: {
-    src: "/images/odi/dhoni_jersey7_back_walk.jpg",
-    alt: "MS Dhoni 350th ODI & Australia Man of the Series",
-    label: "2019: Player of the Series in Australia"
+    src: "/images/timeline/2019.jpg",
+    alt: "MS Dhoni 2019 ICC Cricket World Cup in England",
+    caption: "2019: Final ICC World Cup Campaign & Gritty Semi-Final 50"
   },
   2020: {
-    src: "/images/odi/dhoni_jersey7_back_walk.jpg",
-    alt: "MS Dhoni 19:29 International Retirement",
-    label: "2020: 19:29 hrs Farewell & CSK Legacy"
+    src: "/images/timeline/2020.jpg",
+    alt: "MS Dhoni No. 7 Jersey Retirement & Definitely Not 2020",
+    caption: "2020: International Retirement (1929 hrs) & 'Definitely Not' Resolve"
   },
   2021: {
-    src: "/images/odi/dhoni_power_lofted.jpg",
-    alt: "MS Dhoni CSK 4th Title",
-    label: "2021: The 4th IPL Crown (Dubai)"
+    src: "/images/timeline/2021.jpg",
+    alt: "MS Dhoni 4th IPL Trophy 2021 in Dubai",
+    caption: "2021: 4th IPL Championship Glory (Dubai) & Mentor for T20 WC"
+  },
+  2022: {
+    src: "/images/timeline/2022.png",
+    alt: "MS Dhoni 16 runs off 4 balls finish vs MI 2022",
+    caption: "2022: Vintage Finisher Heist (16 off 4 balls vs MI) & 200+ IPL Matches"
   },
   2023: {
-    src: "/images/odi/dhoni_jersey7_back_walk.jpg",
-    alt: "MS Dhoni 5th IPL Title at Ahmedabad",
-    label: "2023: 5th IPL Title Masterclass"
+    src: "/images/timeline/2023.jpg",
+    alt: "MS Dhoni Lifting Ravindra Jadeja 5th IPL Trophy 2023",
+    caption: "2023: Historic 5th IPL Championship & Emotional Jadeja Hug (Ahmedabad)"
   },
   2024: {
-    src: "/images/odi/dhoni_jersey7_back_walk.jpg",
-    alt: "MS Dhoni The Timeless Legend",
-    label: "2024: The Timeless Icon of No. 7"
+    src: "/images/timeline/2024.jpg",
+    alt: "MS Dhoni Vintage Long Hair Power Hitting 2024",
+    caption: "2024: Vintage Long-Hair Era, 220+ SR Death Overs Fireworks & Ruturaj Handover"
   }
 };
 
 export const CareerTimelineSection: React.FC = () => {
-  const [selectedYear, setSelectedYear] = useState<number>(2011);
+  const [selectedYear, setSelectedYear] = useState<number>(2004);
   const [filterMode, setFilterMode] = useState<"all" | "trophy" | "milestone">("all");
 
   const currentYearItem = timelineData.find((t) => Number(t.year) === selectedYear) || timelineData[0];
   const relatedMilestones = milestonesData.filter((m) => m.date.startsWith(String(selectedYear)));
-  const yearImage = YEAR_IMAGES[selectedYear] || YEAR_IMAGES[2011];
+  const currentYearImage = TIMELINE_IMAGES[selectedYear];
 
   const filteredTimeline = timelineData.filter((item) => {
     if (filterMode === "trophy") return item.trophy !== "None";
@@ -268,19 +273,28 @@ export const CareerTimelineSection: React.FC = () => {
               {currentYearItem.year} SEASON METRICS
             </div>
 
-            {/* Embedded Era Image with crisp 16/9 aspect ratio */}
-            {yearImage && (
-              <div className="relative rounded-2xl overflow-hidden aspect-[16/9] border border-white/10 shadow-lg group">
+            {/* Embedded Era Image if available (Uncropped Full Image) */}
+            {currentYearImage && (
+              <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-gradient-to-b from-black/90 via-black/60 to-black/95 border border-white/10 shadow-lg group flex items-center justify-center">
+                {/* Blurred ambient background bleed */}
                 <img
-                  src={yearImage.src}
-                  alt={yearImage.alt}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  src={currentYearImage.src}
+                  alt={currentYearImage.alt}
+                  className="absolute inset-0 w-full h-full object-cover blur-xl opacity-25 scale-110 pointer-events-none"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[11px] font-mono">
-                  <span className="text-csk-yellow font-bold truncate">{yearImage.label}</span>
-                  <span className="text-[10px] text-slate-300 bg-black/60 px-1.5 py-0.5 rounded backdrop-blur-sm">ERA</span>
-                </div>
+                {/* Crisp uncropped foreground image */}
+                <img
+                  src={currentYearImage.src}
+                  alt={currentYearImage.alt}
+                  className="relative z-10 w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none z-20" />
+                {currentYearImage.caption && (
+                  <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-mono z-30">
+                    <span className="text-csk-yellow font-bold truncate drop-shadow">{currentYearImage.caption}</span>
+                    <span className="text-[10px] text-slate-300 bg-black/70 px-2 py-0.5 rounded-md border border-white/10 backdrop-blur-sm">ERA</span>
+                  </div>
+                )}
               </div>
             )}
 

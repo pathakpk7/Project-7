@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { KpiCard } from "@/components/ui/KpiCard";
 import wkStatsData from "@/data/wicketkeeping_stats.json";
-import { Shield, Zap, Timer, Award, CheckCircle, Flame } from "lucide-react";
+import { Shield, Zap, Timer, Award, CheckCircle, Flame, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const TheKeeperSection: React.FC = () => {
@@ -74,13 +74,27 @@ export const TheKeeperSection: React.FC = () => {
             <h3 className="text-xl font-bold uppercase tracking-tight text-white mb-2">
               CAN YOU MATCH DHONI&apos;S 0.08-SECOND REFLEXES?
             </h3>
-            <p className="text-xs text-slate-400 font-mono leading-relaxed mb-6">
+            <p className="text-xs text-slate-400 font-mono leading-relaxed mb-4">
               When the button flashes green, tap or click immediately. MS Dhoni recorded stumping dismissals in as low as 80 milliseconds.
             </p>
+
+            {/* Embedded Lightning Stumping Image */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[16/9] border border-sky-500/20 shadow-lg mb-5 group">
+              <img
+                src="/images/keeper/dhoni_lightning_stumping_008s.png"
+                alt="MS Dhoni Lightning 0.08s Stumping vs West Indies"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[11px] font-mono">
+                <span className="text-sky-400 font-bold">0.08s Stumping Lightning Speed</span>
+                <span className="text-[10px] text-slate-300 bg-black/60 px-1.5 py-0.5 rounded backdrop-blur-sm">TELEMETRY</span>
+              </div>
+            </div>
           </div>
 
           {/* Game Action Area */}
-          <div className="my-4">
+          <div className="my-2">
             {gameState === "idle" && (
               <button
                 onClick={startTest}
@@ -142,29 +156,29 @@ export const TheKeeperSection: React.FC = () => {
             WICKETKEEPING BREAKDOWN BY ARENA
           </h3>
 
-          <div className="space-y-3 font-mono">
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 font-mono">
+            <div className="p-3 sm:p-3.5 rounded-xl bg-white/5 border border-white/10 flex flex-col justify-between space-y-1.5 hover:border-sky-500/30 transition-colors">
               <div>
-                <div className="text-sm font-bold text-white">One Day Internationals (ODI)</div>
-                <div className="text-xs text-slate-400">{odisWk.catches} Catches • {odisWk.stumpings} Stumpings</div>
+                <div className="text-xs font-bold text-white leading-snug">One Day Internationals (ODI)</div>
+                <div className="text-[10px] text-slate-400 mt-0.5">{odisWk.catches} Catches • {odisWk.stumpings} Stumpings</div>
               </div>
-              <div className="text-xl font-bold text-sky-400">{odisWk.total_dismissals}</div>
+              <div className="text-xl sm:text-2xl font-black text-sky-400">{odisWk.total_dismissals}</div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between">
+            <div className="p-3 sm:p-3.5 rounded-xl bg-white/5 border border-white/10 flex flex-col justify-between space-y-1.5 hover:border-sky-500/30 transition-colors">
               <div>
-                <div className="text-sm font-bold text-white">Test Matches</div>
-                <div className="text-xs text-slate-400">{testsWk.catches} Catches • {testsWk.stumpings} Stumpings</div>
+                <div className="text-xs font-bold text-white leading-snug">Test Matches</div>
+                <div className="text-[10px] text-slate-400 mt-0.5">{testsWk.catches} Catches • {testsWk.stumpings} Stumpings</div>
               </div>
-              <div className="text-xl font-bold text-sky-400">{testsWk.total_dismissals}</div>
+              <div className="text-xl sm:text-2xl font-black text-sky-400">{testsWk.total_dismissals}</div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between">
+            <div className="p-3 sm:p-3.5 rounded-xl bg-white/5 border border-white/10 flex flex-col justify-between space-y-1.5 hover:border-csk-gold/30 transition-colors">
               <div>
-                <div className="text-sm font-bold text-white">Indian Premier League (IPL)</div>
-                <div className="text-xs text-slate-400">{iplWk.catches} Catches • {iplWk.stumpings} Stumpings</div>
+                <div className="text-xs font-bold text-white leading-snug">Indian Premier League (IPL)</div>
+                <div className="text-[10px] text-slate-400 mt-0.5">{iplWk.catches} Catches • {iplWk.stumpings} Stumpings</div>
               </div>
-              <div className="text-xl font-bold text-csk-yellow">{iplWk.total_dismissals}</div>
+              <div className="text-xl sm:text-2xl font-black text-csk-yellow">{iplWk.total_dismissals}</div>
             </div>
           </div>
 
@@ -176,6 +190,64 @@ export const TheKeeperSection: React.FC = () => {
               <li><strong>Blind Deflection / Backhand Flick</strong>: Deflecting throws onto the stumps without looking.</li>
               <li><strong>The 2016 Glove-Off Sprint</strong>: Removing right glove before the final ball to run out Mustafizur Rahman.</li>
             </ul>
+          </div>
+
+          {/* Top 5 Fastest Stumpings in Cricket History Leaderboard */}
+          <div className="p-4 rounded-2xl bg-surface-raised border border-sky-500/30 text-xs space-y-3 shadow-glow-blue">
+            <div className="flex items-center justify-between">
+              <div className="font-bold text-sky-400 uppercase font-mono flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-sky-400" />
+                <span>TOP FIVE FASTEST STUMPINGS IN CRICKET:</span>
+              </div>
+              <span className="text-[10px] font-mono text-slate-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20 font-bold">ALL #1 BY DHONI</span>
+            </div>
+
+            <div className="space-y-1.5 font-mono">
+              <div className="flex items-center justify-between p-2 rounded-xl bg-sky-500/10 border border-sky-500/20 text-white font-bold">
+                <span className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-sky-500 text-black text-[10px] flex items-center justify-center font-black">1</span>
+                  <span>MS Dhoni</span>
+                </span>
+                <span className="text-sky-300 font-black">0.08 seconds</span>
+              </div>
+
+              <div className="flex items-center justify-between p-2 rounded-xl bg-white/5 border border-white/5 text-slate-200">
+                <span className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-white/10 text-slate-300 text-[10px] flex items-center justify-center font-bold">2</span>
+                  <span>MS Dhoni</span>
+                </span>
+                <span className="text-slate-300 font-bold">0.09 seconds</span>
+              </div>
+
+              <div className="flex items-center justify-between p-2 rounded-xl bg-white/5 border border-white/5 text-slate-200">
+                <span className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-white/10 text-slate-300 text-[10px] flex items-center justify-center font-bold">3</span>
+                  <span>MS Dhoni</span>
+                </span>
+                <span className="text-slate-300 font-bold">0.09 seconds</span>
+              </div>
+
+              <div className="flex items-center justify-between p-2 rounded-xl bg-white/5 border border-white/5 text-slate-200">
+                <span className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-white/10 text-slate-300 text-[10px] flex items-center justify-center font-bold">4</span>
+                  <span>MS Dhoni</span>
+                </span>
+                <span className="text-slate-300 font-bold">0.12 seconds</span>
+              </div>
+
+              <div className="flex items-center justify-between p-2 rounded-xl bg-white/5 border border-white/5 text-slate-200">
+                <span className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-white/10 text-slate-300 text-[10px] flex items-center justify-center font-bold">5</span>
+                  <span>MS Dhoni</span>
+                </span>
+                <span className="text-slate-300 font-bold">0.16 seconds</span>
+              </div>
+            </div>
+
+            <div className="text-[10px] font-mono text-slate-400 pt-1 border-t border-white/5 flex items-center justify-between">
+              <span>Benchmark: Human eye blink = ~0.10s–0.40s</span>
+              <span className="text-sky-400">Broadcast Telemetry</span>
+            </div>
           </div>
         </div>
 
