@@ -1,0 +1,54 @@
+[
+  {
+    "format": "IPL",
+    "death_overs_definition": "Overs 16-20 (T20/IPL) / Overs 41-50 (ODI)",
+    "balls_faced": "1982",
+    "runs_scored": "3468",
+    "strike_rate": "174.97",
+    "fours": "252",
+    "sixes": "208",
+    "dot_balls": "539",
+    "dot_ball_percentage": "27.2%",
+    "boundary_percentage": "23.2%",
+    "finisher_index": "136.86"
+  },
+  {
+    "format": "ODI",
+    "death_overs_definition": "Overs 16-20 (T20/IPL) / Overs 41-50 (ODI)",
+    "balls_faced": "2997",
+    "runs_scored": "3837",
+    "strike_rate": "128.03",
+    "fours": "315",
+    "sixes": "128",
+    "dot_balls": "1033",
+    "dot_ball_percentage": "34.5%",
+    "boundary_percentage": "14.8%",
+    "finisher_index": "99.29"
+  },
+  {
+    "format": "OVERALL_LIMITED_OVERS",
+    "death_overs_definition": "Overs 16-20 (T20/IPL) / Overs 41-50 (ODI)",
+    "balls_faced": "5637",
+    "runs_scored": "8301",
+    "strike_rate": "147.26",
+    "fours": "648",
+    "sixes": "372",
+    "dot_balls": "1749",
+    "dot_ball_percentage": "31.0%",
+    "boundary_percentage": "18.1%",
+    "finisher_index": "114.57"
+  },
+  {
+    "format": "T20I",
+    "death_overs_definition": "Overs 16-20 (T20/IPL) / Overs 41-50 (ODI)",
+    "balls_faced": "658",
+    "runs_scored": "996",
+    "strike_rate": "151.37",
+    "fours": "81",
+    "sixes": "36",
+    "dot_balls": "177",
+    "dot_ball_percentage": "26.9%",
+    "boundary_percentage": "17.8%",
+    "finisher_index": "116.98"
+  }
+]

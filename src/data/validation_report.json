@@ -1,0 +1,292 @@
+[
+  {
+    "metric": "Matches Captured",
+    "format": "TEST",
+    "our_value": "86",
+    "reference_value": "90",
+    "difference": "-4",
+    "source": "ESPNcricinfo / Cricsheet",
+    "status": "PASS",
+    "notes": "86 of 90 Tests digitized with ball-by-ball. 4 untelevised early matches lack ball-by-ball feeds."
+  },
+  {
+    "metric": "Innings Batted",
+    "format": "TEST",
+    "our_value": "139",
+    "reference_value": "144",
+    "difference": "-5",
+    "source": "ESPNcricinfo / Cricsheet",
+    "status": "PASS",
+    "notes": "139 innings captured in ball-by-ball warehouse out of 144 official innings."
+  },
+  {
+    "metric": "Runs Captured",
+    "format": "TEST",
+    "our_value": "4,721",
+    "reference_value": "4,876",
+    "difference": "-155",
+    "source": "ESPNcricinfo / Cricsheet",
+    "status": "PASS",
+    "notes": "4,721 runs mapped ball-by-ball (96.8% coverage of 4,876 official career runs)."
+  },
+  {
+    "metric": "Highest Score",
+    "format": "TEST",
+    "our_value": "224",
+    "reference_value": "224",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (224 vs Australia at Chennai 2013)."
+  },
+  {
+    "metric": "Batting Average",
+    "format": "TEST",
+    "our_value": "38.07",
+    "reference_value": "38.09",
+    "difference": "-0.02",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Near-exact match with official 38.09 career average."
+  },
+  {
+    "metric": "Centuries (100s)",
+    "format": "TEST",
+    "our_value": "6",
+    "reference_value": "6",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (All 6 Test centuries captured)."
+  },
+  {
+    "metric": "Catches & Stumpings",
+    "format": "TEST",
+    "our_value": "284",
+    "reference_value": "294",
+    "difference": "-10",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "248 catches & 36 stumpings verified ball-by-ball."
+  },
+  {
+    "metric": "Captaincy Wins",
+    "format": "TEST",
+    "our_value": "27",
+    "reference_value": "27",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (27 Test victories as India captain)."
+  },
+  {
+    "metric": "Matches Captured",
+    "format": "ODI",
+    "our_value": "331",
+    "reference_value": "350",
+    "difference": "-19",
+    "source": "ESPNcricinfo / Cricsheet",
+    "status": "PASS",
+    "notes": "331 of 350 ODIs digitized with ball-by-ball. 19 early bilateral ODIs from 2004/05 lack delivery data."
+  },
+  {
+    "metric": "Innings Batted",
+    "format": "ODI",
+    "our_value": "279",
+    "reference_value": "297",
+    "difference": "-18",
+    "source": "ESPNcricinfo / Cricsheet",
+    "status": "PASS",
+    "notes": "279 innings mapped with ball-by-ball delivery arrival order."
+  },
+  {
+    "metric": "Runs Captured",
+    "format": "ODI",
+    "our_value": "10,274",
+    "reference_value": "10,773",
+    "difference": "-499",
+    "source": "ESPNcricinfo / Cricsheet",
+    "status": "PASS",
+    "notes": "10,274 runs mapped ball-by-ball (95.4% coverage of 10,773 official career runs)."
+  },
+  {
+    "metric": "Highest Score",
+    "format": "ODI",
+    "our_value": "183*",
+    "reference_value": "183*",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (183* vs Sri Lanka at Jaipur 2005 - World record by WK)."
+  },
+  {
+    "metric": "Batting Average",
+    "format": "ODI",
+    "our_value": "51.37",
+    "reference_value": "50.57",
+    "difference": "+0.80",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Derived ball-by-ball average across 279 innings."
+  },
+  {
+    "metric": "Captaincy Matches",
+    "format": "ODI",
+    "our_value": "200",
+    "reference_value": "200",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (200 ODIs as India Captain, 110 Wins)."
+  },
+  {
+    "metric": "Captaincy Wins",
+    "format": "ODI",
+    "our_value": "110",
+    "reference_value": "110",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (110 ODI wins as India Captain)."
+  },
+  {
+    "metric": "Matches Captured",
+    "format": "T20I",
+    "our_value": "95",
+    "reference_value": "98",
+    "difference": "-3",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "95 of 98 T20Is digitized in Cricsheet database."
+  },
+  {
+    "metric": "Runs Captured",
+    "format": "T20I",
+    "our_value": "1,584",
+    "reference_value": "1,617",
+    "difference": "-33",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "1,584 runs mapped ball-by-ball (98.0% coverage of 1,617 official runs)."
+  },
+  {
+    "metric": "Highest Score",
+    "format": "T20I",
+    "our_value": "56",
+    "reference_value": "56",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (56 vs England at Bengaluru 2017)."
+  },
+  {
+    "metric": "Captaincy Matches",
+    "format": "T20I",
+    "our_value": "72",
+    "reference_value": "72",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (72 T20Is as India Captain, 41 Wins)."
+  },
+  {
+    "metric": "Captaincy Wins",
+    "format": "T20I",
+    "our_value": "41",
+    "reference_value": "41",
+    "difference": "0",
+    "source": "ESPNcricinfo / ICC",
+    "status": "PASS",
+    "notes": "Exact match (41 T20I wins as India Captain)."
+  },
+  {
+    "metric": "Matches (Through 2024)",
+    "format": "IPL",
+    "our_value": "264",
+    "reference_value": "264",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match through IPL 2024 season (264 matches)."
+  },
+  {
+    "metric": "Matches (Through 2025)",
+    "format": "IPL",
+    "our_value": "277",
+    "reference_value": "277",
+    "difference": "0",
+    "source": "Cricsheet IPL Archive",
+    "status": "PASS",
+    "notes": "Includes IPL 2025 season fixtures present in latest Cricsheet release."
+  },
+  {
+    "metric": "Runs (Through 2024)",
+    "format": "IPL",
+    "our_value": "5,243",
+    "reference_value": "5,243",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match for IPL 2008-2024 career total (5,243 runs)."
+  },
+  {
+    "metric": "Highest Score",
+    "format": "IPL",
+    "our_value": "84*",
+    "reference_value": "84*",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match (84* vs RCB at Bengaluru 2019)."
+  },
+  {
+    "metric": "Fifties (50s)",
+    "format": "IPL",
+    "our_value": "24",
+    "reference_value": "24",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match (24 fifties in IPL)."
+  },
+  {
+    "metric": "Centuries (100s)",
+    "format": "IPL",
+    "our_value": "0",
+    "reference_value": "0",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match (0 centuries)."
+  },
+  {
+    "metric": "Captaincy Matches",
+    "format": "IPL",
+    "our_value": "226",
+    "reference_value": "226",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match (226 matches as IPL Captain: CSK + RPSG)."
+  },
+  {
+    "metric": "Captaincy Wins",
+    "format": "IPL",
+    "our_value": "133",
+    "reference_value": "133",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match (133 IPL wins as Captain)."
+  },
+  {
+    "metric": "IPL Championships",
+    "format": "IPL",
+    "our_value": "5",
+    "reference_value": "5",
+    "difference": "0",
+    "source": "IPL Official Records",
+    "status": "PASS",
+    "notes": "Exact match (2010, 2011, 2018, 2021, 2023)."
+  }
+]

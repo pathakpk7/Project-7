@@ -1,0 +1,189 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Player {
+  id                      String                   @id @map("player_id")
+  fullName                String                   @map("full_name")
+  knownAs                 String                   @map("known_as")
+  cricsheetId             String?                  @unique @map("cricsheet_id")
+  cricinfoId              String?                  @map("cricinfo_id")
+  jerseyNumber            Int                      @default(7) @map("jersey_number")
+  battingHand             String                   @default("Right-hand bat") @map("batting_hand")
+  bowlingStyle            String                   @default("Right-arm medium") @map("bowling_style")
+  role                    String                   @default("Wicketkeeper Batsman")
+  birthDate               DateTime?                @map("birth_date")
+  birthPlace              String?                  @map("birth_place")
+  internationalDebut      DateTime?                @map("international_debut")
+  internationalRetirement DateTime?                @map("international_retirement")
+  innings                 Innings[]
+  wicketkeeping           WicketkeepingPerformance[]
+  captaincy               CaptaincyPerformance[]
+
+  @@map("players")
+}
+
+model Team {
+  id        String    @id @map("team_id")
+  name      String    @unique
+  shortName String    @map("short_name")
+  type      String
+  homeMatches Match[] @relation("HomeTeam")
+  awayMatches Match[] @relation("AwayTeam")
+
+  @@map("teams")
+}
+
+model Venue {
+  id       String    @id @map("venue_id")
+  name     String
+  city     String?
+  country  String
+  matches  Match[]
+
+  @@map("venues")
+}
+
+model Match {
+  id              String                   @id @map("match_id")
+  date            DateTime
+  year            Int
+  month           Int
+  format          String
+  competition     String
+  season          String
+  teamId          String                   @map("team_id")
+  opponentId      String                   @map("opponent_id")
+  venueId         String?                  @map("venue_id")
+  homeAway        String                   @map("home_away")
+  tossWinner      String?                  @map("toss_winner")
+  tossDecision    String?                  @map("toss_decision")
+  winner          String?
+  result          String
+  margin          String?
+  captain         Boolean                  @default(false)
+  playerOfMatch   Boolean                  @default(false) @map("player_of_match")
+  tournamentStage String?                  @map("tournament_stage")
+
+  team            Team                     @relation("HomeTeam", fields: [teamId], references: [id])
+  opponent        Team                     @relation("AwayTeam", fields: [opponentId], references: [id])
+  venue           Venue?                   @relation(fields: [venueId], references: [id])
+  innings         Innings[]
+  wicketkeeping   WicketkeepingPerformance[]
+  captaincy       CaptaincyPerformance[]
+
+  @@map("matches")
+}
+
+model Innings {
+  id              String   @id @map("innings_id")
+  matchId         String   @map("match_id")
+  playerId        String   @map("player_id")
+  date            DateTime
+  year            Int
+  format          String
+  inningsNumber   Int      @map("innings_number")
+  battingPosition Int?     @map("batting_position")
+  runs            Int      @default(0)
+  ballsFaced      Int      @default(0) @map("balls_faced")
+  fours           Int      @default(0)
+  sixes           Int      @default(0)
+  dots            Int      @default(0)
+  strikeRate      Decimal  @default(0.00) @map("strike_rate") @db.Decimal(6, 2)
+  dismissed       Boolean  @default(true)
+  notOut          Boolean  @default(false) @map("not_out")
+  dismissalType   String   @map("dismissal_type")
+  bowler          String?
+  fielder         String?
+  captain         Boolean  @default(false)
+  chasing         Boolean  @default(false)
+  target          Int?
+  result          String
+
+  match           Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  player          Player   @relation(fields: [playerId], references: [id])
+
+  @@map("innings")
+}
+
+model WicketkeepingPerformance {
+  id              String   @id @default(uuid())
+  matchId         String   @map("match_id")
+  playerId        String   @map("player_id")
+  date            DateTime
+  format          String
+  catches         Int      @default(0)
+  stumpings       Int      @default(0)
+  runOuts         Int      @default(0) @map("run_outs")
+  totalDismissals Int      @default(0) @map("total_dismissals")
+
+  match           Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  player          Player   @relation(fields: [playerId], references: [id])
+
+  @@map("wicketkeeping_performances")
+}
+
+model CaptaincyPerformance {
+  id              String   @id @default(uuid())
+  matchId         String   @map("match_id")
+  playerId        String   @map("player_id")
+  date            DateTime
+  team            String
+  format          String
+  tossWon         Boolean  @map("toss_won")
+  result          String
+  margin          String?
+
+  match           Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  player          Player   @relation(fields: [playerId], references: [id])
+
+  @@map("captaincy_performances")
+}
+
+model Trophy {
+  id           String   @id @default(uuid()) @map("trophy_id")
+  year         Int
+  competition  String
+  team         String
+  captain      String
+  stage        String
+  opponent     String
+  venue        String
+  result       String
+  significance String   @db.Text
+  source       String
+
+  @@map("trophies")
+}
+
+model IconicMoment {
+  id          String   @id @map("moment_id")
+  date        DateTime
+  year        Int
+  competition String
+  match       String
+  opponent    String
+  venue       String
+  context     String   @db.Text
+  performance String   @db.Text
+  result      String
+  category    String
+  source      String
+
+  @@map("iconic_moments")
+}
+
+model Milestone {
+  id      String   @id @default(uuid()) @map("milestone_id")
+  date    DateTime
+  milestone String
+  format  String
+  details String   @db.Text
+
+  @@map("milestones")
+}

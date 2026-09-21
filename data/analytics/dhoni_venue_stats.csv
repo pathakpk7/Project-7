@@ -1,0 +1,362 @@
+venue,city,country,format,matches,innings,runs,dismissals,not_outs,average,strike_rate,highest_score
+"MA Chidambaram Stadium, Chepauk",Chennai,India,IPL,46,43,1145,30,13,38.17,142.41,67*
+Maharashtra Cricket Association Stadium,Pune,India,IPL,17,16,421,7,9,60.14,138.94,61*
+M Chinnaswamy Stadium,Bangalore,India,IPL,8,8,309,5,3,61.80,177.59,70*
+Eden Gardens,Kolkata,India,IPL,13,11,278,6,5,46.33,134.30,66*
+Wankhede Stadium,Mumbai,India,IPL,17,14,250,10,4,25.00,114.68,43*
+MA Chidambaram Stadium,Chennai,India,IPL,8,5,218,1,4,218.00,147.30,75*
+"MA Chidambaram Stadium, Chepauk, Chennai",Chennai,India,IPL,21,17,184,7,10,26.29,153.33,32*
+Dubai International Cricket Stadium,Dubai,United Arab Emirates,IPL,14,12,183,8,4,22.88,111.59,47*
+"Wankhede Stadium, Mumbai",Mumbai,India,IPL,12,10,166,6,4,27.67,128.68,50*
+M.Chinnaswamy Stadium,Bengaluru,India,IPL,2,2,154,0,2,NA [Not Out],187.80,84*
+Sawai Mansingh Stadium,Jaipur,India,IPL,6,6,145,4,2,36.25,130.63,58
+JSCA International Stadium Complex,Ranchi,India,IPL,5,5,138,2,3,69.00,126.61,57*
+Feroz Shah Kotla,Delhi,India,IPL,7,6,132,5,1,26.40,126.92,44
+SuperSport Park,Centurion,South Africa,IPL,3,3,118,0,3,NA [Not Out],159.46,56*
+Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Visakhapatnam,India,IPL,5,4,110,3,1,36.67,157.14,64*
+"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,IPL,6,6,107,6,0,17.83,130.49,37
+Sheikh Zayed Stadium,Abu Dhabi,United Arab Emirates,IPL,6,5,97,4,1,24.25,142.65,32
+Punjab Cricket Association IS Bindra Stadium,Chandigarh,Unknown,IPL,2,2,89,0,2,NA [Not Out],158.93,79*
+Sharjah Cricket Stadium,Sharjah,United Arab Emirates,IPL,6,6,86,2,4,43.00,119.44,29*
+Dr DY Patil Sports Academy,Mumbai,India,IPL,4,3,81,2,1,40.50,126.56,30
+Subrata Roy Sahara Stadium,Pune,India,IPL,2,2,71,1,1,71.00,161.36,45*
+"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,IPL,4,3,70,2,1,35.00,179.49,43
+"Brabourne Stadium, Mumbai",Mumbai,India,IPL,4,3,65,2,1,32.50,104.84,26
+Himachal Pradesh Cricket Association Stadium,Dharamsala,India,IPL,2,2,60,1,1,60.00,133.33,54*
+Buffalo Park,East London,South Africa,IPL,1,1,58,0,1,NA [Not Out],156.76,58*
+"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Lucknow,India,IPL,3,2,54,0,2,NA [Not Out],270.00,28*
+"Sardar Patel Stadium, Motera",Ahmedabad,India,IPL,2,2,52,1,1,52.00,92.86,31*
+"Dr DY Patil Sports Academy, Mumbai",Navi Mumbai,Unknown,IPL,4,4,52,1,3,52.00,192.59,28*
+Arun Jaitley Stadium,Delhi,India,IPL,2,2,49,1,1,49.00,84.48,32*
+Kingsmead,Durban,South Africa,IPL,4,4,47,4,0,11.75,92.16,22
+"Narendra Modi Stadium, Ahmedabad",Ahmedabad,India,IPL,4,3,40,1,2,40.00,210.53,26*
+St George's Park,Port Elizabeth,South Africa,IPL,2,2,39,1,1,39.00,108.33,23*
+"M Chinnaswamy Stadium, Bengaluru",Bengaluru,India,IPL,3,3,38,2,1,19.00,172.73,25
+"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",Visakhapatnam,India,IPL,1,1,37,0,1,NA [Not Out],231.25,37*
+Newlands,Cape Town,South Africa,IPL,1,1,36,1,0,36.00,138.46,36
+New Wanderers Stadium,Johannesburg,South Africa,IPL,2,2,34,2,0,17.00,91.89,28
+Shaheed Veer Narayan Singh International Stadium,Raipur,Pakistan,IPL,1,1,27,1,0,27.00,112.50,27
+Saurashtra Cricket Association Stadium,Rajkot,India,IPL,2,2,27,1,1,27.00,150.00,22*
+Rajiv Gandhi International Stadium,Hyderabad,India,IPL,2,2,27,1,1,27.00,135.00,25*
+"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Mohali,India,IPL,1,1,27,1,0,27.00,225.00,27
+Barabati Stadium,Cuttack,India,IPL,1,1,23,1,0,23.00,115.00,23
+"Arun Jaitley Stadium, Delhi",Delhi,India,IPL,4,2,21,1,1,21.00,100.00,16
+"Eden Gardens, Kolkata",Kolkata,India,IPL,2,2,19,0,2,NA [Not Out],90.48,17*
+"Barsapara Cricket Stadium, Guwahati",Guwahati,India,IPL,1,1,16,1,0,16.00,145.45,16
+Nehru Stadium,Kochi,India,IPL,1,1,14,0,1,NA [Not Out],107.69,14*
+"Maharashtra Cricket Association Stadium, Pune",Pune,India,IPL,3,2,10,2,0,5.00,100.00,8
+"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,IPL,1,1,7,1,0,7.00,53.85,7
+Holkar Cricket Stadium,Indore,India,IPL,1,1,5,1,0,5.00,45.45,5
+"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,Unknown,IPL,1,1,1,1,0,1.00,50.00,1
+"Zayed Cricket Stadium, Abu Dhabi",Abu Dhabi,United Arab Emirates,IPL,2,1,1,1,0,1.00,25.00,1
+"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Hyderabad,India,IPL,1,1,1,0,1,NA [Not Out],50.00,1*
+"Himachal Pradesh Cricket Association Stadium, Dharamsala",Dharamsala,India,IPL,1,1,0,1,0,0.00,0.00,0
+Shere Bangla National Stadium,Mirpur,Pakistan,ODI,17,14,591,9,5,65.67,88.21,101*
+R Premadasa Stadium,Colombo,Sri Lanka,ODI,12,11,483,9,2,53.67,81.18,94
+Rangiri Dambulla International Stadium,,Sri Lanka,ODI,14,13,434,9,4,48.22,70.57,67
+National Stadium,Karachi,Pakistan,ODI,7,6,404,3,3,134.67,97.58,109*
+"MA Chidambaram Stadium, Chepauk",Chennai,India,ODI,6,6,401,4,2,100.25,101.78,139*
+"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,ODI,8,8,356,6,2,59.33,92.47,139*
+Nehru Stadium,Kochi,India,ODI,7,7,283,5,2,56.60,74.67,72
+"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,ODI,6,5,268,3,2,89.33,101.90,124
+"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,ODI,6,6,262,5,1,52.40,75.29,88*
+Adelaide Oval,Adelaide,Australia,ODI,6,6,262,2,4,131.00,83.97,58*
+Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Visakhapatnam,India,ODI,6,5,260,4,1,65.00,104.84,148
+Feroz Shah Kotla,Delhi,India,ODI,8,6,236,3,3,78.67,73.07,71*
+Sydney Cricket Ground,Sydney,Australia,ODI,7,6,215,5,1,43.00,65.15,65
+"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,ODI,5,5,202,3,2,67.33,90.99,87*
+Melbourne Cricket Ground,Melbourne,Australia,ODI,7,7,199,5,2,39.80,74.25,87*
+Kennington Oval,London,England,ODI,7,5,198,5,0,39.60,89.19,69
+Barabati Stadium,Cuttack,India,ODI,2,2,184,2,0,92.00,100.55,134
+Wankhede Stadium,Mumbai,India,ODI,6,6,175,4,2,43.75,85.37,91*
+Pallekele International Cricket Stadium,,Sri Lanka,ODI,3,3,170,1,2,170.00,88.54,67*
+Green Park,Kanpur,India,ODI,6,6,168,4,2,42.00,88.89,49
+"Sabina Park, Kingston",Jamaica,Jamaica,ODI,5,4,165,4,0,41.25,75.69,95
+Lord's,London,England,ODI,3,3,165,2,1,82.50,81.68,78*
+Madhavrao Scindia Cricket Ground,Rajkot,India,ODI,4,3,159,3,0,53.00,103.92,72
+Eden Gardens,Kolkata,India,ODI,5,4,159,2,2,79.50,77.94,75*
+"Queen's Park Oval, Port of Spain",Trinidad,Trinidad and Tobago,ODI,8,8,156,4,4,39.00,86.67,46*
+Eden Park,Auckland,New Zealand,ODI,3,3,144,2,1,72.00,91.72,85*
+M Chinnaswamy Stadium,Bangalore,India,ODI,6,5,138,5,0,27.60,113.11,62
+Seddon Park,Hamilton,New Zealand,ODI,4,2,135,1,1,135.00,115.38,79*
+Harare Sports Club,,Zimbabwe,ODI,6,3,134,2,1,67.00,107.20,67*
+"Sir Vivian Richards Stadium, North Sound",Antigua,Antigua and Barbuda,ODI,2,2,132,1,1,132.00,68.39,78*
+Sophia Gardens,Cardiff,England,ODI,4,3,129,2,1,64.50,125.24,52
+McLean Park,Napier,New Zealand,ODI,3,2,124,1,1,124.00,91.85,84*
+Old Trafford,Manchester,England,ODI,4,4,120,3,1,40.00,78.43,56*
+Reliance Stadium,Vadodara,India,ODI,3,3,118,3,0,39.33,93.65,80
+Captain Roop Singh Stadium,Gwalior,India,ODI,2,2,113,0,2,NA [Not Out],141.25,68*
+Himachal Pradesh Cricket Association Stadium,Dharamsala,India,ODI,4,4,107,4,0,26.75,76.98,65
+New Wanderers Stadium,Johannesburg,South Africa,ODI,3,2,103,2,0,51.50,78.03,65
+Keenan Stadium,Jamshedpur,Unknown,ODI,1,1,96,1,0,96.00,90.57,96
+Headingley,Leeds,England,ODI,4,3,95,3,0,31.67,76.00,42
+Holkar Cricket Stadium,Indore,India,ODI,2,2,95,0,2,NA [Not Out],103.26,92*
+Edgbaston,Birmingham,England,ODI,8,4,90,3,1,30.00,102.27,42*
+Western Australia Cricket Association Ground,Perth,Australia,ODI,5,4,84,3,1,28.00,79.25,45*
+"Nehru Stadium, Fatorda",Margao,India,ODI,2,2,80,0,2,NA [Not Out],100.00,67*
+Saurashtra Cricket Association Stadium,Rajkot,India,ODI,2,2,79,2,0,39.50,91.86,47
+Gaddafi Stadium,Lahore,Pakistan,ODI,1,1,72,0,1,NA [Not Out],156.52,72*
+Westpac Stadium,Wellington,New Zealand,ODI,3,3,71,2,1,35.50,73.20,47
+Newlands,Cape Town,South Africa,ODI,3,3,70,3,0,23.33,85.37,55
+Dubai International Cricket Stadium,,United Arab Emirates,ODI,5,3,69,3,0,23.00,64.49,36
+Arbab Niaz Stadium,Peshawar,Pakistan,ODI,1,1,68,1,0,68.00,128.30,68
+AMI Stadium,Christchurch,New Zealand,ODI,1,1,68,1,0,68.00,117.24,68
+"Sardar Patel Stadium, Motera",Ahmedabad,India,ODI,3,3,67,3,0,22.33,83.75,51
+Sheikh Zayed Stadium,Abu Dhabi,United Arab Emirates,ODI,2,2,62,2,0,31.00,75.61,59
+Kingsmead,Durban,South Africa,ODI,4,4,62,3,1,20.67,64.58,25
+The Rose Bowl,Southampton,England,ODI,3,3,59,3,0,19.67,53.15,34
+Sawai Mansingh Stadium,Jaipur,India,ODI,4,3,57,3,0,19.00,68.67,26
+SuperSport Park,Centurion,South Africa,ODI,7,3,52,3,0,17.33,76.47,44
+Sector 16 Stadium,Chandigarh,India,ODI,1,1,50,0,1,NA [Not Out],142.86,50*
+Maharashtra Cricket Association Stadium,Pune,India,ODI,4,4,50,3,1,16.67,83.33,19
+"R.Premadasa Stadium, Khettarama",Colombo,Sri Lanka,ODI,2,2,50,0,2,NA [Not Out],116.28,49*
+Bay Oval,Mount Maunganui,Unknown,ODI,1,1,48,0,1,NA [Not Out],145.45,48*
+"Sardar Patel (Gujarat) Stadium, Motera",Ahmedabad,India,ODI,2,2,47,2,0,23.50,72.31,47
+JSCA International Stadium Complex,Ranchi,India,ODI,4,3,47,2,1,23.50,55.29,26
+"Beausejour Stadium, Gros Islet",St Lucia,Saint Lucia,ODI,2,1,46,0,1,NA [Not Out],135.29,46*
+"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Hambantota,Unknown,ODI,2,2,46,2,0,23.00,102.22,35
+Kinrara Academy Oval,Kuala Lumpur,Unknown,ODI,4,3,43,3,0,14.33,75.44,23
+The Wanderers Stadium,Johannesburg,South Africa,ODI,1,1,42,0,1,NA [Not Out],97.67,42*
+St George's Park,Port Elizabeth,South Africa,ODI,3,3,41,3,0,13.67,89.13,26
+Indian Petrochemicals Corporation Limited Sports Complex Ground,Vadodara,India,ODI,1,1,40,0,1,NA [Not Out],200.00,40*
+Vidarbha C.A. Ground,Nagpur,India,ODI,1,1,38,1,0,38.00,135.71,38
+Nahar Singh Stadium,Faridabad,Unknown,ODI,1,1,38,1,0,38.00,69.09,38
+Riverside Ground,Chester-le-Street,England,ODI,1,1,33,1,0,33.00,91.67,33
+Vidarbha Cricket Association Ground,Nagpur,India,ODI,1,1,26,1,0,26.00,89.66,26
+Arun Jaitley Stadium,Delhi,India,ODI,1,1,24,1,0,24.00,63.16,24
+Brabourne Stadium,Mumbai,India,ODI,1,1,23,1,0,23.00,153.33,23
+County Ground,Bristol,England,ODI,1,1,21,1,0,21.00,116.67,21
+"Warner Park, Basseterre",St Kitts,Saint Kitts and Nevis,ODI,1,1,15,1,0,15.00,57.69,15
+Maharani Usharaje Trust Cricket Ground,Indore,India,ODI,1,1,15,1,0,15.00,57.69,15
+"Civil Service Cricket Club, Stormont",Belfast,Unknown,ODI,2,2,14,1,1,14.00,93.33,14*
+M.Chinnaswamy Stadium,Bengaluru,India,ODI,1,1,13,1,0,13.00,130.00,13
+Bangabandhu National Stadium,Dhaka,Bangladesh,ODI,1,1,7,0,1,NA [Not Out],350.00,7*
+"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,Unknown,ODI,2,1,7,1,0,7.00,140.00,7
+Multan Cricket Stadium,,Pakistan,ODI,1,1,2,0,1,NA [Not Out],40.00,2*
+MA Aziz Stadium,Chattogram,Unknown,ODI,1,1,0,1,0,0.00,0.00,0
+Manuka Oval,Canberra,Australia,ODI,1,1,0,1,0,0.00,0.00,0
+"MA Chidambaram Stadium, Chepauk",Chennai,India,OVERALL,56,53,1861,37,16,50.30,116.24,224
+Eden Gardens,Kolkata,India,OVERALL,25,24,928,14,10,66.29,82.05,144
+Shere Bangla National Stadium,Mirpur,Pakistan,OVERALL,29,23,772,11,12,70.18,86.55,101*
+"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,OVERALL,17,20,699,15,5,46.60,86.51,139*
+M Chinnaswamy Stadium,Bangalore,India,OVERALL,20,20,666,15,5,44.40,104.39,70*
+"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,OVERALL,14,15,658,13,2,50.62,62.91,124
+Wankhede Stadium,Mumbai,India,OVERALL,29,28,554,20,8,27.70,90.97,91*
+R Premadasa Stadium,Colombo,Sri Lanka,OVERALL,17,15,543,12,3,45.25,83.03,94
+Maharashtra Cricket Association Stadium,Pune,India,OVERALL,22,21,473,11,10,43.00,129.59,61*
+"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,OVERALL,14,14,440,12,2,36.67,85.44,87*
+National Stadium,Karachi,Pakistan,OVERALL,8,8,435,5,3,87.00,94.16,109*
+Rangiri Dambulla International Stadium,,Sri Lanka,OVERALL,14,13,434,9,4,48.22,70.57,67
+Feroz Shah Kotla,Delhi,India,OVERALL,18,17,431,11,6,39.18,86.03,71*
+Kennington Oval,London,England,OVERALL,10,11,428,11,0,38.91,73.67,92
+Kingsmead,Durban,South Africa,OVERALL,15,18,409,16,2,25.56,81.15,47
+Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Visakhapatnam,India,OVERALL,13,10,399,7,3,57.00,112.39,148
+"Sardar Patel Stadium, Motera",Ahmedabad,India,OVERALL,10,12,365,11,1,33.18,61.86,110
+Lord's,London,England,OVERALL,8,11,346,8,3,43.25,52.11,78*
+SuperSport Park,Centurion,South Africa,OVERALL,12,9,345,5,4,69.00,105.83,90
+Melbourne Cricket Ground,Melbourne,Australia,OVERALL,13,16,318,12,4,26.50,67.66,87*
+Sydney Cricket Ground,Sydney,Australia,OVERALL,10,10,311,8,2,38.88,60.62,65
+Adelaide Oval,Adelaide,Australia,OVERALL,8,9,309,4,5,77.25,73.05,58*
+Nehru Stadium,Kochi,India,OVERALL,8,8,297,5,3,59.40,75.77,72
+"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,OVERALL,7,8,295,7,1,42.14,73.20,88*
+Edgbaston,Birmingham,England,OVERALL,10,7,268,4,3,67.00,95.37,77
+Dubai International Cricket Stadium,Dubai,United Arab Emirates,OVERALL,19,15,252,11,4,22.91,92.99,47*
+Barabati Stadium,Cuttack,India,OVERALL,5,5,251,4,1,62.75,107.73,134
+Green Park,Kanpur,India,OVERALL,9,9,240,6,3,40.00,84.21,49
+Old Trafford,Manchester,England,OVERALL,7,7,226,6,1,37.67,71.52,71
+MA Chidambaram Stadium,Chennai,India,OVERALL,8,5,218,1,4,218.00,147.30,75*
+New Wanderers Stadium,Johannesburg,South Africa,OVERALL,10,9,215,9,0,23.89,67.82,65
+Eden Park,Auckland,New Zealand,OVERALL,5,6,213,4,2,53.25,87.65,85*
+M.Chinnaswamy Stadium,Bengaluru,India,OVERALL,4,4,207,2,2,103.50,180.00,84*
+"Sabina Park, Kingston",Jamaica,Jamaica,OVERALL,8,9,205,9,0,22.78,72.70,95
+Sawai Mansingh Stadium,Jaipur,India,OVERALL,10,9,202,7,2,28.86,104.12,58
+JSCA International Stadium Complex,Ranchi,India,OVERALL,11,9,194,4,5,48.50,97.49,57*
+Himachal Pradesh Cricket Association Stadium,Dharamsala,India,OVERALL,7,7,187,5,2,37.40,95.41,65
+Pallekele International Cricket Stadium,,Sri Lanka,OVERALL,4,4,186,1,3,186.00,90.29,67*
+Seddon Park,Hamilton,New Zealand,OVERALL,6,4,184,3,1,61.33,75.41,79*
+"MA Chidambaram Stadium, Chepauk, Chennai",Chennai,India,OVERALL,21,17,184,7,10,26.29,153.33,32*
+Saurashtra Cricket Association Stadium,Rajkot,India,OVERALL,6,6,179,4,2,44.75,110.49,49
+Basin Reserve,Wellington,New Zealand,OVERALL,2,3,176,2,1,88.00,68.22,68
+"Wankhede Stadium, Mumbai",Mumbai,India,OVERALL,12,10,166,6,4,27.67,128.68,50*
+Harare Sports Club,,Zimbabwe,OVERALL,9,5,162,3,2,54.00,104.52,67*
+Sophia Gardens,Cardiff,England,OVERALL,5,4,161,2,2,80.50,126.77,52
+Sheikh Zayed Stadium,Abu Dhabi,United Arab Emirates,OVERALL,8,7,159,6,1,26.50,106.00,59
+Madhavrao Scindia Cricket Ground,Rajkot,India,OVERALL,4,3,159,3,0,53.00,103.92,72
+"Queen's Park Oval, Port of Spain",Trinidad,Trinidad and Tobago,OVERALL,8,8,156,4,4,39.00,86.67,46*
+Western Australia Cricket Association Ground,Perth,Australia,OVERALL,7,8,155,7,1,22.14,54.77,45*
+Iqbal Stadium,Faisalabad,Pakistan,OVERALL,1,1,148,1,0,148.00,96.73,148
+Trent Bridge,Nottingham,England,OVERALL,8,8,148,8,0,18.50,60.66,82
+Westpac Stadium,Wellington,New Zealand,OVERALL,5,5,138,3,2,46.00,87.34,47
+Arun Jaitley Stadium,Delhi,India,OVERALL,5,5,137,3,2,45.67,71.73,57
+Brabourne Stadium,Mumbai,India,OVERALL,4,3,132,1,2,132.00,75.86,100*
+"Sir Vivian Richards Stadium, North Sound",Antigua,Antigua and Barbuda,OVERALL,2,2,132,1,1,132.00,68.39,78*
+Holkar Cricket Stadium,Indore,India,OVERALL,4,4,128,2,2,64.00,103.23,92*
+McLean Park,Napier,New Zealand,OVERALL,3,2,124,1,1,124.00,91.85,84*
+Reliance Stadium,Vadodara,India,OVERALL,3,3,118,3,0,39.33,93.65,80
+Newlands,Cape Town,South Africa,OVERALL,6,6,118,6,0,19.67,96.72,55
+The Rose Bowl,Southampton,England,OVERALL,4,5,115,5,0,23.00,48.94,50
+Captain Roop Singh Stadium,Gwalior,India,OVERALL,2,2,113,0,2,NA [Not Out],141.25,68*
+Keenan Stadium,Jamshedpur,Unknown,OVERALL,1,1,96,1,0,96.00,90.57,96
+Headingley,Leeds,England,OVERALL,4,3,95,3,0,31.67,76.00,42
+Subrata Roy Sahara Stadium,Pune,India,OVERALL,3,3,95,1,2,95.00,146.15,45*
+Punjab Cricket Association IS Bindra Stadium,Chandigarh,Unknown,OVERALL,2,2,89,0,2,NA [Not Out],158.93,79*
+"Antigua Recreation Ground, St John's",Antigua,West Indies,OVERALL,1,2,88,2,0,44.00,111.39,69
+Sharjah Cricket Stadium,Sharjah,United Arab Emirates,OVERALL,6,6,86,2,4,43.00,119.44,29*
+"Beausejour Stadium, Gros Islet",St Lucia,Saint Lucia,OVERALL,4,3,85,0,3,NA [Not Out],144.07,46*
+The Wanderers Stadium,Johannesburg,South Africa,OVERALL,3,4,81,3,1,27.00,81.82,42*
+Dr DY Patil Sports Academy,Mumbai,India,OVERALL,4,3,81,2,1,40.50,126.56,30
+"Nehru Stadium, Fatorda",Margao,India,OVERALL,2,2,80,0,2,NA [Not Out],100.00,67*
+St George's Park,Port Elizabeth,South Africa,OVERALL,5,5,80,4,1,20.00,97.56,26
+Sinhalese Sports Club Ground,Colombo,Sri Lanka,OVERALL,2,1,76,1,0,76.00,55.07,76
+"Windsor Park, Roseau",Dominica,Unknown,OVERALL,1,1,74,1,0,74.00,55.64,74
+Gaddafi Stadium,Lahore,Pakistan,OVERALL,1,1,72,0,1,NA [Not Out],156.52,72*
+AMI Stadium,Christchurch,New Zealand,OVERALL,2,2,70,2,0,35.00,109.38,68
+Arbab Niaz Stadium,Peshawar,Pakistan,OVERALL,1,1,68,1,0,68.00,128.30,68
+"Brabourne Stadium, Mumbai",Mumbai,India,OVERALL,4,3,65,2,1,32.50,104.84,26
+"Warner Park, Basseterre",St Kitts,Saint Kitts and Nevis,OVERALL,2,3,64,3,0,21.33,56.14,29
+Sardar Patel Stadium,Ahmedabad,India,OVERALL,1,2,63,2,0,31.50,76.83,49
+Vidarbha C.A. Ground,Nagpur,India,OVERALL,2,3,59,3,0,19.67,100.00,38
+Buffalo Park,East London,South Africa,OVERALL,1,1,58,0,1,NA [Not Out],156.76,58*
+"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Lucknow,India,OVERALL,3,2,54,0,2,NA [Not Out],270.00,28*
+Zahur Ahmed Chowdhury Stadium,Chattogram,Unknown,OVERALL,1,2,53,1,1,53.00,96.36,36
+"Dr DY Patil Sports Academy, Mumbai",Navi Mumbai,Unknown,OVERALL,4,4,52,1,3,52.00,192.59,28*
+"Shere Bangla National Stadium, Mirpur",Dhaka,Pakistan,OVERALL,1,1,51,0,1,NA [Not Out],102.00,51*
+"R.Premadasa Stadium, Khettarama",Colombo,Sri Lanka,OVERALL,3,3,51,0,3,NA [Not Out],115.91,49*
+Sector 16 Stadium,Chandigarh,India,OVERALL,1,1,50,0,1,NA [Not Out],142.86,50*
+Stadium Australia,Sydney,Australia,OVERALL,1,1,48,0,1,NA [Not Out],111.63,48*
+Bay Oval,Mount Maunganui,Unknown,OVERALL,1,1,48,0,1,NA [Not Out],145.45,48*
+"Sardar Patel (Gujarat) Stadium, Motera",Ahmedabad,India,OVERALL,2,2,47,2,0,23.50,72.31,47
+"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Hambantota,Unknown,OVERALL,2,2,46,2,0,23.00,102.22,35
+Kinrara Academy Oval,Kuala Lumpur,Unknown,OVERALL,4,3,43,3,0,14.33,75.44,23
+Central Broward Regional Park Stadium Turf Ground,Lauderhill,United States of America,OVERALL,2,1,43,1,0,43.00,172.00,43
+"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,Unknown,OVERALL,5,4,42,3,1,14.00,107.69,18*
+Indian Petrochemicals Corporation Limited Sports Complex Ground,Vadodara,India,OVERALL,1,1,40,0,1,NA [Not Out],200.00,40*
+"Narendra Modi Stadium, Ahmedabad",Ahmedabad,India,OVERALL,4,3,40,1,2,40.00,210.53,26*
+Nahar Singh Stadium,Faridabad,Unknown,OVERALL,1,1,38,1,0,38.00,69.09,38
+"Kensington Oval, Bridgetown",Barbados,Barbados,OVERALL,3,4,38,4,0,9.50,71.70,29
+"M Chinnaswamy Stadium, Bengaluru",Bengaluru,India,OVERALL,3,3,38,2,1,19.00,172.73,25
+Galle International Stadium,,Sri Lanka,OVERALL,1,2,37,2,0,18.50,71.15,33
+"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",Visakhapatnam,India,OVERALL,1,1,37,0,1,NA [Not Out],231.25,37*
+Riverside Ground,Chester-le-Street,England,OVERALL,1,1,33,1,0,33.00,91.67,33
+Shaheed Veer Narayan Singh International Stadium,Raipur,Pakistan,OVERALL,1,1,27,1,0,27.00,112.50,27
+Rajiv Gandhi International Stadium,Hyderabad,India,OVERALL,2,2,27,1,1,27.00,135.00,25*
+"Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",Mohali,India,OVERALL,1,1,27,1,0,27.00,225.00,27
+Vidarbha Cricket Association Ground,Nagpur,India,OVERALL,1,1,26,1,0,26.00,89.66,26
+County Ground,Bristol,England,OVERALL,2,1,21,1,0,21.00,116.67,21
+"Arun Jaitley Stadium, Delhi",Delhi,India,OVERALL,4,2,21,1,1,21.00,100.00,16
+"Eden Gardens, Kolkata",Kolkata,India,OVERALL,2,2,19,0,2,NA [Not Out],90.48,17*
+"Barsapara Cricket Stadium, Guwahati",Guwahati,India,OVERALL,1,1,16,1,0,16.00,145.45,16
+Maharani Usharaje Trust Cricket Ground,Indore,India,OVERALL,1,1,15,1,0,15.00,57.69,15
+P Sara Oval,Colombo,Sri Lanka,OVERALL,1,1,15,1,0,15.00,50.00,15
+"Civil Service Cricket Club, Stormont",Belfast,Unknown,OVERALL,2,2,14,1,1,14.00,93.33,14*
+Barsapara Cricket Stadium,Guwahati,India,OVERALL,2,1,13,1,0,13.00,81.25,13
+"The Village, Malahide",Dublin,Unknown,OVERALL,1,1,11,1,0,11.00,220.00,11
+Moses Mabhida Stadium,Durban,South Africa,OVERALL,1,1,10,0,1,NA [Not Out],90.91,10*
+"Maharashtra Cricket Association Stadium, Pune",Pune,India,OVERALL,3,2,10,2,0,5.00,100.00,8
+"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,West Indies,OVERALL,1,1,9,1,0,9.00,26.47,9
+Bangabandhu National Stadium,Dhaka,Bangladesh,OVERALL,1,1,7,0,1,NA [Not Out],350.00,7*
+Multan Cricket Stadium,,Pakistan,OVERALL,1,1,2,0,1,NA [Not Out],40.00,2*
+"Zayed Cricket Stadium, Abu Dhabi",Abu Dhabi,United Arab Emirates,OVERALL,2,1,1,1,0,1.00,25.00,1
+"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Hyderabad,India,OVERALL,1,1,1,0,1,NA [Not Out],50.00,1*
+MA Aziz Stadium,Chattogram,Unknown,OVERALL,1,1,0,1,0,0.00,0.00,0
+Manuka Oval,Canberra,Australia,OVERALL,1,1,0,1,0,0.00,0.00,0
+Greenfield International Stadium,Thiruvananthapuram,Pakistan,OVERALL,2,1,0,0,1,0.00,0.00,0
+"Himachal Pradesh Cricket Association Stadium, Dharamsala",Dharamsala,India,OVERALL,1,1,0,1,0,0.00,0.00,0
+Kingsmead,Durban,South Africa,T20I,4,4,124,3,1,41.33,137.78,45
+Shere Bangla National Stadium,Mirpur,Pakistan,T20I,11,8,92,1,7,92.00,167.27,24
+Saurashtra Cricket Association Stadium,Rajkot,India,T20I,2,2,73,1,1,73.00,125.86,49
+M Chinnaswamy Stadium,Bangalore,India,T20I,3,3,70,2,1,35.00,140.00,56
+Wankhede Stadium,Mumbai,India,T20I,3,3,69,1,2,69.00,186.49,38
+Westpac Stadium,Wellington,New Zealand,T20I,2,2,67,1,1,67.00,109.84,39
+R Premadasa Stadium,Colombo,Sri Lanka,T20I,5,4,60,3,1,20.00,101.69,23*
+SuperSport Park,Centurion,South Africa,T20I,1,1,52,0,1,NA [Not Out],185.71,52*
+Stadium Australia,Sydney,Australia,T20I,1,1,48,0,1,NA [Not Out],111.63,48*
+"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,T20I,1,1,46,1,0,46.00,164.29,46
+Trent Bridge,Nottingham,England,T20I,3,3,45,3,0,15.00,97.83,26
+Melbourne Cricket Ground,,Australia,T20I,3,3,44,2,1,22.00,81.48,21*
+"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,T20I,3,3,44,3,0,14.67,89.80,30
+Barabati Stadium,Cuttack,India,T20I,2,2,44,1,1,44.00,146.67,39*
+Central Broward Regional Park Stadium Turf Ground,Lauderhill,United States of America,T20I,2,1,43,1,0,43.00,172.00,43
+Lord's,London,England,T20I,2,2,41,1,1,41.00,95.35,30*
+M.Chinnaswamy Stadium,Bengaluru,India,T20I,1,1,40,1,0,40.00,173.91,40
+"Beausejour Stadium, Gros Islet",St Lucia,Saint Lucia,T20I,2,2,39,0,2,NA [Not Out],156.00,23*
+Green Park,Kanpur,India,T20I,1,1,36,0,1,NA [Not Out],133.33,36*
+Eden Gardens,Kolkata,India,T20I,2,2,34,1,1,34.00,97.14,21
+"Sardar Patel Stadium, Motera",Ahmedabad,India,T20I,1,1,33,1,0,33.00,143.48,33
+Sophia Gardens,Cardiff,England,T20I,1,1,32,0,1,NA [Not Out],133.33,32*
+"Kensington Oval, Bridgetown",Barbados,Barbados,T20I,2,2,31,2,0,15.50,119.23,29
+New Wanderers Stadium,Johannesburg,South Africa,T20I,4,3,30,3,0,10.00,93.75,24
+Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Visakhapatnam,India,T20I,2,1,29,0,1,NA [Not Out],78.38,29*
+Harare Sports Club,,Zimbabwe,T20I,3,2,28,1,1,28.00,93.33,19*
+Holkar Cricket Stadium,Indore,India,T20I,1,1,28,1,0,28.00,133.33,28
+Edgbaston,Birmingham,England,T20I,1,1,27,0,1,NA [Not Out],150.00,27*
+Subrata Roy Sahara Stadium,Pune,India,T20I,1,1,24,0,1,NA [Not Out],114.29,24*
+"MA Chidambaram Stadium, Chepauk",Chennai,India,T20I,1,1,22,0,1,NA [Not Out],95.65,22*
+Himachal Pradesh Cricket Association Stadium,Dharmasala,India,T20I,1,1,20,0,1,NA [Not Out],166.67,20*
+Eden Park,Auckland,New Zealand,T20I,1,1,20,0,1,NA [Not Out],117.65,20*
+"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,Unknown,T20I,1,1,18,0,1,NA [Not Out],180.00,18*
+Pallekele International Cricket Stadium,,Sri Lanka,T20I,1,1,16,0,1,NA [Not Out],114.29,16*
+The Wanderers Stadium,Johannesburg,South Africa,T20I,1,1,16,1,0,16.00,145.45,16
+Barsapara Cricket Stadium,Guwahati,India,T20I,1,1,13,1,0,13.00,81.25,13
+Newlands,Cape Town,South Africa,T20I,1,1,12,1,0,12.00,109.09,12
+Adelaide Oval,,Australia,T20I,1,1,11,0,1,NA [Not Out],366.67,11*
+"The Village, Malahide",Dublin,Unknown,T20I,1,1,11,1,0,11.00,220.00,11
+Moses Mabhida Stadium,Durban,South Africa,T20I,1,1,10,0,1,NA [Not Out],90.91,10*
+Brabourne Stadium,Mumbai,India,T20I,1,1,9,0,1,NA [Not Out],180.00,9*
+JSCA International Stadium Complex,Ranchi,India,T20I,2,1,9,0,1,NA [Not Out],180.00,9*
+Old Trafford,Manchester,England,T20I,2,1,8,1,0,8.00,100.00,8
+Arun Jaitley Stadium,Delhi,India,T20I,1,1,7,0,1,NA [Not Out],350.00,7*
+AMI Stadium,Christchurch,New Zealand,T20I,1,1,2,1,0,2.00,33.33,2
+Maharashtra Cricket Association Stadium,Pune,India,T20I,1,1,2,1,0,2.00,100.00,2
+"Sabina Park, Kingston",Jamaica,Jamaica,T20I,1,1,2,1,0,2.00,66.67,2
+Seddon Park,Hamilton,New Zealand,T20I,1,1,2,1,0,2.00,50.00,2
+"R.Premadasa Stadium, Khettarama",Colombo,Sri Lanka,T20I,1,1,1,0,1,NA [Not Out],100.00,1*
+Greenfield International Stadium,Thiruvananthapuram,Pakistan,T20I,1,1,0,0,1,0.00,0.00,0
+Eden Gardens,Kolkata,India,TEST,5,7,457,5,2,91.40,66.72,144
+"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,TEST,4,6,339,6,0,56.50,47.02,99
+"MA Chidambaram Stadium, Chepauk",Chennai,India,TEST,3,3,293,3,0,97.67,77.11,224
+Kennington Oval,London,England,TEST,3,6,230,6,0,38.33,64.07,92
+"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,TEST,4,8,227,6,2,37.83,63.76,92
+"Sardar Patel Stadium, Motera",Ahmedabad,India,TEST,4,6,213,6,0,35.50,49.42,110
+Kingsmead,Durban,South Africa,TEST,3,6,176,6,0,29.33,65.92,47
+Basin Reserve,Wellington,New Zealand,TEST,2,3,176,2,1,88.00,68.22,68
+Edgbaston,Birmingham,England,TEST,1,2,151,1,1,151.00,86.29,77
+M Chinnaswamy Stadium,Bangalore,India,TEST,3,4,149,3,1,49.67,51.03,62
+Iqbal Stadium,Faisalabad,Pakistan,TEST,1,1,148,1,0,148.00,96.73,148
+Lord's,London,England,TEST,3,6,140,5,1,28.00,33.41,76*
+"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,TEST,3,3,131,3,0,43.67,62.09,73
+SuperSport Park,Centurion,South Africa,TEST,1,2,123,2,0,61.50,78.85,90
+Trent Bridge,Nottingham,England,TEST,3,5,103,5,0,20.60,52.02,82
+Brabourne Stadium,Mumbai,India,TEST,1,1,100,0,1,NA [Not Out],64.94,100*
+Old Trafford,Manchester,England,TEST,1,2,98,2,0,49.00,63.23,71
+Sydney Cricket Ground,,Australia,TEST,2,4,96,3,1,32.00,52.46,57*
+Shere Bangla National Stadium,Mirpur,Pakistan,TEST,1,1,89,1,0,89.00,53.29,89
+"Antigua Recreation Ground, St John's",Antigua,West Indies,TEST,1,2,88,2,0,44.00,111.39,69
+Sinhalese Sports Club Ground,Colombo,Sri Lanka,TEST,1,1,76,1,0,76.00,55.07,76
+Melbourne Cricket Ground,,Australia,TEST,3,6,75,5,1,15.00,50.68,24*
+"Windsor Park, Roseau",Dominica,Unknown,TEST,1,1,74,1,0,74.00,55.64,74
+Western Australia Cricket Association Ground,Perth,Australia,TEST,2,4,71,4,0,17.75,40.11,38
+Sardar Patel Stadium,Ahmedabad,India,TEST,1,2,63,2,0,31.50,76.83,49
+Feroz Shah Kotla,Delhi,India,TEST,3,5,63,3,2,21.00,85.14,27
+Wankhede Stadium,Mumbai,India,TEST,3,5,60,5,0,12.00,40.27,29
+Arun Jaitley Stadium,Delhi,India,TEST,1,1,57,1,0,57.00,61.29,57
+The Rose Bowl,Southampton,England,TEST,1,2,56,2,0,28.00,45.16,50
+Zahur Ahmed Chowdhury Stadium,Chattogram,Unknown,TEST,1,2,53,1,1,53.00,96.36,36
+"Shere Bangla National Stadium, Mirpur",Dhaka,Pakistan,TEST,1,1,51,0,1,NA [Not Out],102.00,51*
+"Warner Park, Basseterre",St Kitts,Saint Kitts and Nevis,TEST,1,2,49,2,0,24.50,55.68,29
+Eden Park,Auckland,New Zealand,TEST,1,2,49,2,0,24.50,71.01,39
+New Wanderers Stadium,Johannesburg,South Africa,TEST,1,2,48,2,0,24.00,41.38,29
+Seddon Park,Hamilton,New Zealand,TEST,1,1,47,1,0,47.00,38.21,47
+"Sabina Park, Kingston",Jamaica,Jamaica,TEST,2,4,38,4,0,9.50,62.30,19
+Galle International Stadium,,Sri Lanka,TEST,1,2,37,2,0,18.50,71.15,33
+Adelaide Oval,,Australia,TEST,1,2,36,2,0,18.00,33.33,20
+Green Park,Kanpur,India,TEST,2,2,36,2,0,18.00,52.17,32
+"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,TEST,1,2,33,2,0,16.50,60.00,33
+National Stadium,Karachi,Pakistan,TEST,1,2,31,2,0,15.50,64.58,18
+The Wanderers Stadium,Johannesburg,South Africa,TEST,1,2,23,2,0,11.50,51.11,18
+Vidarbha C.A. Ground,Nagpur,India,TEST,1,2,21,2,0,10.50,67.74,16
+"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,Unknown,TEST,1,1,16,1,0,16.00,72.73,16
+P Sara Oval,Colombo,Sri Lanka,TEST,1,1,15,1,0,15.00,50.00,15
+"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,West Indies,TEST,1,1,9,1,0,9.00,26.47,9
+"Kensington Oval, Bridgetown",Barbados,Barbados,TEST,1,2,7,2,0,3.50,25.93,5
+Newlands,Cape Town,South Africa,TEST,1,1,0,1,0,0.00,0.00,0

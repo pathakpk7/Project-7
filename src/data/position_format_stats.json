@@ -1,0 +1,290 @@
+[
+  {
+    "format": "IPL",
+    "position": "3",
+    "innings": "8",
+    "runs": "196",
+    "dismissals": "6",
+    "average": "32.67",
+    "strike_rate": "124.84"
+  },
+  {
+    "format": "IPL",
+    "position": "4",
+    "innings": "66",
+    "runs": "1560",
+    "dismissals": "43",
+    "average": "36.28",
+    "strike_rate": "138.05"
+  },
+  {
+    "format": "IPL",
+    "position": "5",
+    "innings": "74",
+    "runs": "1982",
+    "dismissals": "42",
+    "average": "47.19",
+    "strike_rate": "145.20"
+  },
+  {
+    "format": "IPL",
+    "position": "6",
+    "innings": "52",
+    "runs": "990",
+    "dismissals": "31",
+    "average": "31.94",
+    "strike_rate": "121.32"
+  },
+  {
+    "format": "IPL",
+    "position": "7",
+    "innings": "25",
+    "runs": "444",
+    "dismissals": "13",
+    "average": "34.15",
+    "strike_rate": "133.73"
+  },
+  {
+    "format": "IPL",
+    "position": "8",
+    "innings": "14",
+    "runs": "236",
+    "dismissals": "5",
+    "average": "47.20",
+    "strike_rate": "173.53"
+  },
+  {
+    "format": "IPL",
+    "position": "9",
+    "innings": "3",
+    "runs": "31",
+    "dismissals": "2",
+    "average": "15.50",
+    "strike_rate": "147.62"
+  },
+  {
+    "format": "ODI",
+    "position": "2",
+    "innings": "1",
+    "runs": "96",
+    "dismissals": "1",
+    "average": "96.00",
+    "strike_rate": "90.57"
+  },
+  {
+    "format": "ODI",
+    "position": "3",
+    "innings": "14",
+    "runs": "782",
+    "dismissals": "11",
+    "average": "71.09",
+    "strike_rate": "94.56"
+  },
+  {
+    "format": "ODI",
+    "position": "4",
+    "innings": "27",
+    "runs": "1268",
+    "dismissals": "22",
+    "average": "57.64",
+    "strike_rate": "92.08"
+  },
+  {
+    "format": "ODI",
+    "position": "5",
+    "innings": "81",
+    "runs": "3110",
+    "dismissals": "61",
+    "average": "50.98",
+    "strike_rate": "86.39"
+  },
+  {
+    "format": "ODI",
+    "position": "6",
+    "innings": "125",
+    "runs": "4096",
+    "dismissals": "85",
+    "average": "48.19",
+    "strike_rate": "83.59"
+  },
+  {
+    "format": "ODI",
+    "position": "7",
+    "innings": "29",
+    "runs": "885",
+    "dismissals": "18",
+    "average": "49.17",
+    "strike_rate": "92.77"
+  },
+  {
+    "format": "ODI",
+    "position": "8",
+    "innings": "2",
+    "runs": "37",
+    "dismissals": "2",
+    "average": "18.50",
+    "strike_rate": "66.07"
+  },
+  {
+    "format": "OVERALL",
+    "position": "2",
+    "innings": "1",
+    "runs": "96",
+    "dismissals": "1",
+    "average": "96.00",
+    "strike_rate": "90.57"
+  },
+  {
+    "format": "OVERALL",
+    "position": "3",
+    "innings": "29",
+    "runs": "1206",
+    "dismissals": "23",
+    "average": "52.43",
+    "strike_rate": "98.53"
+  },
+  {
+    "format": "OVERALL",
+    "position": "4",
+    "innings": "105",
+    "runs": "3083",
+    "dismissals": "70",
+    "average": "44.04",
+    "strike_rate": "115.34"
+  },
+  {
+    "format": "OVERALL",
+    "position": "5",
+    "innings": "183",
+    "runs": "5614",
+    "dismissals": "117",
+    "average": "47.98",
+    "strike_rate": "103.26"
+  },
+  {
+    "format": "OVERALL",
+    "position": "6",
+    "innings": "232",
+    "runs": "6846",
+    "dismissals": "155",
+    "average": "44.17",
+    "strike_rate": "83.88"
+  },
+  {
+    "format": "OVERALL",
+    "position": "7",
+    "innings": "165",
+    "runs": "4297",
+    "dismissals": "126",
+    "average": "34.10",
+    "strike_rate": "66.72"
+  },
+  {
+    "format": "OVERALL",
+    "position": "8",
+    "innings": "25",
+    "runs": "845",
+    "dismissals": "15",
+    "average": "56.33",
+    "strike_rate": "85.87"
+  },
+  {
+    "format": "OVERALL",
+    "position": "9",
+    "innings": "3",
+    "runs": "31",
+    "dismissals": "2",
+    "average": "15.50",
+    "strike_rate": "147.62"
+  },
+  {
+    "format": "T20I",
+    "position": "3",
+    "innings": "5",
+    "runs": "123",
+    "dismissals": "5",
+    "average": "24.60",
+    "strike_rate": "129.47"
+  },
+  {
+    "format": "T20I",
+    "position": "4",
+    "innings": "12",
+    "runs": "255",
+    "dismissals": "5",
+    "average": "51.00",
+    "strike_rate": "153.61"
+  },
+  {
+    "format": "T20I",
+    "position": "5",
+    "innings": "25",
+    "runs": "468",
+    "dismissals": "12",
+    "average": "39.00",
+    "strike_rate": "119.69"
+  },
+  {
+    "format": "T20I",
+    "position": "6",
+    "innings": "31",
+    "runs": "606",
+    "dismissals": "18",
+    "average": "33.67",
+    "strike_rate": "115.43"
+  },
+  {
+    "format": "T20I",
+    "position": "7",
+    "innings": "10",
+    "runs": "132",
+    "dismissals": "3",
+    "average": "44.00",
+    "strike_rate": "146.67"
+  },
+  {
+    "format": "TEST",
+    "position": "3",
+    "innings": "2",
+    "runs": "105",
+    "dismissals": "1",
+    "average": "105.00",
+    "strike_rate": "72.41"
+  },
+  {
+    "format": "TEST",
+    "position": "5",
+    "innings": "3",
+    "runs": "54",
+    "dismissals": "2",
+    "average": "27.00",
+    "strike_rate": "66.67"
+  },
+  {
+    "format": "TEST",
+    "position": "6",
+    "innings": "24",
+    "runs": "1154",
+    "dismissals": "21",
+    "average": "54.95",
+    "strike_rate": "60.07"
+  },
+  {
+    "format": "TEST",
+    "position": "7",
+    "innings": "101",
+    "runs": "2836",
+    "dismissals": "92",
+    "average": "30.83",
+    "strike_rate": "56.00"
+  },
+  {
+    "format": "TEST",
+    "position": "8",
+    "innings": "9",
+    "runs": "572",
+    "dismissals": "8",
+    "average": "71.50",
+    "strike_rate": "72.22"
+  }
+]

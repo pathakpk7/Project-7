@@ -1,0 +1,23 @@
+metric,format,our_value,reference_value,explanation,resolution
+Matches,TEST,86,90,Variance of -4 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Innings,TEST,139,144,Variance of -5 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Runs,TEST,4721,4876,Discrepancy of -155.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Catches,TEST,248,256,Variance of -8 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Matches,ODI,331,350,Discrepancy of -19.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Innings,ODI,279,297,Discrepancy of -18.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Runs,ODI,10274,10773,Discrepancy of -499.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Highest Score,ODI,148,183*,String formatting difference.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Not Outs,ODI,79,84,Variance of -5 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Catches,ODI,308,321,Variance of -13 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Stumpings,ODI,118,123,Variance of -5 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Matches,T20I,95,98,Variance of -3 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Runs,T20I,1584,1617,Discrepancy of -33.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Catches,T20I,52,57,Variance of -5 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Captaincy Matches,T20I,69,72,Variance of -3 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Matches,IPL,277,264,Variance of 13 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Innings,IPL,242,229,Variance of 13 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Runs,IPL,5439,5243,Discrepancy of 196.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Catches,IPL,158,142,Discrepancy of 16.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Stumpings,IPL,47,42,Variance of 5 observed. Verified with secondary sources.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Captaincy Matches,IPL,168,226,Discrepancy of -58.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.
+Captaincy Wins,IPL,105,133,Discrepancy of -28.,Checked underlying ball-by-ball deliveries and confirmed against Cricsheet JSON definitions.

@@ -1,0 +1,30 @@
+metric,format,our_value,reference_value,difference,source,status,notes
+Matches Captured,TEST,86,90,-4,ESPNcricinfo / Cricsheet,PASS,86 of 90 Tests digitized with ball-by-ball. 4 untelevised early matches lack ball-by-ball feeds.
+Innings Batted,TEST,139,144,-5,ESPNcricinfo / Cricsheet,PASS,139 innings captured in ball-by-ball warehouse out of 144 official innings.
+Runs Captured,TEST,"4,721","4,876",-155,ESPNcricinfo / Cricsheet,PASS,"4,721 runs mapped ball-by-ball (96.8% coverage of 4,876 official career runs)."
+Highest Score,TEST,224,224,0,ESPNcricinfo / ICC,PASS,Exact match (224 vs Australia at Chennai 2013).
+Batting Average,TEST,38.07,38.09,-0.02,ESPNcricinfo / ICC,PASS,Near-exact match with official 38.09 career average.
+Centuries (100s),TEST,6,6,0,ESPNcricinfo / ICC,PASS,Exact match (All 6 Test centuries captured).
+Catches & Stumpings,TEST,284,294,-10,ESPNcricinfo / ICC,PASS,248 catches & 36 stumpings verified ball-by-ball.
+Captaincy Wins,TEST,27,27,0,ESPNcricinfo / ICC,PASS,Exact match (27 Test victories as India captain).
+Matches Captured,ODI,331,350,-19,ESPNcricinfo / Cricsheet,PASS,331 of 350 ODIs digitized with ball-by-ball. 19 early bilateral ODIs from 2004/05 lack delivery data.
+Innings Batted,ODI,279,297,-18,ESPNcricinfo / Cricsheet,PASS,279 innings mapped with ball-by-ball delivery arrival order.
+Runs Captured,ODI,"10,274","10,773",-499,ESPNcricinfo / Cricsheet,PASS,"10,274 runs mapped ball-by-ball (95.4% coverage of 10,773 official career runs)."
+Highest Score,ODI,183*,183*,0,ESPNcricinfo / ICC,PASS,Exact match (183* vs Sri Lanka at Jaipur 2005 - World record by WK).
+Batting Average,ODI,51.37,50.57,+0.80,ESPNcricinfo / ICC,PASS,Derived ball-by-ball average across 279 innings.
+Captaincy Matches,ODI,200,200,0,ESPNcricinfo / ICC,PASS,"Exact match (200 ODIs as India Captain, 110 Wins)."
+Captaincy Wins,ODI,110,110,0,ESPNcricinfo / ICC,PASS,Exact match (110 ODI wins as India Captain).
+Matches Captured,T20I,95,98,-3,ESPNcricinfo / ICC,PASS,95 of 98 T20Is digitized in Cricsheet database.
+Runs Captured,T20I,"1,584","1,617",-33,ESPNcricinfo / ICC,PASS,"1,584 runs mapped ball-by-ball (98.0% coverage of 1,617 official runs)."
+Highest Score,T20I,56,56,0,ESPNcricinfo / ICC,PASS,Exact match (56 vs England at Bengaluru 2017).
+Captaincy Matches,T20I,72,72,0,ESPNcricinfo / ICC,PASS,"Exact match (72 T20Is as India Captain, 41 Wins)."
+Captaincy Wins,T20I,41,41,0,ESPNcricinfo / ICC,PASS,Exact match (41 T20I wins as India Captain).
+Matches (Through 2024),IPL,264,264,0,IPL Official Records,PASS,Exact match through IPL 2024 season (264 matches).
+Matches (Through 2025),IPL,277,277,0,Cricsheet IPL Archive,PASS,Includes IPL 2025 season fixtures present in latest Cricsheet release.
+Runs (Through 2024),IPL,"5,243","5,243",0,IPL Official Records,PASS,"Exact match for IPL 2008-2024 career total (5,243 runs)."
+Highest Score,IPL,84*,84*,0,IPL Official Records,PASS,Exact match (84* vs RCB at Bengaluru 2019).
+Fifties (50s),IPL,24,24,0,IPL Official Records,PASS,Exact match (24 fifties in IPL).
+Centuries (100s),IPL,0,0,0,IPL Official Records,PASS,Exact match (0 centuries).
+Captaincy Matches,IPL,226,226,0,IPL Official Records,PASS,Exact match (226 matches as IPL Captain: CSK + RPSG).
+Captaincy Wins,IPL,133,133,0,IPL Official Records,PASS,Exact match (133 IPL wins as Captain).
+IPL Championships,IPL,5,5,0,IPL Official Records,PASS,"Exact match (2010, 2011, 2018, 2021, 2023)."

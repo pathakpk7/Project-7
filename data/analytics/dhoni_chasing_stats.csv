@@ -1,0 +1,6 @@
+format,chase_innings,chase_runs,chase_dismissals,chase_not_outs,chase_average,chase_strike_rate,successful_chases,runs_in_successful_chases,average_in_successful_chases,not_outs_in_successful_chases,highest_score_chasing
+IPL,101,2336,59,42,39.59,135.19,56,1276,51.04,31,84*
+ODI,136,4544,89,47,51.06,78.90,71,2628,97.33,44,101*
+OVERALL,336,9810,220,116,44.59,82.44,171,5351,70.41,95,224
+T20I,33,653,14,19,46.64,126.55,18,275,68.75,14,49
+TEST,66,2277,58,8,39.26,58.43,26,1172,58.60,6,224

@@ -1,0 +1,11 @@
+innings_phase,format,innings,runs,balls,dismissals,not_outs,average,strike_rate,fifties,hundreds,highest_score
+1st Innings (Batting First),IPL,141,3103,2229,83,58,37.39,139.21,14,0,75*
+2nd Innings (Chasing / Batting Second),IPL,101,2336,1728,59,42,39.59,135.19,10,0,84*
+1st Innings (Batting First),ODI,143,5730,6061,111,32,51.62,94.54,37,8,148
+2nd Innings (Chasing / Batting Second),ODI,136,4544,5759,89,47,51.06,78.90,35,1,101*
+1st Innings (Batting First),OVERALL,407,12208,13147,289,118,42.24,92.86,73,10,148
+2nd Innings (Chasing / Batting Second),OVERALL,336,9810,11900,220,116,44.59,82.44,56,5,224
+1st Innings (Batting First),T20I,50,931,751,29,21,32.10,123.97,2,0,56
+2nd Innings (Chasing / Batting Second),T20I,33,653,516,14,19,46.64,126.55,0,0,49
+1st Innings (Batting First),TEST,73,2444,4106,66,7,37.03,59.52,20,2,144
+2nd Innings (Chasing / Batting Second),TEST,66,2277,3897,58,8,39.26,58.43,11,4,224

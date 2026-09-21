@@ -1,0 +1,511 @@
+match_id,date,year,format,competition,team,opponent,venue,toss_winner,toss_decision,toss_won_by_dhoni,winner,result,margin
+287862,2007-09-14,2007,T20I,ICC World Twenty20,India,Pakistan,Kingsmead,Pakistan,field,False,,TIED,
+287865,2007-09-16,2007,T20I,ICC World Twenty20,India,New Zealand,New Wanderers Stadium,India,field,True,New Zealand,LOST,10 runs
+287873,2007-09-19,2007,T20I,ICC World Twenty20,India,England,Kingsmead,India,bat,True,India,WON,18 runs
+287876,2007-09-20,2007,T20I,ICC World Twenty20,India,South Africa,Kingsmead,India,bat,True,India,WON,37 runs
+287878,2007-09-22,2007,T20I,ICC World Twenty20,India,Australia,Kingsmead,India,bat,True,India,WON,15 runs
+287879,2007-09-24,2007,T20I,ICC World Twenty20,India,Pakistan,New Wanderers Stadium,India,bat,True,India,WON,5 runs
+297793,2007-09-29,2007,ODI,Australia in India ODI Series,India,Australia,M Chinnaswamy Stadium,Australia,bat,False,,NO_RESULT,
+297794,2007-10-02,2007,ODI,Australia in India ODI Series,India,Australia,Nehru Stadium,India,field,True,Australia,LOST,84 runs
+297795,2007-10-05,2007,ODI,Australia in India ODI Series,India,Australia,"Rajiv Gandhi International Stadium, Uppal",Australia,bat,False,Australia,LOST,47 runs
+297796,2007-10-08,2007,ODI,Australia in India ODI Series,India,Australia,Sector 16 Stadium,India,bat,True,India,WON,8 runs
+297797,2007-10-11,2007,ODI,Australia in India ODI Series,India,Australia,Reliance Stadium,India,bat,True,Australia,LOST,9 wickets
+297798,2007-10-14,2007,ODI,Australia in India ODI Series,India,Australia,Vidarbha Cricket Association Ground,Australia,bat,False,Australia,LOST,18 runs
+297799,2007-10-17,2007,ODI,Australia in India ODI Series,India,Australia,Wankhede Stadium,Australia,bat,False,India,WON,2 wickets
+297800,2007-10-20,2007,T20I,T20I Series,India,Australia,Brabourne Stadium,Australia,bat,False,India,WON,7 wickets
+297801,2007-11-05,2007,ODI,Pakistan in India ODI Series,India,Pakistan,Nehru Stadium,Pakistan,bat,False,India,WON,5 wickets
+297802,2007-11-08,2007,ODI,Pakistan in India ODI Series,India,Pakistan,"Punjab Cricket Association Stadium, Mohali",India,bat,True,Pakistan,LOST,4 wickets
+297803,2007-11-11,2007,ODI,Pakistan in India ODI Series,India,Pakistan,Green Park,Pakistan,field,False,India,WON,46 runs
+297804,2007-11-15,2007,ODI,Pakistan in India ODI Series,India,Pakistan,Captain Roop Singh Stadium,Pakistan,bat,False,India,WON,6 wickets
+297805,2007-11-18,2007,ODI,Pakistan in India ODI Series,India,Pakistan,Sawai Mansingh Stadium,India,field,True,Pakistan,LOST,31 runs
+291356,2008-02-01,2008,T20I,T20I Series,India,Australia,Melbourne Cricket Ground,India,bat,True,Australia,LOST,9 wickets
+291359,2008-02-03,2008,ODI,Commonwealth Bank Series,India,Australia,"Brisbane Cricket Ground, Woolloongabba",India,bat,True,,NO_RESULT,
+291360,2008-02-05,2008,ODI,Commonwealth Bank Series,India,Sri Lanka,"Brisbane Cricket Ground, Woolloongabba",India,bat,True,,NO_RESULT,
+291362,2008-02-10,2008,ODI,Commonwealth Bank Series,India,Australia,Melbourne Cricket Ground,Australia,bat,False,India,WON,5 wickets
+291365,2008-02-17,2008,ODI,Commonwealth Bank Series,India,Australia,Adelaide Oval,Australia,bat,False,Australia,LOST,50 runs
+291366,2008-02-19,2008,ODI,Commonwealth Bank Series,India,Sri Lanka,Adelaide Oval,Sri Lanka,bat,False,India,WON,2 wickets
+291368,2008-02-24,2008,ODI,Commonwealth Bank Series,India,Australia,Sydney Cricket Ground,Australia,bat,False,Australia,LOST,18 runs
+291369,2008-02-26,2008,ODI,Commonwealth Bank Series,India,Sri Lanka,Bellerive Oval,India,field,True,India,WON,7 wickets
+291371,2008-03-02,2008,ODI,Commonwealth Bank Series,India,Australia,Sydney Cricket Ground,Australia,bat,False,India,WON,6 wickets
+291372,2008-03-04,2008,ODI,Commonwealth Bank Series,India,Australia,"Brisbane Cricket Ground, Woolloongabba",India,bat,True,India,WON,9 runs
+332913,2008-04-11,2008,TEST,Test Series,India,South Africa,Green Park,South Africa,bat,False,India,WON,8 wickets
+345469,2008-06-10,2008,ODI,Kitply Cup,India,Pakistan,Shere Bangla National Stadium,India,bat,True,India,WON,140 runs
+345470,2008-06-12,2008,ODI,Kitply Cup,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,bat,False,India,WON,7 wickets
+345471,2008-06-14,2008,ODI,Kitply Cup,India,Pakistan,Shere Bangla National Stadium,Pakistan,bat,False,Pakistan,LOST,25 runs
+335349,2008-06-25,2008,ODI,Asia Cup,India,Hong Kong,National Stadium,India,bat,True,India,WON,256 runs
+335351,2008-06-26,2008,ODI,Asia Cup,India,Pakistan,National Stadium,Pakistan,bat,False,India,WON,6 wickets
+335352,2008-06-28,2008,ODI,Asia Cup,India,Bangladesh,National Stadium,Bangladesh,bat,False,India,WON,7 wickets
+335355,2008-07-02,2008,ODI,Asia Cup,India,Pakistan,National Stadium,India,bat,True,Pakistan,LOST,8 wickets
+335356,2008-07-03,2008,ODI,Asia Cup,India,Sri Lanka,National Stadium,Sri Lanka,bat,False,India,WON,6 wickets
+335358,2008-07-06,2008,ODI,Asia Cup,India,Sri Lanka,National Stadium,India,field,True,Sri Lanka,LOST,100 runs
+343732,2008-08-18,2008,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,Rangiri Dambulla International Stadium,India,bat,True,Sri Lanka,LOST,8 wickets
+343733,2008-08-20,2008,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,Rangiri Dambulla International Stadium,India,field,True,India,WON,3 wickets
+343734,2008-08-24,2008,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,India,bat,True,India,WON,33 runs
+366341,2008-08-27,2008,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,India,bat,True,India,WON,46 runs
+343736,2008-08-29,2008,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,Sri Lanka,bat,False,Sri Lanka,LOST,112 runs
+345669,2008-10-09,2008,TEST,Test Series,India,Australia,M Chinnaswamy Stadium,Australia,bat,False,,DRAWN,
+345670,2008-10-17,2008,TEST,Test Series,India,Australia,"Punjab Cricket Association Stadium, Mohali",India,bat,True,India,WON,320 runs
+345672,2008-11-06,2008,TEST,Test Series,India,Australia,"Vidarbha Cricket Association Stadium, Jamtha",India,bat,True,India,WON,172 runs
+361043,2008-11-14,2008,ODI,England in India ODI Series,India,England,Madhavrao Scindia Cricket Ground,England,field,False,India,WON,158 runs
+361044,2008-11-17,2008,ODI,England in India ODI Series,India,England,Maharani Usharaje Trust Cricket Ground,India,bat,True,India,WON,54 runs
+361045,2008-11-20,2008,ODI,England in India ODI Series,India,England,Green Park,England,bat,False,India,WON,16 runs
+361046,2008-11-23,2008,ODI,England in India ODI Series,India,England,M Chinnaswamy Stadium,England,field,False,India,WON,19 runs
+361047,2008-11-26,2008,ODI,England in India ODI Series,India,England,Barabati Stadium,India,field,True,India,WON,6 wickets
+361050,2008-12-11,2008,TEST,Test Series,India,England,"MA Chidambaram Stadium, Chepauk",England,bat,False,India,WON,6 wickets
+361051,2008-12-19,2008,TEST,Test Series,India,England,"Punjab Cricket Association Stadium, Mohali",India,bat,True,,DRAWN,
+386530,2009-01-28,2009,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,Rangiri Dambulla International Stadium,India,field,True,India,WON,6 wickets
+386531,2009-01-31,2009,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,India,bat,True,India,WON,15 runs
+386532,2009-02-03,2009,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,India,bat,True,India,WON,147 runs
+386533,2009-02-05,2009,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,India,bat,True,India,WON,67 runs
+386534,2009-02-08,2009,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,Sri Lanka,bat,False,Sri Lanka,LOST,68 runs
+386535,2009-02-10,2009,T20I,T20I Series,India,Sri Lanka,R Premadasa Stadium,Sri Lanka,bat,False,India,WON,3 wickets
+386494,2009-02-25,2009,T20I,India in New Zealand T20I Series,India,New Zealand,AMI Stadium,New Zealand,field,False,New Zealand,LOST,7 wickets
+366622,2009-02-27,2009,T20I,India in New Zealand T20I Series,India,New Zealand,Westpac Stadium,New Zealand,field,False,New Zealand,LOST,5 wickets
+366623,2009-03-03,2009,ODI,India in New Zealand ODI Series,India,New Zealand,McLean Park,India,bat,True,India,WON,53 runs
+366626,2009-03-06,2009,ODI,India in New Zealand ODI Series,India,New Zealand,Westpac Stadium,India,bat,True,,NO_RESULT,
+366627,2009-03-08,2009,ODI,India in New Zealand ODI Series,India,New Zealand,AMI Stadium,New Zealand,field,False,India,WON,58 runs
+366624,2009-03-11,2009,ODI,India in New Zealand ODI Series,India,New Zealand,Seddon Park,New Zealand,bat,False,India,WON,84 runs
+366625,2009-03-14,2009,ODI,India in New Zealand ODI Series,India,New Zealand,Eden Park,India,bat,True,New Zealand,LOST,8 wickets
+366628,2009-03-18,2009,TEST,Test Series,India,New Zealand,Seddon Park,India,field,True,India,WON,10 wickets
+366629,2009-04-03,2009,TEST,Test Series,India,New Zealand,Basin Reserve,New Zealand,field,False,,DRAWN,
+392181,2009-04-18,2009,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Newlands,Chennai Super Kings,field,True,Mumbai Indians,LOST,19 runs
+392185,2009-04-20,2009,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,St George's Park,Chennai Super Kings,bat,True,Chennai Super Kings,WON,92 runs
+392189,2009-04-23,2009,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Kingsmead,Delhi Daredevils,bat,False,Delhi Daredevils,LOST,9 runs
+392196,2009-04-27,2009,IPL,Indian Premier League,Chennai Super Kings,Deccan Chargers,Kingsmead,Deccan Chargers,field,False,Deccan Chargers,LOST,6 wickets
+392202,2009-04-30,2009,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,SuperSport Park,Rajasthan Royals,field,False,Chennai Super Kings,WON,38 runs
+392206,2009-05-02,2009,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,New Wanderers Stadium,Delhi Daredevils,field,False,Chennai Super Kings,WON,18 runs
+392209,2009-05-04,2009,IPL,Indian Premier League,Chennai Super Kings,Deccan Chargers,Buffalo Park,Chennai Super Kings,bat,True,Chennai Super Kings,WON,78 runs
+392214,2009-05-07,2009,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,SuperSport Park,Chennai Super Kings,bat,True,Chennai Super Kings,WON,12 runs
+392217,2009-05-09,2009,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,De Beers Diamond Oval,Rajasthan Royals,bat,False,Chennai Super Kings,WON,7 wickets
+392224,2009-05-14,2009,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,Kingsmead,Chennai Super Kings,bat,True,Royal Challengers Bangalore,LOST,2 wickets
+392227,2009-05-16,2009,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,St George's Park,Mumbai Indians,bat,False,Chennai Super Kings,WON,7 wickets
+392231,2009-05-18,2009,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,SuperSport Park,Chennai Super Kings,bat,True,Kolkata Knight Riders,LOST,7 wickets
+392234,2009-05-20,2009,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Kingsmead,Chennai Super Kings,bat,True,Chennai Super Kings,WON,24 runs
+392238,2009-05-23,2009,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,New Wanderers Stadium,Royal Challengers Bangalore,field,False,Royal Challengers Bangalore,LOST,6 wickets
+355994,2009-06-06,2009,T20I,ICC World Twenty20,India,Bangladesh,Trent Bridge,India,bat,True,India,WON,25 runs
+356001,2009-06-10,2009,T20I,ICC World Twenty20,India,Ireland,Trent Bridge,India,field,True,India,WON,8 wickets
+356006,2009-06-12,2009,T20I,ICC World Twenty20,India,West Indies,Lord's,India,bat,True,West Indies,LOST,7 wickets
+356010,2009-06-14,2009,T20I,ICC World Twenty20,India,England,Lord's,India,field,True,England,LOST,3 runs
+356014,2009-06-16,2009,T20I,ICC World Twenty20,India,South Africa,Trent Bridge,South Africa,bat,False,South Africa,LOST,12 runs
+377313,2009-06-26,2009,ODI,India in West Indies ODI Series,India,West Indies,"Sabina Park, Kingston",India,bat,True,India,WON,20 runs
+377314,2009-06-28,2009,ODI,India in West Indies ODI Series,India,West Indies,"Sabina Park, Kingston",India,bat,True,West Indies,LOST,8 wickets
+377315,2009-07-03,2009,ODI,India in West Indies ODI Series,India,West Indies,"Beausejour Stadium, Gros Islet",India,field,True,India,WON,6 wickets
+377316,2009-07-05,2009,ODI,India in West Indies ODI Series,India,West Indies,"Beausejour Stadium, Gros Islet",India,field,True,,NO_RESULT,
+403382,2009-09-11,2009,ODI,Compaq Cup,India,New Zealand,R Premadasa Stadium,New Zealand,bat,False,India,WON,6 wickets
+403381,2009-09-12,2009,ODI,Compaq Cup,India,Sri Lanka,R Premadasa Stadium,Sri Lanka,bat,False,Sri Lanka,LOST,139 runs
+403383,2009-09-14,2009,ODI,Compaq Cup,India,Sri Lanka,R Premadasa Stadium,India,bat,True,India,WON,46 runs
+415278,2009-09-26,2009,ODI,ICC Champions Trophy,India,Pakistan,SuperSport Park,Pakistan,bat,False,Pakistan,LOST,54 runs
+415281,2009-09-28,2009,ODI,ICC Champions Trophy,India,Australia,SuperSport Park,Australia,bat,False,,NO_RESULT,
+415284,2009-09-30,2009,ODI,ICC Champions Trophy,India,West Indies,New Wanderers Stadium,India,field,True,India,WON,7 wickets
+416236,2009-10-25,2009,ODI,Australia in India ODI Series,India,Australia,Reliance Stadium,Australia,bat,False,Australia,LOST,4 runs
+416237,2009-10-28,2009,ODI,Australia in India ODI Series,India,Australia,"Vidarbha Cricket Association Stadium, Jamtha",Australia,field,False,India,WON,99 runs
+416238,2009-10-31,2009,ODI,Australia in India ODI Series,India,Australia,Feroz Shah Kotla,Australia,bat,False,India,WON,6 wickets
+416239,2009-11-02,2009,ODI,Australia in India ODI Series,India,Australia,"Punjab Cricket Association Stadium, Mohali",India,field,True,Australia,LOST,24 runs
+416240,2009-11-05,2009,ODI,Australia in India ODI Series,India,Australia,"Rajiv Gandhi International Stadium, Uppal",Australia,bat,False,Australia,LOST,3 runs
+416241,2009-11-08,2009,ODI,Australia in India ODI Series,India,Australia,Nehru Stadium,India,bat,True,Australia,LOST,6 wickets
+430881,2009-11-16,2009,TEST,Test Series,India,Sri Lanka,"Sardar Patel Stadium, Motera",India,bat,True,,DRAWN,
+430882,2009-11-24,2009,TEST,Test Series,India,Sri Lanka,Green Park,India,bat,True,India,WON,144 runs
+430883,2009-12-02,2009,TEST,Test Series,India,Sri Lanka,Brabourne Stadium,Sri Lanka,bat,False,India,WON,24 runs
+430884,2009-12-09,2009,T20I,Sri Lanka in India T20I Series,India,Sri Lanka,"Vidarbha Cricket Association Stadium, Jamtha",India,field,True,Sri Lanka,LOST,29 runs
+430885,2009-12-12,2009,T20I,Sri Lanka in India T20I Series,India,Sri Lanka,"Punjab Cricket Association Stadium, Mohali",Sri Lanka,bat,False,India,WON,6 wickets
+430886,2009-12-15,2009,ODI,Sri Lanka in India ODI Series,India,Sri Lanka,Madhavrao Scindia Cricket Ground,Sri Lanka,field,False,India,WON,3 runs
+430887,2009-12-18,2009,ODI,Sri Lanka in India ODI Series,India,Sri Lanka,"Vidarbha Cricket Association Stadium, Jamtha",India,bat,True,Sri Lanka,LOST,3 wickets
+430890,2009-12-27,2009,ODI,Sri Lanka in India ODI Series,India,Sri Lanka,Feroz Shah Kotla,India,field,True,,NO_RESULT,
+434259,2010-01-05,2010,ODI,Tri-Nation Tournament in Bangladesh,India,Sri Lanka,Shere Bangla National Stadium,Sri Lanka,field,False,Sri Lanka,LOST,5 wickets
+434260,2010-01-07,2010,ODI,Tri-Nation Tournament in Bangladesh,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,bat,False,India,WON,6 wickets
+434262,2010-01-10,2010,ODI,Tri-Nation Tournament in Bangladesh,India,Sri Lanka,Shere Bangla National Stadium,Sri Lanka,bat,False,India,WON,8 wickets
+434263,2010-01-11,2010,ODI,Tri-Nation Tournament in Bangladesh,India,Bangladesh,Shere Bangla National Stadium,India,field,True,India,WON,6 wickets
+434264,2010-01-13,2010,ODI,Tri-Nation Tournament in Bangladesh,India,Sri Lanka,Shere Bangla National Stadium,Sri Lanka,field,False,Sri Lanka,LOST,4 wickets
+434257,2010-01-24,2010,TEST,Test Series,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,bat,False,India,WON,10 wickets
+441825,2010-02-06,2010,TEST,Test Series,India,South Africa,"Vidarbha Cricket Association Stadium, Jamtha",South Africa,bat,False,South Africa,LOST,6 runs
+441826,2010-02-14,2010,TEST,Test Series,India,South Africa,Eden Gardens,South Africa,bat,False,India,WON,57 runs
+441827,2010-02-21,2010,ODI,South Africa in India ODI Series,India,South Africa,Sawai Mansingh Stadium,South Africa,field,False,India,WON,1 runs
+441828,2010-02-24,2010,ODI,South Africa in India ODI Series,India,South Africa,Captain Roop Singh Stadium,India,bat,True,India,WON,153 runs
+441829,2010-02-27,2010,ODI,South Africa in India ODI Series,India,South Africa,"Sardar Patel Stadium, Motera",South Africa,bat,False,South Africa,LOST,90 runs
+412682,2010-05-02,2010,T20I,ICC World Twenty20,India,South Africa,"Beausejour Stadium, Gros Islet",South Africa,field,False,India,WON,14 runs
+412691,2010-05-07,2010,T20I,ICC World Twenty20,India,Australia,"Kensington Oval, Bridgetown",India,field,True,Australia,LOST,49 runs
+412695,2010-05-09,2010,T20I,ICC World Twenty20,India,West Indies,"Kensington Oval, Bridgetown",India,field,True,West Indies,LOST,14 runs
+412699,2010-05-11,2010,T20I,ICC World Twenty20,India,Sri Lanka,"Beausejour Stadium, Gros Islet",India,bat,True,Sri Lanka,LOST,5 wickets
+455232,2010-06-16,2010,ODI,Asia Cup,India,Bangladesh,Rangiri Dambulla International Stadium,Bangladesh,bat,False,India,WON,6 wickets
+455234,2010-06-19,2010,ODI,Asia Cup,India,Pakistan,Rangiri Dambulla International Stadium,Pakistan,bat,False,India,WON,3 wickets
+455236,2010-06-22,2010,ODI,Asia Cup,India,Sri Lanka,Rangiri Dambulla International Stadium,Sri Lanka,field,False,Sri Lanka,LOST,7 wickets
+455237,2010-06-24,2010,ODI,Asia Cup,India,Sri Lanka,Rangiri Dambulla International Stadium,India,bat,True,India,WON,81 runs
+456669,2010-07-18,2010,TEST,Test Series,India,Sri Lanka,Galle International Stadium,Sri Lanka,bat,False,Sri Lanka,LOST,10 wickets
+456670,2010-07-26,2010,TEST,Test Series,India,Sri Lanka,Sinhalese Sports Club Ground,Sri Lanka,bat,False,,DRAWN,
+456671,2010-08-03,2010,TEST,Test Series,India,Sri Lanka,P Sara Oval,Sri Lanka,bat,False,India,WON,5 wickets
+456662,2010-08-10,2010,ODI,Sri Lanka Triangular Series,India,New Zealand,Rangiri Dambulla International Stadium,New Zealand,bat,False,New Zealand,LOST,200 runs
+456663,2010-08-16,2010,ODI,Sri Lanka Triangular Series,India,Sri Lanka,Rangiri Dambulla International Stadium,Sri Lanka,bat,False,India,WON,6 wickets
+456666,2010-08-22,2010,ODI,Sri Lanka Triangular Series,India,Sri Lanka,Rangiri Dambulla International Stadium,India,bat,True,Sri Lanka,LOST,8 wickets
+456665,2010-08-25,2010,ODI,Sri Lanka Triangular Series,India,New Zealand,Rangiri Dambulla International Stadium,India,bat,True,India,WON,105 runs
+456668,2010-08-28,2010,ODI,Sri Lanka Triangular Series,India,Sri Lanka,Rangiri Dambulla International Stadium,Sri Lanka,bat,False,Sri Lanka,LOST,74 runs
+464526,2010-10-01,2010,TEST,Test Series,India,Australia,"Punjab Cricket Association Stadium, Mohali",Australia,bat,False,India,WON,1 wickets
+464527,2010-10-09,2010,TEST,Test Series,India,Australia,M Chinnaswamy Stadium,Australia,bat,False,India,WON,7 wickets
+464529,2010-10-20,2010,ODI,Australia in India ODI Series,India,Australia,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,field,True,India,WON,5 wickets
+464531,2010-11-04,2010,TEST,Test Series,India,New Zealand,"Sardar Patel Stadium, Motera",India,bat,True,,DRAWN,
+464532,2010-11-12,2010,TEST,Test Series,India,New Zealand,"Rajiv Gandhi International Stadium, Uppal",New Zealand,bat,False,,DRAWN,
+464533,2010-11-20,2010,TEST,Test Series,India,New Zealand,"Vidarbha Cricket Association Stadium, Jamtha",New Zealand,bat,False,India,WON,198 runs
+463146,2010-12-16,2010,TEST,Test Series,India,South Africa,SuperSport Park,South Africa,field,False,South Africa,LOST,25 runs
+463147,2010-12-26,2010,TEST,Test Series,India,South Africa,Kingsmead,South Africa,field,False,India,WON,87 runs
+463148,2011-01-02,2011,TEST,Test Series,India,South Africa,Newlands,India,field,True,,DRAWN,
+463149,2011-01-09,2011,T20I,T20I Series,India,South Africa,Moses Mabhida Stadium,India,bat,True,India,WON,21 runs
+463150,2011-01-12,2011,ODI,India in South Africa ODI Series,India,South Africa,Kingsmead,South Africa,bat,False,South Africa,LOST,135 runs
+463151,2011-01-15,2011,ODI,India in South Africa ODI Series,India,South Africa,New Wanderers Stadium,India,bat,True,India,WON,1 runs
+463152,2011-01-18,2011,ODI,India in South Africa ODI Series,India,South Africa,Newlands,South Africa,bat,False,India,WON,2 wickets
+463153,2011-01-21,2011,ODI,India in South Africa ODI Series,India,South Africa,St George's Park,South Africa,bat,False,South Africa,LOST,48 runs
+463154,2011-01-23,2011,ODI,India in South Africa ODI Series,India,South Africa,SuperSport Park,India,field,True,South Africa,LOST,33 runs
+433558,2011-02-19,2011,ODI,ICC Cricket World Cup,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,field,False,India,WON,87 runs
+433568,2011-02-27,2011,ODI,ICC Cricket World Cup,India,England,M Chinnaswamy Stadium,India,bat,True,,TIED,
+433578,2011-03-06,2011,ODI,ICC Cricket World Cup,India,Ireland,M Chinnaswamy Stadium,India,field,True,India,WON,5 wickets
+433582,2011-03-09,2011,ODI,ICC Cricket World Cup,India,Netherlands,Feroz Shah Kotla,Netherlands,bat,False,India,WON,5 wickets
+433586,2011-03-12,2011,ODI,ICC Cricket World Cup,India,South Africa,"Vidarbha Cricket Association Stadium, Jamtha",India,bat,True,South Africa,LOST,3 wickets
+433599,2011-03-20,2011,ODI,ICC Cricket World Cup,India,West Indies,"MA Chidambaram Stadium, Chepauk",India,bat,True,India,WON,80 runs
+433601,2011-03-24,2011,ODI,ICC Cricket World Cup,India,Australia,"Sardar Patel Stadium, Motera",Australia,bat,False,India,WON,5 wickets
+433605,2011-03-30,2011,ODI,ICC Cricket World Cup,India,Pakistan,"Punjab Cricket Association Stadium, Mohali",India,bat,True,India,WON,29 runs
+433606,2011-04-02,2011,ODI,ICC Cricket World Cup,India,Sri Lanka,Wankhede Stadium,Sri Lanka,bat,False,India,WON,6 wickets
+501198,2011-04-08,2011,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,2 runs
+501206,2011-04-13,2011,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,"Punjab Cricket Association Stadium, Mohali",Kings XI Punjab,field,False,Kings XI Punjab,LOST,6 wickets
+501211,2011-04-16,2011,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,21 runs
+501215,2011-04-18,2011,IPL,Indian Premier League,Chennai Super Kings,Kochi Tuskers Kerala,Nehru Stadium,Kochi Tuskers Kerala,field,False,Kochi Tuskers Kerala,LOST,7 wickets
+501221,2011-04-22,2011,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Chennai Super Kings,field,True,Mumbai Indians,LOST,8 runs
+501226,2011-04-25,2011,IPL,Indian Premier League,Chennai Super Kings,Pune Warriors,"MA Chidambaram Stadium, Chepauk",Pune Warriors,field,False,Chennai Super Kings,WON,25 runs
+501228,2011-04-27,2011,IPL,Indian Premier League,Chennai Super Kings,Pune Warriors,Dr DY Patil Sports Academy,Pune Warriors,bat,False,Chennai Super Kings,WON,8 wickets
+501236,2011-05-01,2011,IPL,Indian Premier League,Chennai Super Kings,Deccan Chargers,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,19 runs
+501240,2011-05-04,2011,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"MA Chidambaram Stadium, Chepauk",Rajasthan Royals,bat,False,Chennai Super Kings,WON,8 wickets
+501245,2011-05-07,2011,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Chennai Super Kings,bat,True,Kolkata Knight Riders,LOST,10 runs
+501249,2011-05-09,2011,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Sawai Mansingh Stadium,Rajasthan Royals,field,False,Chennai Super Kings,WON,63 runs
+501253,2011-05-12,2011,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,18 runs
+501261,2011-05-18,2011,IPL,Indian Premier League,Chennai Super Kings,Kochi Tuskers Kerala,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,11 runs
+501266,2011-05-22,2011,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,M Chinnaswamy Stadium,Royal Challengers Bangalore,field,False,Royal Challengers Bangalore,LOST,8 wickets
+501268,2011-05-24,2011,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,Wankhede Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+501271,2011-05-28,2011,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,58 runs
+489226,2011-06-20,2011,TEST,Test Series,India,West Indies,"Sabina Park, Kingston",India,bat,True,India,WON,63 runs
+489227,2011-06-28,2011,TEST,Test Series,India,West Indies,"Kensington Oval, Bridgetown",West Indies,field,False,,DRAWN,
+489228,2011-07-06,2011,TEST,Test Series,India,West Indies,"Windsor Park, Roseau",India,field,True,,DRAWN,
+474472,2011-07-21,2011,TEST,Test Series,India,England,Lord's,India,field,True,England,LOST,196 runs
+474473,2011-07-29,2011,TEST,Test Series,India,England,Trent Bridge,India,field,True,England,LOST,319 runs
+474474,2011-08-10,2011,TEST,Test Series,India,England,Edgbaston,England,field,False,England,LOST,242 runs
+474475,2011-08-18,2011,TEST,Test Series,India,England,Kennington Oval,England,bat,False,England,LOST,8 runs
+474476,2011-08-31,2011,T20I,T20I Series,India,England,Old Trafford,India,bat,True,England,LOST,6 wickets
+474477,2011-09-03,2011,ODI,NatWest Series,India,England,Riverside Ground,England,field,False,,NO_RESULT,
+474478,2011-09-06,2011,ODI,NatWest Series,India,England,The Rose Bowl,England,field,False,England,LOST,7 wickets
+474479,2011-09-09,2011,ODI,NatWest Series,India,England,Kennington Oval,England,field,False,England,LOST,3 wickets
+474480,2011-09-11,2011,ODI,NatWest Series,India,England,Lord's,England,field,False,,TIED,
+474481,2011-09-16,2011,ODI,NatWest Series,India,England,Sophia Gardens,England,field,False,England,LOST,6 wickets
+521218,2011-10-14,2011,ODI,England in India ODI Series,India,England,"Rajiv Gandhi International Stadium, Uppal",India,bat,True,India,WON,126 runs
+521219,2011-10-17,2011,ODI,England in India ODI Series,India,England,Feroz Shah Kotla,England,bat,False,India,WON,8 wickets
+521220,2011-10-20,2011,ODI,England in India ODI Series,India,England,"Punjab Cricket Association Stadium, Mohali",England,bat,False,India,WON,5 wickets
+521221,2011-10-23,2011,ODI,England in India ODI Series,India,England,Wankhede Stadium,England,bat,False,India,WON,6 wickets
+521222,2011-10-25,2011,ODI,England in India ODI Series,India,England,Eden Gardens,England,field,False,India,WON,95 runs
+521217,2011-10-29,2011,T20I,T20I Series,India,England,Eden Gardens,India,bat,True,England,LOST,6 wickets
+535997,2011-11-06,2011,TEST,Test Series,India,West Indies,Feroz Shah Kotla,West Indies,bat,False,India,WON,5 wickets
+535998,2011-11-14,2011,TEST,Test Series,India,West Indies,Eden Gardens,India,bat,True,India,WON,15 runs
+535999,2011-11-22,2011,TEST,Test Series,India,West Indies,Wankhede Stadium,West Indies,bat,False,,DRAWN,
+518950,2011-12-26,2011,TEST,Test Series,India,Australia,Melbourne Cricket Ground,Australia,bat,False,Australia,LOST,122 runs
+518951,2012-01-03,2012,TEST,Test Series,India,Australia,Sydney Cricket Ground,India,bat,True,Australia,LOST,68 runs
+518952,2012-01-13,2012,TEST,Test Series,India,Australia,Western Australia Cricket Association Ground,Australia,field,False,Australia,LOST,37 runs
+518954,2012-02-01,2012,T20I,India in Australia T20I Series,India,Australia,Stadium Australia,India,field,True,Australia,LOST,31 runs
+518955,2012-02-03,2012,T20I,India in Australia T20I Series,India,Australia,Melbourne Cricket Ground,Australia,bat,False,India,WON,8 wickets
+518956,2012-02-05,2012,ODI,Commonwealth Bank Series,India,Australia,Melbourne Cricket Ground,India,field,True,Australia,LOST,65 runs
+518957,2012-02-08,2012,ODI,Commonwealth Bank Series,India,Sri Lanka,Western Australia Cricket Association Ground,Sri Lanka,bat,False,India,WON,4 wickets
+518959,2012-02-12,2012,ODI,Commonwealth Bank Series,India,Australia,Adelaide Oval,Australia,bat,False,India,WON,4 wickets
+518960,2012-02-14,2012,ODI,Commonwealth Bank Series,India,Sri Lanka,Adelaide Oval,Sri Lanka,bat,False,,TIED,
+518962,2012-02-19,2012,ODI,Commonwealth Bank Series,India,Australia,"Brisbane Cricket Ground, Woolloongabba",Australia,bat,False,Australia,LOST,110 runs
+518965,2012-02-26,2012,ODI,Commonwealth Bank Series,India,Australia,Sydney Cricket Ground,Australia,bat,False,Australia,LOST,87 runs
+518966,2012-02-28,2012,ODI,Commonwealth Bank Series,India,Sri Lanka,Bellerive Oval,India,field,True,India,WON,7 wickets
+535795,2012-03-13,2012,ODI,Asia Cup,India,Sri Lanka,Shere Bangla National Stadium,Sri Lanka,field,False,India,WON,50 runs
+535797,2012-03-16,2012,ODI,Asia Cup,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,field,False,Bangladesh,LOST,5 wickets
+535798,2012-03-18,2012,ODI,Asia Cup,India,Pakistan,Shere Bangla National Stadium,Pakistan,bat,False,India,WON,6 wickets
+556252,2012-03-30,2012,T20I,T20I Series,India,South Africa,New Wanderers Stadium,India,field,True,South Africa,LOST,11 runs
+548306,2012-04-04,2012,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"MA Chidambaram Stadium, Chepauk",Mumbai Indians,field,False,Mumbai Indians,LOST,8 wickets
+548311,2012-04-07,2012,IPL,Indian Premier League,Chennai Super Kings,Deccan Chargers,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Deccan Chargers,field,False,Chennai Super Kings,WON,74 runs
+548316,2012-04-10,2012,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Feroz Shah Kotla,Delhi Daredevils,field,False,Delhi Daredevils,LOST,8 wickets
+548318,2012-04-12,2012,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"MA Chidambaram Stadium, Chepauk",Royal Challengers Bangalore,bat,False,Chennai Super Kings,WON,5 wickets
+548322,2012-04-14,2012,IPL,Indian Premier League,Chennai Super Kings,Pune Warriors,Subrata Roy Sahara Stadium,Chennai Super Kings,bat,True,Pune Warriors,LOST,7 wickets
+548330,2012-04-19,2012,IPL,Indian Premier League,Chennai Super Kings,Pune Warriors,"MA Chidambaram Stadium, Chepauk",Pune Warriors,field,False,Chennai Super Kings,WON,13 runs
+548332,2012-04-21,2012,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"MA Chidambaram Stadium, Chepauk",Rajasthan Royals,bat,False,Chennai Super Kings,WON,7 wickets
+548343,2012-04-28,2012,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,"MA Chidambaram Stadium, Chepauk",Kings XI Punjab,bat,False,Kings XI Punjab,LOST,7 runs
+548347,2012-04-30,2012,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Kolkata Knight Riders,LOST,5 wickets
+548352,2012-05-04,2012,IPL,Indian Premier League,Chennai Super Kings,Deccan Chargers,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,10 runs
+548355,2012-05-06,2012,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Mumbai Indians,field,False,Mumbai Indians,LOST,2 wickets
+548361,2012-05-10,2012,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Sawai Mansingh Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,4 wickets
+548364,2012-05-12,2012,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,field,True,Chennai Super Kings,WON,9 wickets
+548368,2012-05-14,2012,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Chennai Super Kings,field,True,Chennai Super Kings,WON,5 wickets
+548371,2012-05-17,2012,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Himachal Pradesh Cricket Association Stadium,Kings XI Punjab,field,False,Kings XI Punjab,LOST,6 wickets
+548379,2012-05-23,2012,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,M Chinnaswamy Stadium,Mumbai Indians,field,False,Chennai Super Kings,WON,38 runs
+548380,2012-05-25,2012,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,"MA Chidambaram Stadium, Chepauk",Delhi Daredevils,field,False,Chennai Super Kings,WON,86 runs
+548381,2012-05-27,2012,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Kolkata Knight Riders,LOST,5 wickets
+564781,2012-07-21,2012,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",India,bat,True,India,WON,21 runs
+564782,2012-07-24,2012,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",India,bat,True,Sri Lanka,LOST,9 wickets
+564783,2012-07-28,2012,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,Sri Lanka,bat,False,India,WON,5 wickets
+564784,2012-07-31,2012,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,R Premadasa Stadium,Sri Lanka,bat,False,India,WON,6 wickets
+564785,2012-08-04,2012,ODI,India in Sri Lanka ODI Series,India,Sri Lanka,Pallekele International Cricket Stadium,India,bat,True,India,WON,20 runs
+564786,2012-08-07,2012,T20I,T20I Series,India,Sri Lanka,Pallekele International Cricket Stadium,Sri Lanka,field,False,India,WON,39 runs
+565817,2012-08-23,2012,TEST,Test Series,India,New Zealand,"Rajiv Gandhi International Stadium, Uppal",India,bat,True,India,WON,115 runs
+565818,2012-08-31,2012,TEST,Test Series,India,New Zealand,M Chinnaswamy Stadium,New Zealand,bat,False,India,WON,5 wickets
+565820,2012-09-11,2012,T20I,New Zealand in India T20I Series,India,New Zealand,"MA Chidambaram Stadium, Chepauk",India,field,True,New Zealand,LOST,1 runs
+533281,2012-09-23,2012,T20I,ICC World Twenty20,India,England,R Premadasa Stadium,England,field,False,India,WON,90 runs
+533287,2012-09-28,2012,T20I,ICC World Twenty20,India,Australia,R Premadasa Stadium,India,bat,True,Australia,LOST,9 wickets
+533291,2012-09-30,2012,T20I,ICC World Twenty20,India,Pakistan,R Premadasa Stadium,Pakistan,bat,False,India,WON,8 wickets
+533295,2012-10-02,2012,T20I,ICC World Twenty20,India,South Africa,R Premadasa Stadium,South Africa,field,False,India,WON,1 runs
+565806,2012-11-15,2012,TEST,Test Series,India,England,"Sardar Patel Stadium, Motera",India,bat,True,India,WON,9 wickets
+565807,2012-11-23,2012,TEST,Test Series,India,England,Wankhede Stadium,India,bat,True,England,LOST,10 wickets
+565808,2012-12-05,2012,TEST,Test Series,India,England,Eden Gardens,India,bat,True,England,LOST,7 wickets
+565809,2012-12-13,2012,TEST,Test Series,India,England,"Vidarbha Cricket Association Stadium, Jamtha",England,bat,False,,DRAWN,
+565810,2012-12-20,2012,T20I,England in India T20I Series,India,England,Subrata Roy Sahara Stadium,India,field,True,India,WON,5 wickets
+565811,2012-12-22,2012,T20I,England in India T20I Series,India,England,Wankhede Stadium,England,field,False,England,LOST,6 wickets
+589306,2012-12-25,2012,T20I,Pakistan in India T20I Series,India,Pakistan,M Chinnaswamy Stadium,Pakistan,field,False,Pakistan,LOST,5 wickets
+589307,2012-12-28,2012,T20I,Pakistan in India T20I Series,India,Pakistan,"Sardar Patel Stadium, Motera",Pakistan,field,False,India,WON,11 runs
+589308,2012-12-30,2012,ODI,Pakistan in India ODI Series,India,Pakistan,"MA Chidambaram Stadium, Chepauk",Pakistan,field,False,Pakistan,LOST,6 wickets
+589309,2013-01-03,2013,ODI,Pakistan in India ODI Series,India,Pakistan,Eden Gardens,India,field,True,Pakistan,LOST,85 runs
+589310,2013-01-06,2013,ODI,Pakistan in India ODI Series,India,Pakistan,Feroz Shah Kotla,India,bat,True,India,WON,10 runs
+565812,2013-01-11,2013,ODI,England in India ODI Series,India,England,Saurashtra Cricket Association Stadium,England,bat,False,England,LOST,9 runs
+565813,2013-01-15,2013,ODI,England in India ODI Series,India,England,Nehru Stadium,India,bat,True,India,WON,127 runs
+565814,2013-01-19,2013,ODI,England in India ODI Series,India,England,JSCA International Stadium Complex,India,field,True,India,WON,7 wickets
+565815,2013-01-23,2013,ODI,England in India ODI Series,India,England,"Punjab Cricket Association Stadium, Mohali",India,field,True,India,WON,5 wickets
+565816,2013-01-27,2013,ODI,England in India ODI Series,India,England,Himachal Pradesh Cricket Association Stadium,England,field,False,England,LOST,7 wickets
+598812,2013-02-22,2013,TEST,Test Series,India,Australia,"MA Chidambaram Stadium, Chepauk",Australia,bat,False,India,WON,8 wickets
+598813,2013-03-02,2013,TEST,Test Series,India,Australia,"Rajiv Gandhi International Stadium, Uppal",Australia,bat,False,India,WON,135 runs
+598814,2013-03-14,2013,TEST,Test Series,India,Australia,"Punjab Cricket Association Stadium, Mohali",Australia,bat,False,India,WON,6 wickets
+598815,2013-03-22,2013,TEST,Test Series,India,Australia,Feroz Shah Kotla,Australia,bat,False,India,WON,6 wickets
+598002,2013-04-06,2013,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"MA Chidambaram Stadium, Chepauk",Mumbai Indians,bat,False,Mumbai Indians,LOST,9 runs
+598007,2013-04-10,2013,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,"Punjab Cricket Association Stadium, Mohali",Chennai Super Kings,field,True,Chennai Super Kings,WON,10 wickets
+598012,2013-04-13,2013,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,field,True,Chennai Super Kings,WON,4 wickets
+598015,2013-04-15,2013,IPL,Indian Premier League,Chennai Super Kings,Pune Warriors,"MA Chidambaram Stadium, Chepauk",Pune Warriors,bat,False,Pune Warriors,LOST,24 runs
+598020,2013-04-18,2013,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Feroz Shah Kotla,Chennai Super Kings,bat,True,Chennai Super Kings,WON,86 runs
+598022,2013-04-20,2013,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Kolkata Knight Riders,bat,False,Chennai Super Kings,WON,4 wickets
+598026,2013-04-22,2013,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"MA Chidambaram Stadium, Chepauk",Rajasthan Royals,bat,False,Chennai Super Kings,WON,5 wickets
+598030,2013-04-25,2013,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"MA Chidambaram Stadium, Chepauk",Sunrisers Hyderabad,bat,False,Chennai Super Kings,WON,5 wickets
+598034,2013-04-28,2013,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk",Kolkata Knight Riders,field,False,Chennai Super Kings,WON,14 runs
+598038,2013-04-30,2013,IPL,Indian Premier League,Chennai Super Kings,Pune Warriors,Subrata Roy Sahara Stadium,Chennai Super Kings,bat,True,Chennai Super Kings,WON,37 runs
+598041,2013-05-02,2013,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,15 runs
+598046,2013-05-05,2013,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Mumbai Indians,bat,False,Mumbai Indians,LOST,60 runs
+598051,2013-05-08,2013,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"Rajiv Gandhi International Stadium, Uppal",Sunrisers Hyderabad,field,False,Chennai Super Kings,WON,77 runs
+598058,2013-05-12,2013,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Sawai Mansingh Stadium,Rajasthan Royals,field,False,Rajasthan Royals,LOST,5 wickets
+598062,2013-05-14,2013,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,33 runs
+598068,2013-05-18,2013,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,M Chinnaswamy Stadium,Chennai Super Kings,field,True,Royal Challengers Bangalore,LOST,24 runs
+598070,2013-05-21,2013,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Feroz Shah Kotla,Chennai Super Kings,bat,True,Chennai Super Kings,WON,48 runs
+598073,2013-05-26,2013,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Eden Gardens,Mumbai Indians,bat,False,Mumbai Indians,LOST,23 runs
+578614,2013-06-06,2013,ODI,ICC Champions Trophy,India,South Africa,Sophia Gardens,South Africa,field,False,India,WON,26 runs
+578619,2013-06-11,2013,ODI,ICC Champions Trophy,India,West Indies,Kennington Oval,India,field,True,India,WON,8 wickets
+578623,2013-06-15,2013,ODI,ICC Champions Trophy,India,Pakistan,Edgbaston,India,field,True,India,WON,8 wickets
+566947,2013-06-20,2013,ODI,ICC Champions Trophy,India,Sri Lanka,Sophia Gardens,India,field,True,India,WON,8 wickets
+566948,2013-06-23,2013,ODI,ICC Champions Trophy,India,England,Edgbaston,England,field,False,India,WON,5 runs
+597924,2013-06-30,2013,ODI,West Indies Tri-Nation Series,India,West Indies,"Sabina Park, Kingston",West Indies,field,False,West Indies,LOST,1 wickets
+597929,2013-07-11,2013,ODI,West Indies Tri-Nation Series,India,Sri Lanka,"Queen's Park Oval, Port of Spain",India,field,True,India,WON,1 wickets
+647247,2013-10-10,2013,T20I,T20I Series,India,Australia,Saurashtra Cricket Association Stadium,India,field,True,India,WON,6 wickets
+647249,2013-10-13,2013,ODI,Australia in India ODI Series,India,Australia,Maharashtra Cricket Association Stadium,Australia,bat,False,Australia,LOST,72 runs
+647251,2013-10-16,2013,ODI,Australia in India ODI Series,India,Australia,Sawai Mansingh Stadium,Australia,bat,False,India,WON,9 wickets
+647253,2013-10-19,2013,ODI,Australia in India ODI Series,India,Australia,"Punjab Cricket Association Stadium, Mohali",Australia,field,False,Australia,LOST,4 wickets
+647255,2013-10-23,2013,ODI,Australia in India ODI Series,India,Australia,JSCA International Stadium Complex,India,field,True,,NO_RESULT,
+647259,2013-10-30,2013,ODI,Australia in India ODI Series,India,Australia,"Vidarbha Cricket Association Stadium, Jamtha",India,field,True,India,WON,6 wickets
+647261,2013-11-02,2013,ODI,Australia in India ODI Series,India,Australia,M Chinnaswamy Stadium,Australia,field,False,India,WON,57 runs
+676525,2013-11-06,2013,TEST,Test Series,India,West Indies,Eden Gardens,West Indies,bat,False,India,WON,51 runs
+676527,2013-11-14,2013,TEST,Test Series,India,West Indies,Wankhede Stadium,India,field,True,India,WON,126 runs
+676529,2013-11-21,2013,ODI,West Indies in India ODI Series,India,West Indies,Nehru Stadium,West Indies,bat,False,India,WON,6 wickets
+676531,2013-11-24,2013,ODI,West Indies in India ODI Series,India,West Indies,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,West Indies,field,False,West Indies,LOST,2 wickets
+676533,2013-11-27,2013,ODI,West Indies in India ODI Series,India,West Indies,Green Park,India,field,True,India,WON,5 wickets
+648651,2013-12-05,2013,ODI,India in South Africa ODI Series,India,South Africa,New Wanderers Stadium,India,field,True,South Africa,LOST,141 runs
+648653,2013-12-08,2013,ODI,India in South Africa ODI Series,India,South Africa,Kingsmead,India,field,True,South Africa,LOST,134 runs
+648655,2013-12-11,2013,ODI,India in South Africa ODI Series,India,South Africa,SuperSport Park,South Africa,bat,False,,NO_RESULT,
+648665,2013-12-18,2013,TEST,Test Series,India,South Africa,New Wanderers Stadium,India,bat,True,,DRAWN,
+648667,2013-12-26,2013,TEST,Test Series,India,South Africa,Kingsmead,India,bat,True,South Africa,LOST,10 wickets
+667641,2014-01-19,2014,ODI,India in New Zealand ODI Series,India,New Zealand,McLean Park,India,field,True,New Zealand,LOST,24 runs
+667643,2014-01-22,2014,ODI,India in New Zealand ODI Series,India,New Zealand,Seddon Park,India,field,True,New Zealand,LOST,15 runs
+667645,2014-01-25,2014,ODI,India in New Zealand ODI Series,India,New Zealand,Eden Park,India,field,True,,TIED,
+667647,2014-01-28,2014,ODI,India in New Zealand ODI Series,India,New Zealand,Seddon Park,India,bat,True,New Zealand,LOST,7 wickets
+667649,2014-01-31,2014,ODI,India in New Zealand ODI Series,India,New Zealand,Westpac Stadium,India,field,True,New Zealand,LOST,87 runs
+667651,2014-02-06,2014,TEST,Test Series,India,New Zealand,Eden Park,India,field,True,New Zealand,LOST,40 runs
+667653,2014-02-14,2014,TEST,Test Series,India,New Zealand,Basin Reserve,India,field,True,,DRAWN,
+682921,2014-03-21,2014,T20I,World T20,India,Pakistan,Shere Bangla National Stadium,India,field,True,India,WON,7 wickets
+682929,2014-03-23,2014,T20I,World T20,India,West Indies,Shere Bangla National Stadium,India,field,True,India,WON,7 wickets
+682943,2014-03-28,2014,T20I,World T20,India,Bangladesh,Shere Bangla National Stadium,India,field,True,India,WON,8 wickets
+682951,2014-03-30,2014,T20I,World T20,India,Australia,Shere Bangla National Stadium,Australia,field,False,India,WON,73 runs
+682963,2014-04-04,2014,T20I,World T20,India,South Africa,Shere Bangla National Stadium,South Africa,bat,False,India,WON,6 wickets
+682965,2014-04-06,2014,T20I,World T20,India,Sri Lanka,Shere Bangla National Stadium,Sri Lanka,field,False,Sri Lanka,LOST,6 wickets
+729283,2014-04-18,2014,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Sheikh Zayed Stadium,Chennai Super Kings,bat,True,Kings XI Punjab,LOST,6 wickets
+729293,2014-04-21,2014,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Sheikh Zayed Stadium,Chennai Super Kings,bat,True,Chennai Super Kings,WON,93 runs
+729297,2014-04-23,2014,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Dubai International Cricket Stadium,Rajasthan Royals,field,False,Chennai Super Kings,WON,7 runs
+729303,2014-04-25,2014,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Dubai International Cricket Stadium,Mumbai Indians,bat,False,Chennai Super Kings,WON,7 wickets
+729311,2014-04-27,2014,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,Sharjah Cricket Stadium,Sunrisers Hyderabad,bat,False,Chennai Super Kings,WON,5 wickets
+733971,2014-05-02,2014,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,JSCA International Stadium Complex,Chennai Super Kings,bat,True,Chennai Super Kings,WON,34 runs
+733981,2014-05-05,2014,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Feroz Shah Kotla,Chennai Super Kings,field,True,Chennai Super Kings,WON,8 wickets
+733987,2014-05-07,2014,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Barabati Stadium,Chennai Super Kings,field,True,Kings XI Punjab,LOST,44 runs
+733995,2014-05-10,2014,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,4 wickets
+734003,2014-05-13,2014,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,JSCA International Stadium Complex,Rajasthan Royals,bat,False,Chennai Super Kings,WON,5 wickets
+734013,2014-05-18,2014,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,JSCA International Stadium Complex,Chennai Super Kings,bat,True,Royal Challengers Bangalore,LOST,5 wickets
+734023,2014-05-20,2014,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Kolkata Knight Riders,field,False,Kolkata Knight Riders,LOST,8 wickets
+734029,2014-05-22,2014,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,JSCA International Stadium Complex,Sunrisers Hyderabad,field,False,Sunrisers Hyderabad,LOST,6 wickets
+734035,2014-05-24,2014,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,M Chinnaswamy Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,8 wickets
+734045,2014-05-28,2014,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Brabourne Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,7 wickets
+734047,2014-05-30,2014,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Wankhede Stadium,Chennai Super Kings,field,True,Kings XI Punjab,LOST,24 runs
+667711,2014-07-09,2014,TEST,Test Series,India,England,Trent Bridge,India,bat,True,,DRAWN,
+667713,2014-07-17,2014,TEST,Test Series,India,England,Lord's,England,field,False,India,WON,95 runs
+667715,2014-07-27,2014,TEST,Test Series,India,England,The Rose Bowl,England,bat,False,England,LOST,266 runs
+667717,2014-08-07,2014,TEST,Test Series,India,England,Old Trafford,India,bat,True,England,LOST,54 runs
+667719,2014-08-15,2014,TEST,Test Series,India,England,Kennington Oval,England,field,False,England,LOST,244 runs
+667723,2014-08-27,2014,ODI,India in England ODI Series,India,England,Sophia Gardens,England,field,False,India,WON,133 runs
+667725,2014-08-30,2014,ODI,India in England ODI Series,India,England,Trent Bridge,India,field,True,India,WON,6 wickets
+667727,2014-09-02,2014,ODI,India in England ODI Series,India,England,Edgbaston,India,field,True,India,WON,9 wickets
+667729,2014-09-05,2014,ODI,India in England ODI Series,India,England,Headingley,India,field,True,England,LOST,41 runs
+667731,2014-09-07,2014,T20I,T20I Series,India,England,Edgbaston,England,bat,False,England,LOST,3 runs
+770121,2014-10-08,2014,ODI,West Indies in India ODI Series,India,West Indies,Nehru Stadium,India,field,True,West Indies,LOST,124 runs
+770123,2014-10-11,2014,ODI,West Indies in India ODI Series,India,West Indies,Feroz Shah Kotla,India,bat,True,India,WON,48 runs
+770127,2014-10-17,2014,ODI,West Indies in India ODI Series,India,West Indies,Himachal Pradesh Cricket Association Stadium,West Indies,field,False,India,WON,59 runs
+754739,2014-12-17,2014,TEST,Test Series,India,Australia,"Brisbane Cricket Ground, Woolloongabba",India,bat,True,Australia,LOST,4 wickets
+754741,2014-12-26,2014,TEST,Test Series,India,Australia,Melbourne Cricket Ground,Australia,bat,False,,DRAWN,
+754749,2015-01-18,2015,ODI,Carlton Mid One-Day International Tri-Series,India,Australia,Melbourne Cricket Ground,India,bat,True,Australia,LOST,4 wickets
+754753,2015-01-20,2015,ODI,Carlton Mid One-Day International Tri-Series,India,England,"Brisbane Cricket Ground, Woolloongabba",India,bat,True,England,LOST,9 wickets
+754757,2015-01-26,2015,ODI,Carlton Mid One-Day International Tri-Series,India,Australia,Sydney Cricket Ground,Australia,field,False,,NO_RESULT,
+754759,2015-01-30,2015,ODI,Carlton Mid One-Day International Tri-Series,India,England,Western Australia Cricket Association Ground,England,field,False,England,LOST,3 wickets
+656405,2015-02-15,2015,ODI,ICC Cricket World Cup,India,Pakistan,Adelaide Oval,India,bat,True,India,WON,76 runs
+656423,2015-02-22,2015,ODI,ICC Cricket World Cup,India,South Africa,Melbourne Cricket Ground,India,bat,True,India,WON,130 runs
+656439,2015-02-28,2015,ODI,ICC Cricket World Cup,India,United Arab Emirates,Western Australia Cricket Association Ground,United Arab Emirates,bat,False,India,WON,9 wickets
+656453,2015-03-06,2015,ODI,ICC Cricket World Cup,India,West Indies,Western Australia Cricket Association Ground,West Indies,bat,False,India,WON,4 wickets
+656465,2015-03-10,2015,ODI,ICC Cricket World Cup,India,Ireland,Seddon Park,Ireland,bat,False,India,WON,8 wickets
+656475,2015-03-14,2015,ODI,ICC Cricket World Cup,India,Zimbabwe,Eden Park,India,field,True,India,WON,6 wickets
+656485,2015-03-19,2015,ODI,ICC Cricket World Cup,India,Bangladesh,Melbourne Cricket Ground,India,bat,True,India,WON,109 runs
+656493,2015-03-26,2015,ODI,ICC Cricket World Cup,India,Australia,Sydney Cricket Ground,Australia,bat,False,Australia,LOST,95 runs
+829707,2015-04-09,2015,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,"MA Chidambaram Stadium, Chepauk",Delhi Daredevils,field,False,Chennai Super Kings,WON,1 runs
+829711,2015-04-11,2015,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,45 runs
+829729,2015-04-17,2015,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Mumbai Indians,bat,False,Chennai Super Kings,WON,6 wickets
+829735,2015-04-19,2015,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"Sardar Patel Stadium, Motera",Chennai Super Kings,bat,True,Rajasthan Royals,LOST,8 wickets
+829745,2015-04-22,2015,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,M Chinnaswamy Stadium,Royal Challengers Bangalore,field,False,Chennai Super Kings,WON,27 runs
+829753,2015-04-25,2015,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,97 runs
+829765,2015-04-28,2015,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk",Kolkata Knight Riders,field,False,Chennai Super Kings,WON,2 runs
+829723,2015-04-30,2015,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Kolkata Knight Riders,field,False,Kolkata Knight Riders,LOST,7 wickets
+829773,2015-05-02,2015,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"Rajiv Gandhi International Stadium, Uppal",Chennai Super Kings,field,True,Sunrisers Hyderabad,LOST,22 runs
+829779,2015-05-04,2015,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,24 runs
+829789,2015-05-08,2015,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Mumbai Indians,LOST,6 wickets
+829797,2015-05-10,2015,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"MA Chidambaram Stadium, Chepauk",Chennai Super Kings,bat,True,Chennai Super Kings,WON,12 runs
+829801,2015-05-12,2015,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Shaheed Veer Narayan Singh International Stadium,Chennai Super Kings,bat,True,Delhi Daredevils,LOST,6 wickets
+829809,2015-05-16,2015,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,"Punjab Cricket Association Stadium, Mohali",Kings XI Punjab,bat,False,Chennai Super Kings,WON,7 wickets
+829817,2015-05-19,2015,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Mumbai Indians,bat,False,Mumbai Indians,LOST,25 runs
+829821,2015-05-22,2015,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,JSCA International Stadium Complex,Chennai Super Kings,field,True,Chennai Super Kings,WON,3 wickets
+829823,2015-05-24,2015,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Eden Gardens,Chennai Super Kings,field,True,Mumbai Indians,LOST,41 runs
+870731,2015-06-18,2015,ODI,India in Bangladesh ODI Series,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,bat,False,Bangladesh,LOST,79 runs
+870733,2015-06-21,2015,ODI,India in Bangladesh ODI Series,India,Bangladesh,Shere Bangla National Stadium,India,bat,True,Bangladesh,LOST,6 wickets
+870735,2015-06-24,2015,ODI,India in Bangladesh ODI Series,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,field,False,India,WON,77 runs
+903587,2015-10-02,2015,T20I,South Africa in India T20I Series,India,South Africa,Himachal Pradesh Cricket Association Stadium,South Africa,field,False,South Africa,LOST,7 wickets
+903589,2015-10-05,2015,T20I,South Africa in India T20I Series,India,South Africa,Barabati Stadium,South Africa,field,False,South Africa,LOST,6 wickets
+903593,2015-10-11,2015,ODI,South Africa in India ODI Series,India,South Africa,Green Park,South Africa,bat,False,South Africa,LOST,5 runs
+903595,2015-10-14,2015,ODI,South Africa in India ODI Series,India,South Africa,Holkar Cricket Stadium,India,bat,True,India,WON,22 runs
+903597,2015-10-18,2015,ODI,South Africa in India ODI Series,India,South Africa,Saurashtra Cricket Association Stadium,South Africa,bat,False,South Africa,LOST,18 runs
+903599,2015-10-22,2015,ODI,South Africa in India ODI Series,India,South Africa,"MA Chidambaram Stadium, Chepauk",India,bat,True,India,WON,35 runs
+903601,2015-10-25,2015,ODI,South Africa in India ODI Series,India,South Africa,Wankhede Stadium,South Africa,bat,False,South Africa,LOST,214 runs
+895807,2016-01-12,2016,ODI,India in Australia ODI Series,India,Australia,Western Australia Cricket Association Ground,India,bat,True,Australia,LOST,5 wickets
+895809,2016-01-15,2016,ODI,India in Australia ODI Series,India,Australia,"Brisbane Cricket Ground, Woolloongabba",India,bat,True,Australia,LOST,7 wickets
+895811,2016-01-17,2016,ODI,India in Australia ODI Series,India,Australia,Melbourne Cricket Ground,Australia,field,False,Australia,LOST,3 wickets
+895813,2016-01-20,2016,ODI,India in Australia ODI Series,India,Australia,Manuka Oval,Australia,bat,False,Australia,LOST,25 runs
+895815,2016-01-23,2016,ODI,India in Australia ODI Series,India,Australia,Sydney Cricket Ground,India,field,True,India,WON,6 wickets
+895817,2016-01-26,2016,T20I,India in Australia T20I Series,India,Australia,Adelaide Oval,Australia,field,False,India,WON,37 runs
+895819,2016-01-29,2016,T20I,India in Australia T20I Series,India,Australia,Melbourne Cricket Ground,Australia,field,False,India,WON,27 runs
+895821,2016-01-31,2016,T20I,India in Australia T20I Series,India,Australia,Sydney Cricket Ground,Australia,bat,False,India,WON,7 wickets
+963697,2016-02-09,2016,T20I,Sri Lanka in India T20I Series,India,Sri Lanka,Maharashtra Cricket Association Stadium,Sri Lanka,field,False,Sri Lanka,LOST,5 wickets
+963699,2016-02-12,2016,T20I,Sri Lanka in India T20I Series,India,Sri Lanka,JSCA International Stadium Complex,Sri Lanka,field,False,India,WON,69 runs
+963701,2016-02-14,2016,T20I,Sri Lanka in India T20I Series,India,Sri Lanka,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,field,True,India,WON,9 wickets
+966745,2016-02-24,2016,T20I,Asia Cup,India,Bangladesh,Shere Bangla National Stadium,Bangladesh,field,False,India,WON,45 runs
+966751,2016-02-27,2016,T20I,Asia Cup,India,Pakistan,Shere Bangla National Stadium,India,field,True,India,WON,5 wickets
+966757,2016-03-01,2016,T20I,Asia Cup,India,Sri Lanka,Shere Bangla National Stadium,India,field,True,India,WON,5 wickets
+966761,2016-03-03,2016,T20I,Asia Cup,India,United Arab Emirates,Shere Bangla National Stadium,United Arab Emirates,bat,False,India,WON,9 wickets
+966765,2016-03-06,2016,T20I,Asia Cup,India,Bangladesh,Shere Bangla National Stadium,India,field,True,India,WON,8 wickets
+951329,2016-03-15,2016,T20I,World T20,India,New Zealand,"Vidarbha Cricket Association Stadium, Jamtha",New Zealand,bat,False,New Zealand,LOST,47 runs
+951341,2016-03-19,2016,T20I,World T20,India,Pakistan,Eden Gardens,India,field,True,India,WON,6 wickets
+951353,2016-03-23,2016,T20I,World T20,India,Bangladesh,M Chinnaswamy Stadium,Bangladesh,field,False,India,WON,1 runs
+951363,2016-03-27,2016,T20I,World T20,India,Australia,"Punjab Cricket Association IS Bindra Stadium, Mohali",Australia,bat,False,India,WON,6 wickets
+951371,2016-03-31,2016,T20I,World T20,India,West Indies,Wankhede Stadium,West Indies,field,False,West Indies,LOST,7 wickets
+980901,2016-04-09,2016,IPL,Indian Premier League,Rising Pune Supergiants,Mumbai Indians,Wankhede Stadium,Mumbai Indians,bat,False,Rising Pune Supergiants,WON,9 wickets
+980911,2016-04-14,2016,IPL,Indian Premier League,Rising Pune Supergiants,Gujarat Lions,Saurashtra Cricket Association Stadium,Rising Pune Supergiants,bat,True,Gujarat Lions,LOST,7 wickets
+980919,2016-04-17,2016,IPL,Indian Premier League,Rising Pune Supergiants,Kings XI Punjab,"Punjab Cricket Association IS Bindra Stadium, Mohali",Rising Pune Supergiants,bat,True,Kings XI Punjab,LOST,6 wickets
+980931,2016-04-22,2016,IPL,Indian Premier League,Rising Pune Supergiants,Royal Challengers Bangalore,Maharashtra Cricket Association Stadium,Rising Pune Supergiants,field,True,Royal Challengers Bangalore,LOST,13 runs
+980939,2016-04-24,2016,IPL,Indian Premier League,Rising Pune Supergiants,Kolkata Knight Riders,Maharashtra Cricket Association Stadium,Kolkata Knight Riders,field,False,Kolkata Knight Riders,LOST,2 wickets
+980943,2016-04-26,2016,IPL,Indian Premier League,Rising Pune Supergiants,Sunrisers Hyderabad,"Rajiv Gandhi International Stadium, Uppal",Rising Pune Supergiants,field,True,Rising Pune Supergiants,WON,34 runs
+980949,2016-04-29,2016,IPL,Indian Premier League,Rising Pune Supergiants,Gujarat Lions,Maharashtra Cricket Association Stadium,Gujarat Lions,field,False,Gujarat Lions,LOST,3 wickets
+980957,2016-05-01,2016,IPL,Indian Premier League,Rising Pune Supergiants,Mumbai Indians,Maharashtra Cricket Association Stadium,Mumbai Indians,field,False,Mumbai Indians,LOST,8 wickets
+980965,2016-05-05,2016,IPL,Indian Premier League,Rising Pune Supergiants,Delhi Daredevils,Feroz Shah Kotla,Rising Pune Supergiants,field,True,Rising Pune Supergiants,WON,7 wickets
+980969,2016-05-07,2016,IPL,Indian Premier League,Rising Pune Supergiants,Royal Challengers Bangalore,M Chinnaswamy Stadium,Royal Challengers Bangalore,field,False,Royal Challengers Bangalore,LOST,7 wickets
+980979,2016-05-10,2016,IPL,Indian Premier League,Rising Pune Supergiants,Sunrisers Hyderabad,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Sunrisers Hyderabad,bat,False,Sunrisers Hyderabad,LOST,4 runs
+980989,2016-05-14,2016,IPL,Indian Premier League,Rising Pune Supergiants,Kolkata Knight Riders,Eden Gardens,Rising Pune Supergiants,bat,True,Kolkata Knight Riders,LOST,8 wickets
+980997,2016-05-17,2016,IPL,Indian Premier League,Rising Pune Supergiants,Delhi Daredevils,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Rising Pune Supergiants,field,True,Rising Pune Supergiants,WON,19 runs
+981005,2016-05-21,2016,IPL,Indian Premier League,Rising Pune Supergiants,Kings XI Punjab,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Kings XI Punjab,bat,False,Rising Pune Supergiants,WON,4 wickets
+1007649,2016-06-11,2016,ODI,India in Zimbabwe ODI Series,India,Zimbabwe,Harare Sports Club,India,field,True,India,WON,9 wickets
+1007651,2016-06-13,2016,ODI,India in Zimbabwe ODI Series,India,Zimbabwe,Harare Sports Club,India,field,True,India,WON,8 wickets
+1007653,2016-06-15,2016,ODI,India in Zimbabwe ODI Series,India,Zimbabwe,Harare Sports Club,Zimbabwe,bat,False,India,WON,10 wickets
+1007655,2016-06-18,2016,T20I,India in Zimbabwe T20I Series,India,Zimbabwe,Harare Sports Club,India,field,True,Zimbabwe,LOST,2 runs
+1007657,2016-06-20,2016,T20I,India in Zimbabwe T20I Series,India,Zimbabwe,Harare Sports Club,Zimbabwe,bat,False,India,WON,10 wickets
+1007659,2016-06-22,2016,T20I,India in Zimbabwe T20I Series,India,Zimbabwe,Harare Sports Club,Zimbabwe,field,False,India,WON,3 runs
+1041615,2016-08-27,2016,T20I,West Indies v India T20I Series,India,West Indies,Central Broward Regional Park Stadium Turf Ground,India,field,True,West Indies,LOST,1 runs
+1041617,2016-08-28,2016,T20I,West Indies v India T20I Series,India,West Indies,Central Broward Regional Park Stadium Turf Ground,India,field,True,,NO_RESULT,
+1030219,2016-10-16,2016,ODI,New Zealand in India ODI Series,India,New Zealand,Himachal Pradesh Cricket Association Stadium,India,field,True,India,WON,6 wickets
+1030221,2016-10-20,2016,ODI,New Zealand in India ODI Series,India,New Zealand,Feroz Shah Kotla,India,field,True,New Zealand,LOST,6 runs
+1030223,2016-10-23,2016,ODI,New Zealand in India ODI Series,India,New Zealand,"Punjab Cricket Association Stadium, Mohali",India,field,True,India,WON,7 wickets
+1030225,2016-10-26,2016,ODI,New Zealand in India ODI Series,India,New Zealand,JSCA International Stadium Complex,New Zealand,bat,False,New Zealand,LOST,19 runs
+1030227,2016-10-29,2016,ODI,New Zealand in India ODI Series,India,New Zealand,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,bat,True,India,WON,190 runs
+1136561,2018-04-07,2018,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,1 wickets
+1136565,2018-04-10,2018,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,MA Chidambaram Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,5 wickets
+1136572,2018-04-15,2018,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Punjab Cricket Association IS Bindra Stadium,Chennai Super Kings,field,True,Kings XI Punjab,LOST,4 runs
+1136577,2018-04-20,2018,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Maharashtra Cricket Association Stadium,Rajasthan Royals,field,False,Chennai Super Kings,WON,64 runs
+1136580,2018-04-22,2018,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,Rajiv Gandhi International Stadium,Sunrisers Hyderabad,field,False,Chennai Super Kings,WON,4 runs
+1136584,2018-04-25,2018,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,M.Chinnaswamy Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,5 wickets
+1136587,2018-04-28,2018,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Maharashtra Cricket Association Stadium,Mumbai Indians,field,False,Mumbai Indians,LOST,8 wickets
+1136590,2018-04-30,2018,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Maharashtra Cricket Association Stadium,Delhi Daredevils,field,False,Chennai Super Kings,WON,13 runs
+1136593,2018-05-03,2018,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Kolkata Knight Riders,field,False,Kolkata Knight Riders,LOST,6 wickets
+1136595,2018-05-05,2018,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,Maharashtra Cricket Association Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1136603,2018-05-11,2018,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Sawai Mansingh Stadium,Chennai Super Kings,bat,True,Rajasthan Royals,LOST,4 wickets
+1136606,2018-05-13,2018,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,Maharashtra Cricket Association Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,8 wickets
+1136612,2018-05-18,2018,IPL,Indian Premier League,Chennai Super Kings,Delhi Daredevils,Arun Jaitley Stadium,Chennai Super Kings,field,True,Delhi Daredevils,LOST,34 runs
+1136616,2018-05-20,2018,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Maharashtra Cricket Association Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,5 wickets
+1136617,2018-05-22,2018,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,Wankhede Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,2 wickets
+1136620,2018-05-27,2018,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,Wankhede Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,8 wickets
+1175356,2019-03-23,2019,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,MA Chidambaram Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,7 wickets
+1175360,2019-03-26,2019,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,Arun Jaitley Stadium,Delhi Capitals,bat,False,Chennai Super Kings,WON,6 wickets
+1175367,2019-03-31,2019,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,MA Chidambaram Stadium,Rajasthan Royals,field,False,Chennai Super Kings,WON,8 runs
+1175370,2019-04-03,2019,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Wankhede Stadium,Chennai Super Kings,field,True,Mumbai Indians,LOST,37 runs
+1178393,2019-04-06,2019,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,MA Chidambaram Stadium,Chennai Super Kings,bat,True,Chennai Super Kings,WON,22 runs
+1178398,2019-04-09,2019,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,MA Chidambaram Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,7 wickets
+1178400,2019-04-11,2019,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,Sawai Mansingh Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,4 wickets
+1178404,2019-04-14,2019,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Eden Gardens,Chennai Super Kings,field,True,Chennai Super Kings,WON,5 wickets
+1178414,2019-04-21,2019,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,M.Chinnaswamy Stadium,Chennai Super Kings,field,True,Royal Challengers Bangalore,LOST,1 runs
+1178416,2019-04-23,2019,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,MA Chidambaram Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1178425,2019-05-01,2019,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,MA Chidambaram Stadium,Delhi Capitals,field,False,Chennai Super Kings,WON,80 runs
+1178430,2019-05-05,2019,IPL,Indian Premier League,Chennai Super Kings,Kings XI Punjab,Punjab Cricket Association IS Bindra Stadium,Kings XI Punjab,field,False,Kings XI Punjab,LOST,6 wickets
+1181764,2019-05-07,2019,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,MA Chidambaram Stadium,Chennai Super Kings,bat,True,Mumbai Indians,LOST,6 wickets
+1181767,2019-05-10,2019,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1181768,2019-05-12,2019,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Rajiv Gandhi International Stadium,Mumbai Indians,bat,False,Mumbai Indians,LOST,1 runs
+1254059,2021-04-10,2021,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,"Wankhede Stadium, Mumbai",Delhi Capitals,field,False,Delhi Capitals,LOST,7 wickets
+1254065,2021-04-16,2021,IPL,Indian Premier League,Chennai Super Kings,Punjab Kings,"Wankhede Stadium, Mumbai",Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1254069,2021-04-19,2021,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"Wankhede Stadium, Mumbai",Rajasthan Royals,field,False,Chennai Super Kings,WON,45 runs
+1254072,2021-04-21,2021,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"Wankhede Stadium, Mumbai",Kolkata Knight Riders,field,False,Chennai Super Kings,WON,18 runs
+1254076,2021-04-25,2021,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"Wankhede Stadium, Mumbai",Chennai Super Kings,bat,True,Chennai Super Kings,WON,69 runs
+1254080,2021-04-28,2021,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"Arun Jaitley Stadium, Delhi",Sunrisers Hyderabad,bat,False,Chennai Super Kings,WON,7 wickets
+1254084,2021-05-01,2021,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"Arun Jaitley Stadium, Delhi",Mumbai Indians,field,False,Mumbai Indians,LOST,4 wickets
+1254104,2021-09-19,2021,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,Dubai International Cricket Stadium,Chennai Super Kings,bat,True,Chennai Super Kings,WON,20 runs
+1254113,2021-09-24,2021,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,Sharjah Cricket Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1254098,2021-09-26,2021,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"Zayed Cricket Stadium, Abu Dhabi",Kolkata Knight Riders,bat,False,Chennai Super Kings,WON,2 wickets
+1254091,2021-09-30,2021,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,Sharjah Cricket Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1254089,2021-10-02,2021,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"Zayed Cricket Stadium, Abu Dhabi",Rajasthan Royals,field,False,Rajasthan Royals,LOST,7 wickets
+1254110,2021-10-04,2021,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,Dubai International Cricket Stadium,Delhi Capitals,field,False,Delhi Capitals,LOST,3 wickets
+1254094,2021-10-07,2021,IPL,Indian Premier League,Chennai Super Kings,Punjab Kings,Dubai International Cricket Stadium,Punjab Kings,field,False,Punjab Kings,LOST,6 wickets
+1254114,2021-10-10,2021,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,Dubai International Cricket Stadium,Chennai Super Kings,field,True,Chennai Super Kings,WON,4 wickets
+1254117,2021-10-15,2021,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,Dubai International Cricket Stadium,Kolkata Knight Riders,field,False,Chennai Super Kings,WON,27 runs
+1304092,2022-05-01,2022,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"Maharashtra Cricket Association Stadium, Pune",Sunrisers Hyderabad,field,False,Chennai Super Kings,WON,13 runs
+1304095,2022-05-04,2022,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"Maharashtra Cricket Association Stadium, Pune",Chennai Super Kings,field,True,Royal Challengers Bangalore,LOST,13 runs
+1304101,2022-05-08,2022,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,"Dr DY Patil Sports Academy, Mumbai",Delhi Capitals,field,False,Chennai Super Kings,WON,91 runs
+1304105,2022-05-12,2022,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"Wankhede Stadium, Mumbai",Mumbai Indians,field,False,Mumbai Indians,LOST,5 wickets
+1304108,2022-05-15,2022,IPL,Indian Premier League,Chennai Super Kings,Gujarat Titans,"Wankhede Stadium, Mumbai",Chennai Super Kings,bat,True,Gujarat Titans,LOST,7 wickets
+1304114,2022-05-20,2022,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"Brabourne Stadium, Mumbai",Chennai Super Kings,bat,True,Rajasthan Royals,LOST,5 wickets
+1359475,2023-03-31,2023,IPL,Indian Premier League,Chennai Super Kings,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Gujarat Titans,field,False,Gujarat Titans,LOST,5 wickets
+1359480,2023-04-03,2023,IPL,Indian Premier League,Chennai Super Kings,Lucknow Super Giants,"MA Chidambaram Stadium, Chepauk, Chennai",Lucknow Super Giants,field,False,Chennai Super Kings,WON,12 runs
+1359486,2023-04-08,2023,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"Wankhede Stadium, Mumbai",Chennai Super Kings,field,True,Chennai Super Kings,WON,7 wickets
+1359491,2023-04-12,2023,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,field,True,Rajasthan Royals,LOST,3 runs
+1359498,2023-04-17,2023,IPL,Indian Premier League,Chennai Super Kings,Royal Challengers Bangalore,"M Chinnaswamy Stadium, Bengaluru",Royal Challengers Bangalore,field,False,Chennai Super Kings,WON,8 runs
+1359503,2023-04-21,2023,IPL,Indian Premier League,Chennai Super Kings,Sunrisers Hyderabad,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,field,True,Chennai Super Kings,WON,7 wickets
+1359507,2023-04-23,2023,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"Eden Gardens, Kolkata",Kolkata Knight Riders,field,False,Chennai Super Kings,WON,49 runs
+1359511,2023-04-27,2023,IPL,Indian Premier League,Chennai Super Kings,Rajasthan Royals,"Sawai Mansingh Stadium, Jaipur",Rajasthan Royals,bat,False,Rajasthan Royals,LOST,32 runs
+1359515,2023-04-30,2023,IPL,Indian Premier League,Chennai Super Kings,Punjab Kings,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,bat,True,Punjab Kings,LOST,4 wickets
+1359519,2023-05-03,2023,IPL,Indian Premier League,Chennai Super Kings,Lucknow Super Giants,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",Chennai Super Kings,field,True,,NO_RESULT,
+1359523,2023-05-06,2023,IPL,Indian Premier League,Chennai Super Kings,Mumbai Indians,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,field,True,Chennai Super Kings,WON,6 wickets
+1359529,2023-05-10,2023,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,bat,True,Chennai Super Kings,WON,27 runs
+1359535,2023-05-14,2023,IPL,Indian Premier League,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,bat,True,Kolkata Knight Riders,LOST,6 wickets
+1359541,2023-05-20,2023,IPL,Indian Premier League,Chennai Super Kings,Delhi Capitals,"Arun Jaitley Stadium, Delhi",Chennai Super Kings,bat,True,Chennai Super Kings,WON,77 runs
+1370350,2023-05-23,2023,IPL,Indian Premier League,Chennai Super Kings,Gujarat Titans,"MA Chidambaram Stadium, Chepauk, Chennai",Gujarat Titans,field,False,Chennai Super Kings,WON,15 runs
+1370353,2023-05-29,2023,IPL,Indian Premier League,Chennai Super Kings,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",Chennai Super Kings,field,True,Chennai Super Kings,WON,5 wickets

@@ -1,0 +1,5 @@
+format,death_overs_definition,balls_faced,runs_scored,strike_rate,fours,sixes,dot_balls,dot_ball_percentage,boundary_percentage,finisher_index
+IPL,Overs 16-20 (T20/IPL) / Overs 41-50 (ODI),1982,3468,174.97,252,208,539,27.2%,23.2%,136.86
+ODI,Overs 16-20 (T20/IPL) / Overs 41-50 (ODI),2997,3837,128.03,315,128,1033,34.5%,14.8%,99.29
+OVERALL_LIMITED_OVERS,Overs 16-20 (T20/IPL) / Overs 41-50 (ODI),5637,8301,147.26,648,372,1749,31.0%,18.1%,114.57
+T20I,Overs 16-20 (T20/IPL) / Overs 41-50 (ODI),658,996,151.37,81,36,177,26.9%,17.8%,116.98

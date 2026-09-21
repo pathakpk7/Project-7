@@ -1,0 +1,72 @@
+[
+  {
+    "format": "IPL",
+    "chase_innings": "101",
+    "chase_runs": "2336",
+    "chase_dismissals": "59",
+    "chase_not_outs": "42",
+    "chase_average": "39.59",
+    "chase_strike_rate": "135.19",
+    "successful_chases": "56",
+    "runs_in_successful_chases": "1276",
+    "average_in_successful_chases": "51.04",
+    "not_outs_in_successful_chases": "31",
+    "highest_score_chasing": "84*"
+  },
+  {
+    "format": "ODI",
+    "chase_innings": "136",
+    "chase_runs": "4544",
+    "chase_dismissals": "89",
+    "chase_not_outs": "47",
+    "chase_average": "51.06",
+    "chase_strike_rate": "78.90",
+    "successful_chases": "71",
+    "runs_in_successful_chases": "2628",
+    "average_in_successful_chases": "97.33",
+    "not_outs_in_successful_chases": "44",
+    "highest_score_chasing": "101*"
+  },
+  {
+    "format": "OVERALL",
+    "chase_innings": "336",
+    "chase_runs": "9810",
+    "chase_dismissals": "220",
+    "chase_not_outs": "116",
+    "chase_average": "44.59",
+    "chase_strike_rate": "82.44",
+    "successful_chases": "171",
+    "runs_in_successful_chases": "5351",
+    "average_in_successful_chases": "70.41",
+    "not_outs_in_successful_chases": "95",
+    "highest_score_chasing": "224"
+  },
+  {
+    "format": "T20I",
+    "chase_innings": "33",
+    "chase_runs": "653",
+    "chase_dismissals": "14",
+    "chase_not_outs": "19",
+    "chase_average": "46.64",
+    "chase_strike_rate": "126.55",
+    "successful_chases": "18",
+    "runs_in_successful_chases": "275",
+    "average_in_successful_chases": "68.75",
+    "not_outs_in_successful_chases": "14",
+    "highest_score_chasing": "49"
+  },
+  {
+    "format": "TEST",
+    "chase_innings": "66",
+    "chase_runs": "2277",
+    "chase_dismissals": "58",
+    "chase_not_outs": "8",
+    "chase_average": "39.26",
+    "chase_strike_rate": "58.43",
+    "successful_chases": "26",
+    "runs_in_successful_chases": "1172",
+    "average_in_successful_chases": "58.60",
+    "not_outs_in_successful_chases": "6",
+    "highest_score_chasing": "224"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "year": "2004",
+    "format": "ODI",
+    "runs": "19",
+    "matches": "3",
+    "major_event": "International Debut vs Bangladesh",
+    "captaincy": "No",
+    "trophy": "None",
+    "milestone": "ODI Cap #158"
+  },
+  {
+    "year": "2005",
+    "format": "ODI / TEST",
+    "runs": "966",
+    "matches": "29",
+    "major_event": "148 vs PAK & 183* vs SL; Test Debut",
+    "captaincy": "No",
+    "trophy": "None",
+    "milestone": "Highest ODI score by a WK"
+  },
+  {
+    "year": "2006",
+    "format": "ALL",
+    "runs": "1118",
+    "matches": "42",
+    "major_event": "Maiden Test 100 at Faisalabad; ICC #1 ODI Batter",
+    "captaincy": "No",
+    "trophy": "None",
+    "milestone": "Fastest to ICC No. 1 ODI ranking (42 inngs)"
+  },
+  {
+    "year": "2007",
+    "format": "ALL",
+    "runs": "1475",
+    "matches": "49",
+    "major_event": "Appointed Captain; Won 2007 ICC T20 World Cup",
+    "captaincy": "T20I / ODI Captain",
+    "trophy": "ICC T20 World Cup 2007",
+    "milestone": "First major ICC trophy as Captain"
+  },
+  {
+    "year": "2008",
+    "format": "ALL",
+    "runs": "1740",
+    "matches": "48",
+    "major_event": "Won CB Series in Australia; Appointed Full-Time Test Captain; CSK IPL Debut",
+    "captaincy": "All-Format Captain",
+    "trophy": "CB Series (Australia)",
+    "milestone": "Full-time Test Captaincy"
+  },
+  {
+    "year": "2009",
+    "format": "ALL",
+    "runs": "1714",
+    "matches": "45",
+    "major_event": "Led India to World No. 1 Test Ranking (ICC Mace)",
+    "captaincy": "All-Format Captain",
+    "trophy": "ICC Test Mace #1",
+    "milestone": "First time India #1 in Test history"
+  },
+  {
+    "year": "2010",
+    "format": "ALL",
+    "runs": "1285",
+    "matches": "46",
+    "major_event": "Won Asia Cup, Won IPL 2010 (CSK), Won CLT20 2010",
+    "captaincy": "All-Format Captain",
+    "trophy": "Asia Cup, IPL 2010, CLT20 2010",
+    "milestone": "IPL + CLT20 Double"
+  },
+  {
+    "year": "2011",
+    "format": "ALL",
+    "runs": "1699",
+    "matches": "55",
+    "major_event": "Won ICC Cricket World Cup (91* in Final); Won IPL 2011",
+    "captaincy": "All-Format Captain",
+    "trophy": "ICC Cricket World Cup 2011, IPL 2011",
+    "milestone": "World Cup winning captain (28 yr wait)"
+  },
+  {
+    "year": "2012",
+    "format": "ALL",
+    "runs": "1374",
+    "matches": "47",
+    "major_event": "T20 WC campaign; gritty ODI hundreds vs Pakistan",
+    "captaincy": "All-Format Captain",
+    "trophy": "None",
+    "milestone": "113* vs PAK from 29/5"
+  },
+  {
+    "year": "2013",
+    "format": "ALL",
+    "runs": "1782",
+    "matches": "53",
+    "major_event": "Won ICC Champions Trophy (Completed ICC Trifecta); 224 vs AUS in Test",
+    "captaincy": "All-Format Captain",
+    "trophy": "ICC Champions Trophy 2013",
+    "milestone": "Only captain to win all 3 ICC white-ball trophies"
+  },
+  {
+    "year": "2014",
+    "format": "ALL",
+    "runs": "1391",
+    "matches": "49",
+    "major_event": "T20 WC Finalists; Won CLT20 2014; Retired from Test Cricket",
+    "captaincy": "Captain (Tests ended Dec)",
+    "trophy": "CLT20 2014",
+    "milestone": "Test Retirement at MCG (90 Tests)"
+  },
+  {
+    "year": "2015",
+    "format": "ALL",
+    "runs": "1018",
+    "matches": "38",
+    "major_event": "World Cup 2015 Semi-Finalists (7 wins in a row)",
+    "captaincy": "ODI / T20I / CSK Captain",
+    "trophy": "None",
+    "milestone": "100th ODI win as captain"
+  },
+  {
+    "year": "2016",
+    "format": "ALL",
+    "runs": "971",
+    "matches": "44",
+    "major_event": "Won Asia Cup T20; T20 WC Semi-Finalists (Sprint Run-Out vs BAN); Led RPSG",
+    "captaincy": "ODI / T20I / RPSG Captain",
+    "trophy": "Asia Cup 2016",
+    "milestone": "Bangalore 1-run thriller sprint"
+  },
+  {
+    "year": "2017",
+    "format": "ALL",
+    "runs": "1133",
+    "matches": "45",
+    "major_event": "Stepped down as India captain; 134 vs ENG; 100th ODI stumping",
+    "captaincy": "No",
+    "trophy": "None",
+    "milestone": "100 ODI Stumpings world record"
+  },
+  {
+    "year": "2018",
+    "format": "ALL",
+    "runs": "757",
+    "matches": "37",
+    "major_event": "CSK Return & Won IPL 2018; 10,000 ODI Runs; 200th ODI as Captain",
+    "captaincy": "CSK Captain",
+    "trophy": "IPL 2018",
+    "milestone": "10,000 ODI Runs & 200th captaincy ODI"
+  },
+  {
+    "year": "2019",
+    "format": "ALL",
+    "runs": "1016",
+    "matches": "33",
+    "major_event": "World Cup 2019 Semi-Finalists; 84* vs RCB in IPL; Final International match",
+    "captaincy": "CSK Captain",
+    "trophy": "None",
+    "milestone": "350th ODI & final international match"
+  },
+  {
+    "year": "2020",
+    "format": "IPL",
+    "runs": "200",
+    "matches": "14",
+    "major_event": "Announced International Retirement on Aug 15; IPL in UAE",
+    "captaincy": "CSK Captain",
+    "trophy": "None",
+    "milestone": "International Retirement"
+  },
+  {
+    "year": "2021",
+    "format": "IPL",
+    "runs": "114",
+    "matches": "16",
+    "major_event": "Won IPL 2021 (4th Title) in Dubai",
+    "captaincy": "CSK Captain",
+    "trophy": "IPL 2021",
+    "milestone": "4th IPL Title & 300th T20 as Captain"
+  },
+  {
+    "year": "2022",
+    "format": "IPL",
+    "runs": "232",
+    "matches": "14",
+    "major_event": "Handed captaincy to Jadeja, resumed mid-season; 28* off 13 vs MI finish",
+    "captaincy": "CSK Captain (part)",
+    "trophy": "None",
+    "milestone": "Iconic last over finish vs Jaydev Unadkat"
+  },
+  {
+    "year": "2023",
+    "format": "IPL",
+    "runs": "104",
+    "matches": "16",
+    "major_event": "Won IPL 2023 (5th Title); Played entire season with knee injury",
+    "captaincy": "CSK Captain",
+    "trophy": "IPL 2023",
+    "milestone": "Record 5th IPL Title & 250th IPL Match"
+  },
+  {
+    "year": "2024",
+    "format": "IPL",
+    "runs": "161",
+    "matches": "14",
+    "major_event": "Handed captaincy to Ruturaj; 20* off 4 vs Hardik Pandya at Wankhede; SR 220+",
+    "captaincy": "Player / Mentor",
+    "trophy": "None",
+    "milestone": "264th IPL Match; Strike Rate 220.55"
+  }
+]

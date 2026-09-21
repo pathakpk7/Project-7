@@ -1,0 +1,7 @@
+format,matches,catches,stumpings,run_outs,total_dismissals,dismissals_per_match
+TEST,86,248,36,10,284,3.30
+ODI,331,308,118,85,426,1.29
+T20I,95,52,34,21,86,0.91
+IPL,277,158,47,53,205,0.74
+ALL_INTERNATIONAL,512,608,188,116,796,1.55
+OVERALL,789,766,235,169,1001,1.27

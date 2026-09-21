@@ -1,0 +1,56 @@
+[
+  {
+    "format": "TEST",
+    "matches": "86",
+    "catches": "248",
+    "stumpings": "36",
+    "run_outs": "10",
+    "total_dismissals": "284",
+    "dismissals_per_match": "3.30"
+  },
+  {
+    "format": "ODI",
+    "matches": "331",
+    "catches": "308",
+    "stumpings": "118",
+    "run_outs": "85",
+    "total_dismissals": "426",
+    "dismissals_per_match": "1.29"
+  },
+  {
+    "format": "T20I",
+    "matches": "95",
+    "catches": "52",
+    "stumpings": "34",
+    "run_outs": "21",
+    "total_dismissals": "86",
+    "dismissals_per_match": "0.91"
+  },
+  {
+    "format": "IPL",
+    "matches": "277",
+    "catches": "158",
+    "stumpings": "47",
+    "run_outs": "53",
+    "total_dismissals": "205",
+    "dismissals_per_match": "0.74"
+  },
+  {
+    "format": "ALL_INTERNATIONAL",
+    "matches": "512",
+    "catches": "608",
+    "stumpings": "188",
+    "run_outs": "116",
+    "total_dismissals": "796",
+    "dismissals_per_match": "1.55"
+  },
+  {
+    "format": "OVERALL",
+    "matches": "789",
+    "catches": "766",
+    "stumpings": "235",
+    "run_outs": "169",
+    "total_dismissals": "1001",
+    "dismissals_per_match": "1.27"
+  }
+]

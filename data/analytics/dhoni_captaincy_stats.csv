@@ -1,0 +1,14 @@
+team,format,matches_captained,wins,losses,ties,draws,no_results,win_percentage,toss_win_percentage
+ALL_TEAMS,IPL,182,110,71,0,0,1,60.77%,53.85%
+ALL_TEAMS,ODI,198,110,73,4,0,11,58.82%,48.99%
+ALL_TEAMS,OVERALL,510,286,190,5,16,13,57.55%,50.00%
+ALL_TEAMS,T20I,69,39,28,1,0,1,57.35%,49.28%
+ALL_TEAMS,TEST,61,27,18,0,16,0,44.26%,42.62%
+Chennai Super Kings,IPL,168,105,62,0,0,1,62.87%,54.17%
+Chennai Super Kings,OVERALL,168,105,62,0,0,1,62.87%,54.17%
+India,ODI,198,110,73,4,0,11,58.82%,48.99%
+India,OVERALL,328,176,119,5,16,12,55.70%,47.87%
+India,T20I,69,39,28,1,0,1,57.35%,49.28%
+India,TEST,61,27,18,0,16,0,44.26%,42.62%
+Rising Pune Supergiants,IPL,14,5,9,0,0,0,35.71%,50.00%
+Rising Pune Supergiants,OVERALL,14,5,9,0,0,0,35.71%,50.00%
