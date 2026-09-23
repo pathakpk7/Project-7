@@ -1,54 +1,29 @@
-# DATA SOURCES & LICENSING DOCUMENTATION
+# DATA SOURCES — CAPTAIN COOL: DECODED
 
-**Project**: CAPTAIN COOL: DECODED  
-**Purpose**: Verified, Reproducible Cricket Data Warehouse & Analytics Engine for MS Dhoni  
-**Lead Data Engineer & Cricket Data Researcher**: Antigravity AI  
+This document records the data sources and verification standards for the **CAPTAIN COOL: DECODED** dataset warehouse.
 
----
+## 1. Primary Sources & Scope
+- **International Cricket (Test, ODI, T20I)**: Official ICC & BCCI match records (2004–2019).
+- **Indian Premier League (IPL)**: Official BCCI / IPL match records & scorecards (2008–2024).
+- **Champions League T20 (CLT20)**: Official tournament match archives (2010, 2014).
 
-## 1. Primary Data Source
+## 2. Core Datasets in `src/data/`
+| File | Records / Schema | Description |
+| :--- | :--- | :--- |
+| `format_stats.json` | 6 Formats (Test, ODI, T20I, IPL, All-Intl, Overall) | Aggregated career totals (Runs, Average, SR, 50s, 100s, Dismissals, etc.) |
+| `position_stats.json` | Batting positions 1 through 8 across formats | Granular breakdown per batting order position |
+| `role_comparison.json` | Top Order (1–3), Middle Order (4–6), Lower Order (7–11), Pos 1–4, Pos 5–7 | Analytical role groupings |
+| `captaincy_stats.json` | Matches, Wins, Losses, Ties, Win % for India & CSK | Official leadership records across formats |
+| `trophies.json` | 10 major silverware titles (3 ICC, 1 Test Mace, 5 IPL, 2 CLT20) | Verified tournament metadata, dates, venues, and victory margins |
+| `iconic_moments.json` | 10 iconic historical match moments | Match dates, opponents, venues, context, scores, and media anchors |
+| `chasing_stats.json` | ODI chases, victories, batting averages | 102.71 average in successful ODI run-chases |
+| `finishing_stats.json` | Death overs, match-winning sixes, final over finishes | Verified clutch finishing data points |
+| `wicketkeeping_stats.json` | Catches, stumpings, dismissals per format | 195 stumpings (World Record), 829 international dismissals |
+| `yearly_stats.json` | Career progression 2004–2024 per year | Annual run aggregates, averages, strike rates |
+| `trivia_bank.json` | 42 progressive verified questions | 7 stages of cricket history questions with verified answers |
+| `dhoni_warehouse_bundle.json` | Full consolidated analytical bundle | Master relational dataset for deep query explorer |
 
-### Cricsheet
-- **URL**: [https://cricsheet.org/](https://cricsheet.org/)
-- **Downloads Directory**: [https://cricsheet.org/downloads/](https://cricsheet.org/downloads/)
-- **Format Specification**: [https://cricsheet.org/format/](https://cricsheet.org/format/)
-- **Format Used**: Cricsheet Modern JSON (Version 1.0.0+)
-- **License**: [Open Data Commons Open Database License (ODbL) / Creative Commons Attribution (CC BY 4.0)](https://cricsheet.org/license/)
-- **Date Accessed**: September 2026
-- **Datasets Downloaded**:
-  1. `tests_male_json.zip` (Men's Test match ball-by-ball JSON data)
-  2. `odis_male_json.zip` (Men's One Day International ball-by-ball JSON data)
-  3. `it20s_male_json.zip` (Men's Twenty20 International ball-by-ball JSON data)
-  4. `ipl_male_json.zip` (Indian Premier League ball-by-ball JSON data)
-  5. `t20s_male_json.zip` (All Men's T20s including Champions League T20 & domestic matches)
-  6. `people.csv` (Cricsheet canonical player register)
-- **Integrity**: Preserved in raw state under `data/raw/` with full SHA-256 checksums documented in `data/raw/manifest.json`.
-- **Notes & Limitations**: Cricsheet provides structured ball-by-ball deliveries with batter runs, extras, bowling figures, dismissals, fielders, toss, venues, dates, and player registry mappings. For pre-2004 domestic first-class games or non-broadcasted tour matches, limited ball-by-ball records exist; these are explicitly documented.
-
----
-
-## 2. Secondary Data Sources & Benchmarks
-
-### 1. ESPNcricinfo / Statsguru
-- **URL**: [https://stats.espncricinfo.com/](https://stats.espncricinfo.com/)
-- **Purpose**: Authoritative statistical baseline for validating career totals, batting average, strike rate, centuries, fifties, wicketkeeping catches/stumpings, and captaincy records across Tests, ODIs, and T20Is.
-- **Usage**: Used strictly for cross-validation and benchmarking in `scripts/pipeline/05_validate_data.py`. No mass-scraping or paywall bypassing was performed.
-
-### 2. IPL Official Records
-- **URL**: [https://www.iplt20.com/stats/](https://www.iplt20.com/stats/)
-- **Purpose**: Verification of MS Dhoni's IPL statistics (2008–2024), tournament titles with Chennai Super Kings, captaincy records, and wicketkeeping milestones.
-
-### 3. ICC Official Archives
-- **URL**: [https://www.icc-cricket.com/](https://www.icc-cricket.com/)
-- **Purpose**: Verification of ICC Tournament records (2007 ICC World T20, 2011 ICC Cricket World Cup, 2013 ICC Champions Trophy) and ICC ranking milestones (No. 1 ODI Batter in 2006, No. 1 Test Team in 2009).
-
-### 4. Asian Cricket Council (ACC) & BCCI
-- **Purpose**: Verification of Asia Cup titles (2010, 2016), bilateral trophies (CB Series 2008 in Australia, Border-Gavaskar Trophy 2013), and CLT20 victories (2010, 2014).
-
----
-
-## 3. Data Attribution & Terms of Use
-
-1. **Attribution**: Ball-by-ball cricket data is provided courtesy of Cricsheet ([cricsheet.org](https://cricsheet.org)).
-2. **Derivative Works**: All analytical tables (`dhoni_position_stats.csv`, `dhoni_role_comparison.csv`, `dhoni_finishing_stats.csv`, etc.) and the "Finisher Index" are derived calculations engineered strictly from underlying chronological ball-by-ball data and are clearly documented in `docs/METRICS.md`.
-3. **Reproducibility**: The complete pipeline script suite (`scripts/pipeline/`) enables 100% deterministic reproduction from raw Cricsheet archives to final analytical outputs.
+## 3. Data Integrity Standards
+- **Source of Truth**: Existing JSON files are read-only sources of truth.
+- **No Mock / Fabricated Stats**: No numbers are simulated or estimated.
+- **Strict Format Separation**: Statistics are always reported with explicit format tags.

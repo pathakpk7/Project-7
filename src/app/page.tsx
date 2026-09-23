@@ -31,6 +31,15 @@ import { STORY_ACTS } from "@/config/storySpine";
 import { useActiveStoryChapter } from "@/hooks/useActiveStoryChapter";
 import triviaBankData from "@/data/trivia_bank.json";
 
+// V2 Global Cinematic Infrastructure
+import { SmoothScrollProvider } from "@/components/cinematic/SmoothScrollProvider";
+import { CinemaModeProvider, useCinemaMode } from "@/components/cinematic/CinemaModeProvider";
+import { CinematicHUD } from "@/components/cinematic/CinematicHUD";
+import { CinematicCursor } from "@/components/cinematic/CinematicCursor";
+import { AskMahiModal } from "@/components/cinematic/AskMahiModal";
+import { MatchCutTransition } from "@/components/cinematic/MatchCutTransition";
+import { useStadiumAudio } from "@/components/cinematic/useStadiumAudio";
+
 // Default initial question set for SSR hydration
 const INITIAL_QUESTIONS: TriviaQuestion[] = triviaBankData.map((levelGroup) => {
   const q = levelGroup.questions[0];
@@ -45,15 +54,18 @@ const INITIAL_QUESTIONS: TriviaQuestion[] = triviaBankData.map((levelGroup) => {
   };
 });
 
-export default function Home() {
+function MainAppContent() {
   const [isNo7Open, setIsNo7Open] = useState(false);
   const [isBadgeOpen, setIsBadgeOpen] = useState(false);
   const [isCinematicModalOpen, setIsCinematicModalOpen] = useState(false);
+  const [isAskMahiOpen, setIsAskMahiOpen] = useState(false);
   const [activeQuestions, setActiveQuestions] = useState<TriviaQuestion[]>(INITIAL_QUESTIONS);
   const [answeredLevels, setAnsweredLevels] = useState<number[]>([]);
   const [unlockedList, setUnlockedList] = useState<string[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { activeId, chapter, scrolled } = useActiveStoryChapter();
+  const { isCinemaMode } = useCinemaMode();
+  const { playImpactSound } = useStadiumAudio();
 
   // On client mount, randomly sample 1 question per level from the 42+ question bank
   useEffect(() => {
@@ -81,17 +93,15 @@ export default function Home() {
   }, []);
 
   const handleEnterJourney = () => {
+    playImpactSound(280);
     if (!unlockedList.includes("timeline")) {
       setUnlockedList((prev) => [...prev, "timeline"]);
     }
   };
 
-  const handleHelicopterShot = () => {
-    setIsCinematicModalOpen(true);
-  };
-
   const handleTriviaCorrect = (questionId: number) => {
     const levelNumber = Math.floor(questionId / 100);
+    playImpactSound(360);
 
     // Confetti celebration
     try {
@@ -125,21 +135,10 @@ export default function Home() {
     });
   };
 
-  const handleResetProgress = () => {
-    if (confirm("Reset all exploration badges and trivia answers?")) {
-      const resetBadges: string[] = [];
-      setUnlockedList(resetBadges);
-      setAnsweredLevels([]);
-      try {
-        localStorage.removeItem("captain_cool_badges");
-        localStorage.removeItem("captain_cool_trivia");
-      } catch {}
-    }
-  };
-
   return (
     <main className="min-h-screen bg-surface-dark text-slate-100 selection:bg-csk-gold selection:text-black relative overflow-x-hidden">
       <CinematicBackground />
+      <CinematicCursor />
 
       <StoryChapterSidebar
         open={sidebarOpen}
@@ -151,15 +150,25 @@ export default function Home() {
         onTriggerNo7={() => setIsNo7Open(true)}
         onTrigger3DHelicopter={() => setIsCinematicModalOpen(true)}
         onTriggerBadge={() => setIsBadgeOpen(true)}
+        onOpenAskMahi={() => setIsAskMahiOpen(true)}
         unlockedAchievementsCount={answeredLevels.length}
         activeChapter={chapter}
         onToggleSidebar={() => setSidebarOpen((o) => !o)}
         scrolled={scrolled}
       />
 
+      {/* Floating Career Rail HUD */}
+      <CinematicHUD
+        activeChapter={chapter}
+        onOpenSidebar={() => setSidebarOpen(true)}
+        onOpenNo7={() => setIsNo7Open(true)}
+      />
+
+      {/* Hero / Prologue Section */}
       <HeroSection 
         onEnterJourney={handleEnterJourney} 
-        onTriggerNo7={() => setIsNo7Open(true)} 
+        onTriggerNo7={() => setIsNo7Open(true)}
+        onOpenAskMahi={() => setIsAskMahiOpen(true)}
       />
 
       <StoryBridge label="First turn">
@@ -168,6 +177,7 @@ export default function Home() {
 
       <StoryActOpener act={STORY_ACTS[0]} />
 
+      {/* Trivia Checkpoint 1 (Debut & Roots) */}
       {activeQuestions[0] && (
         <TriviaCheckpoint
           question={activeQuestions[0]}
@@ -176,7 +186,16 @@ export default function Home() {
         />
       )}
 
+      {/* Chapter 1: The Timeline */}
       <CareerTimelineSection />
+
+      {/* Match Cut: Archival Roots to The Blade */}
+      <MatchCutTransition
+        fromTheme="dark"
+        toTheme="navy"
+        metaphor="Kharagpur Rail Pitch → Sawai Mansingh Stadium"
+        subtext="183* off 145 balls in Jaipur. The blade redefined wicketkeeper batting in world cricket."
+      />
 
       {/* Trivia Checkpoint 2 (The Blade & 183* Jaipur) */}
       {activeQuestions[1] && (
@@ -189,6 +208,7 @@ export default function Home() {
 
       <StoryActOpener act={STORY_ACTS[1]} />
 
+      {/* Chapter 2: The Batsman & Position Deconstruction */}
       <TheBatsmanSection />
 
       {/* Trivia Checkpoint 3 (Lightning Gloves & 0.08s Reflexes) */}
@@ -204,6 +224,7 @@ export default function Home() {
         The bat speaks loudly; the gloves answer in milliseconds.
       </StoryBridge>
 
+      {/* Chapter 3: The Gloves & Wicketkeeping */}
       <TheKeeperSection />
 
       {/* Trivia Checkpoint 4 (Captain Cool's Mind & 2007 T20 WC) */}
@@ -217,6 +238,7 @@ export default function Home() {
 
       <StoryActOpener act={STORY_ACTS[2]} />
 
+      {/* Chapter 4: The Captain & Tactical Masterclass */}
       <TheCaptainSection />
 
       {/* Trivia Checkpoint 5 (The Immortal Finisher & 2011 WC Final) */}
@@ -228,6 +250,7 @@ export default function Home() {
         />
       )}
 
+      {/* Chapter 5: The Finisher & Death Overs Engine */}
       <TheFinisherSection />
 
       {/* Trivia Checkpoint 6 (White-Ball Emperor & ICC Trifecta) */}
@@ -241,10 +264,19 @@ export default function Home() {
 
       <StoryActOpener act={STORY_ACTS[3]} />
 
+      {/* Chapter 6: The Trophy Cabinet & Silverware Vault */}
       <TrophyCabinetSection />
 
-      {/* Section 8: Iconic Moments */}
+      {/* Chapter 7: Iconic Moments Reel */}
       <IconicMomentsSection />
+
+      {/* Match Cut: Blue Nation to Yellow Dynasty */}
+      <MatchCutTransition
+        fromTheme="navy"
+        toTheme="gold"
+        metaphor="Tricolour No. 7 → Canary Yellow Kingdom"
+        subtext="One heartbeat, two immortal jerseys. The calm never wavers."
+      />
 
       {/* Trivia Checkpoint 7 (07 Mahi Legend & 5x IPL Titles) */}
       {activeQuestions[6] && (
@@ -259,19 +291,23 @@ export default function Home() {
         Same composure—nation on his chest, yellow in his veins.
       </StoryBridge>
 
+      {/* Chapter 8: India vs CSK Identity Comparison */}
       <IndiaCsSection />
 
       <StoryActOpener act={STORY_ACTS[4]} />
 
+      {/* Chapter 9: The Archive & Multi-Dimensional Matrix */}
       <CareerMatrixSection />
 
-      {/* Section 11: Dhoni vs Era Neutral Comparison */}
+      {/* Chapter 10: Dhoni vs Era Neutral Matrix */}
       <DhoniVsEraSection />
 
       <StoryActOpener act={STORY_ACTS[5]} />
 
+      {/* Chapter 11: Personal Fan Tribute */}
       <PersonalTributeSection />
 
+      {/* Epilogue: The Legacy & Final Number 7 Manifesto */}
       <TheLegacySection />
 
       {/* Footer */}
@@ -291,11 +327,27 @@ export default function Home() {
         unlockedCount={answeredLevels.length}
       />
 
-      {/* 3D Cinematic Helicopter Shot Modal with Interactive Three.js Scene */}
+      {/* 3D Cinematic Helicopter Shot Modal with Native Video & Biomechanics */}
       <CinematicHelicopterModal
         isOpen={isCinematicModalOpen}
         onClose={() => setIsCinematicModalOpen(false)}
       />
+
+      {/* Ask Mahi Data-Grounded Query Modal */}
+      <AskMahiModal
+        isOpen={isAskMahiOpen}
+        onClose={() => setIsAskMahiOpen(false)}
+      />
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <CinemaModeProvider>
+      <SmoothScrollProvider>
+        <MainAppContent />
+      </SmoothScrollProvider>
+    </CinemaModeProvider>
   );
 }

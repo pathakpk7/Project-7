@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Sparkles, Menu, Trophy } from "lucide-react";
+import { Sparkles, Menu, Trophy, Database } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { StoryChapter } from "@/config/storySpine";
 
@@ -10,6 +10,7 @@ interface NavbarProps {
   onTriggerNo7: () => void;
   onTrigger3DHelicopter: () => void;
   onTriggerBadge?: () => void;
+  onOpenAskMahi?: () => void;
   unlockedAchievementsCount: number;
   activeChapter: StoryChapter;
   onToggleSidebar: () => void;
@@ -20,6 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onTriggerNo7,
   onTrigger3DHelicopter,
   onTriggerBadge,
+  onOpenAskMahi,
   unlockedAchievementsCount,
   activeChapter,
   onToggleSidebar,
@@ -30,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-[background,border] duration-300",
         scrolled
-          ? "bg-[#0a0b0f]/95 border-b border-white/10 py-2"
+          ? "bg-[#0a0b0f]/95 border-b border-white/10 py-2 backdrop-blur-md"
           : "bg-gradient-to-b from-black/90 via-black/40 to-transparent py-2.5"
       )}
     >
@@ -38,13 +40,13 @@ export const Navbar: React.FC<NavbarProps> = ({
         <button
           type="button"
           onClick={onToggleSidebar}
-          className="p-2 rounded-lg border border-white/10 text-slate-300 hover:text-csk-yellow hover:border-csk-gold/40 shrink-0"
+          className="p-2 rounded-lg border border-white/10 text-slate-300 hover:text-csk-yellow hover:border-csk-gold/40 shrink-0 cursor-pointer"
           aria-label="Open chapters sidebar"
         >
           <Menu className="w-5 h-5" />
         </button>
 
-        <a href="#hero" className="flex items-center gap-2.5 shrink-0 min-w-0 group">
+        <a href="#hero" className="flex items-center gap-2.5 shrink-0 min-w-0 group cursor-pointer">
           <div className="relative w-8 h-8 rounded-full overflow-hidden border border-csk-gold/60 group-hover:border-csk-gold transition-all shadow-glow-gold bg-black shrink-0">
             <Image
               src="/images/brand/dhoni_icon.jpg"
@@ -60,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         <a
           href={`#${activeChapter.id}`}
-          className="flex-1 min-w-0 flex justify-center sm:justify-start sm:pl-2"
+          className="flex-1 min-w-0 flex justify-center sm:justify-start sm:pl-2 cursor-pointer"
           title={activeChapter.tagline}
         >
           <span className="inline-flex items-center gap-2 max-w-full px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] hover:border-csk-gold/30 transition-colors">
@@ -72,6 +74,17 @@ export const Navbar: React.FC<NavbarProps> = ({
         </a>
 
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          {onOpenAskMahi && (
+            <button
+              onClick={onOpenAskMahi}
+              title="Ask Mahi · Verified Career Data Assistant"
+              className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/15 text-slate-300 hover:text-csk-yellow hover:border-csk-gold/40 transition-all text-xs font-mono cursor-pointer"
+            >
+              <Database className="w-3.5 h-3.5 text-csk-gold" />
+              <span>Ask Mahi</span>
+            </button>
+          )}
+
           <button
             onClick={onTrigger3DHelicopter}
             title="3D Helicopter Shot · Signature Weapon"

@@ -1,19 +1,37 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Sparkles, Trophy, Heart, ArrowUp } from "lucide-react";
 
 export const TheLegacySection: React.FC = () => {
   return (
-    <section id="legacy" className="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
+    <section id="legacy" className="py-28 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
       {/* Background stadium light aura */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85vw] h-[450px] bg-gradient-to-r from-india-blue/20 via-csk-gold/20 to-sky-500/20 blur-[130px] rounded-full pointer-events-none" />
 
-      <div className="relative z-10 space-y-8">
+      <div className="relative z-10 space-y-10">
         
+        {/* 2004 — 2024 (19 Years Span) */}
+        <div className="space-y-2">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-black/60 backdrop-blur-md">
+            <span className="text-xs font-mono text-slate-400">2004</span>
+            <span className="w-8 h-px bg-white/20" />
+            <span className="text-xs font-mono text-csk-yellow font-bold">19 YEARS</span>
+            <span className="w-8 h-px bg-white/20" />
+            <span className="text-xs font-mono text-slate-400">2023</span>
+          </div>
+        </div>
+
         {/* Number 7 Emblem */}
-        <div className="w-24 h-24 mx-auto rounded-3xl bg-surface-raised border-2 border-csk-gold flex items-center justify-center font-mono text-5xl font-extrabold text-csk-yellow shadow-glow-gold">
-          07
+        <div className="relative w-24 h-24 mx-auto rounded-3xl overflow-hidden border-2 border-csk-gold shadow-glow-gold bg-black/90 group">
+          <Image
+            src="/images/brand/dhoni_icon.jpg"
+            alt="MS Dhoni 07 Emblem"
+            fill
+            sizes="96px"
+            className="object-cover group-hover:scale-110 transition-transform duration-500"
+          />
         </div>
 
         {/* Grand Manifesto Headlines */}
@@ -24,8 +42,8 @@ export const TheLegacySection: React.FC = () => {
             <span className="text-csk-yellow">The moments made the legacy.</span>
           </h2>
           <div className="story-ornament mx-auto opacity-70" />
-          <p className="text-sm sm:text-base text-slate-400 font-story italic max-w-xl mx-auto">
-            From Ranchi to cricket immortality
+          <p className="text-sm sm:text-base text-slate-300 font-mono tracking-widest uppercase">
+            CAPTAIN COOL: DECODED · THE MAN BEHIND NO. 7
           </p>
         </div>
 
@@ -43,11 +61,11 @@ export const TheLegacySection: React.FC = () => {
           </div>
           <div>
             <div className="text-[11px] text-slate-400 uppercase">All-Time Dismissals</div>
-            <div className="text-2xl font-bold text-white mt-1">829+</div>
+            <div className="text-2xl font-bold text-white mt-1">829</div>
             <div className="text-[10px] text-purple-400">195 world record stumpings</div>
           </div>
           <div>
-            <div className="text-[11px] text-slate-400 uppercase">Major Championships</div>
+            <div className="text-[11px] text-slate-400 uppercase">Major Silverware</div>
             <div className="text-2xl font-bold text-emerald-400 mt-1">10 Titles</div>
             <div className="text-[10px] text-slate-400">3 ICC • 5 IPL • 2 CLT20</div>
           </div>
@@ -55,14 +73,14 @@ export const TheLegacySection: React.FC = () => {
 
         {/* Closing Paragraph */}
         <p className="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Trophies gather dust in cabinets, but the feeling of watching MS Dhoni stand at the crease in the 20th over with 15 needed and total certainty in his eyes — that remains forever.
+          Trophies gather dust in cabinets, but the feeling of watching MS Dhoni stand at the crease in the 20th over with 15 needed and total certainty in his eyes — that remains forever etched in sport&apos;s memory.
         </p>
 
         {/* Back to Top */}
-        <div className="pt-8">
+        <div className="pt-6">
           <a
             href="#hero"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-raised border border-white/10 text-xs font-mono text-slate-300 hover:text-white hover:border-white/30 transition-all uppercase tracking-wider"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-raised border border-white/10 text-xs font-mono text-slate-300 hover:text-white hover:border-white/30 transition-all uppercase tracking-wider cursor-pointer"
           >
             <ArrowUp className="w-3.5 h-3.5" />
             <span>BACK TO TOP</span>
