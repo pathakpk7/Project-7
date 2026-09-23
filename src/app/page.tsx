@@ -34,7 +34,6 @@ import triviaBankData from "@/data/trivia_bank.json";
 // V2 Global Cinematic Infrastructure
 import { SmoothScrollProvider } from "@/components/cinematic/SmoothScrollProvider";
 import { CinemaModeProvider, useCinemaMode } from "@/components/cinematic/CinemaModeProvider";
-import { CinematicHUD } from "@/components/cinematic/CinematicHUD";
 import { CinematicCursor } from "@/components/cinematic/CinematicCursor";
 import { AskMahiModal } from "@/components/cinematic/AskMahiModal";
 import { MatchCutTransition } from "@/components/cinematic/MatchCutTransition";
@@ -155,13 +154,6 @@ function MainAppContent() {
         activeChapter={chapter}
         onToggleSidebar={() => setSidebarOpen((o) => !o)}
         scrolled={scrolled}
-      />
-
-      {/* Floating Career Rail HUD */}
-      <CinematicHUD
-        activeChapter={chapter}
-        onOpenSidebar={() => setSidebarOpen(true)}
-        onOpenNo7={() => setIsNo7Open(true)}
       />
 
       {/* Hero / Prologue Section */}
