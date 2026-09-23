@@ -7,7 +7,6 @@ import { Footer } from "@/components/layout/Footer";
 import { CinematicBackground } from "@/components/layout/CinematicBackground";
 
 import { HeroSection } from "@/components/sections/HeroSection";
-import { CinematicHeroSection } from "@/components/sections/CinematicHeroSection";
 import { CareerTimelineSection } from "@/components/sections/CareerTimelineSection";
 import { TheBatsmanSection } from "@/components/sections/TheBatsmanSection";
 import { TheKeeperSection } from "@/components/sections/TheKeeperSection";
@@ -165,8 +164,8 @@ function MainAppContent() {
         onOpenNo7={() => setIsNo7Open(true)}
       />
 
-      {/* Hero / Prologue Section - Cinematic Version */}
-      <CinematicHeroSection 
+      {/* Hero / Prologue Section */}
+      <HeroSection 
         onEnterJourney={handleEnterJourney} 
         onTriggerNo7={() => setIsNo7Open(true)}
         onOpenAskMahi={() => setIsAskMahiOpen(true)}
