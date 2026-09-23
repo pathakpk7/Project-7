@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import confetti from "canvas-confetti";
-import { HelpCircle, CheckCircle2, XCircle, Sparkles, Award } from "lucide-react";
+import { BookMarked, CheckCircle2, XCircle, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export interface TriviaQuestion {
@@ -63,15 +63,16 @@ export const TriviaCheckpoint: React.FC<TriviaCheckpointProps> = ({
 
   return (
     <div className="my-10 max-w-4xl mx-auto px-4">
-      <div className="rounded-3xl bg-surface-raised/90 border border-white/10 p-6 sm:p-8 backdrop-blur-xl shadow-2xl relative overflow-hidden">
+      <div className="rounded-2xl bg-black/40 border border-csk-gold/20 p-6 sm:p-8 backdrop-blur-xl shadow-2xl relative overflow-hidden story-chapter-frame">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-csk-gold/50 to-transparent" />
         {/* Top badge */}
         <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-white/5">
           <div className="flex items-center gap-2">
-            <span className="p-1.5 rounded-xl bg-csk-gold/10 text-csk-yellow border border-csk-gold/30">
-              <HelpCircle className="w-4 h-4" />
+            <span className="p-1.5 rounded-lg bg-csk-gold/10 text-csk-yellow border border-csk-gold/30">
+              <BookMarked className="w-4 h-4" />
             </span>
-            <span className="text-xs font-mono uppercase tracking-widest text-slate-300 font-bold">
-              MAHI TRIVIA CHECKPOINT #{question.id} of 7
+            <span className="text-xs font-mono uppercase tracking-[0.2em] text-slate-300">
+              Story beat · {question.level}
             </span>
           </div>
 
@@ -81,7 +82,7 @@ export const TriviaCheckpoint: React.FC<TriviaCheckpointProps> = ({
         </div>
 
         {/* Question */}
-        <h4 className="text-base sm:text-lg font-bold text-white mb-5 font-mono">
+        <h4 className="text-base sm:text-lg font-story text-slate-100 mb-5 leading-relaxed">
           {question.question}
         </h4>
 
@@ -129,8 +130,8 @@ export const TriviaCheckpoint: React.FC<TriviaCheckpointProps> = ({
               <span>Not quite right. Try again!</span>
             </div>
           ) : (
-            <div className="text-xs text-slate-500 font-mono">
-              Answer all 7 checkpoints across the site to unlock the exclusive <strong>MAHI FAN MOMENT</strong> badge!
+            <div className="text-xs text-slate-500 font-mono max-w-md">
+              Solve all seven beats as you scroll the story to unlock the <strong className="text-csk-yellow/90">07 Mahi Fan</strong> moment.
             </div>
           )}
 
@@ -140,7 +141,7 @@ export const TriviaCheckpoint: React.FC<TriviaCheckpointProps> = ({
               disabled={!selectedOption}
               className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-csk-gold to-csk-yellow text-black font-mono font-bold text-xs uppercase tracking-wider hover:scale-105 active:scale-95 disabled:opacity-40 disabled:hover:scale-100 transition-all shadow-glow-gold"
             >
-              SUBMIT ANSWER
+              Lock in answer
             </button>
           )}
         </div>

@@ -16,8 +16,8 @@ export const PersonalTributeSection: React.FC = () => {
           <span>CREATOR&apos;S NOTE</span>
         </div>
 
-        <h3 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-white font-mono">
-          WHY I BUILT THIS
+        <h3 className="font-display text-2xl sm:text-4xl font-semibold tracking-wide text-white">
+          Why I Built This
         </h3>
 
         <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-sans">

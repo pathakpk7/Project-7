@@ -45,6 +45,25 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #334155;
   }
+
+  /* Custom scrollbar for modal content */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(253, 185, 19, 0.3);
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 185, 19, 0.5);
+  }
 }
 
 /* Cinematic Atmosphere & Utilities */
@@ -79,6 +98,82 @@
 
 .glow-text-silver {
   text-shadow: 0 0 20px rgba(226, 232, 240, 0.3);
+}
+
+.font-story {
+  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+}
+
+.font-display {
+  font-family: var(--font-cinzel), Georgia, serif;
+}
+
+.story-vignette::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 45;
+  background: radial-gradient(ellipse 90% 75% at 50% 45%, transparent 55%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.story-ornament {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(229, 168, 35, 0.5) 20%,
+    rgba(255, 223, 0, 0.9) 50%,
+    rgba(229, 168, 35, 0.5) 80%,
+    transparent
+  );
+}
+
+.story-bridge {
+  position: relative;
+}
+
+.story-bridge::before,
+.story-bridge::after {
+  content: "◆";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 8px;
+  color: rgba(229, 168, 35, 0.35);
+}
+
+.story-bridge::before {
+  left: 0.5rem;
+}
+
+.story-bridge::after {
+  right: 0.5rem;
+}
+
+.story-act-opener {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, transparent 50%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.story-chapter-frame {
+  position: relative;
+}
+
+.story-chapter-frame::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: min(92%, 56rem);
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Reduced Motion */

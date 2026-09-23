@@ -36,6 +36,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "-apple-system", "sans-serif"],
         display: ["var(--font-cinzel)", "Georgia", "serif"],
+        story: ["var(--font-cormorant)", "Georgia", "Times New Roman", "serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
       },
       backgroundImage: {

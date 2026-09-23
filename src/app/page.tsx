@@ -15,7 +15,7 @@ import { TheFinisherSection } from "@/components/sections/TheFinisherSection";
 import { TrophyCabinetSection } from "@/components/sections/TrophyCabinetSection";
 import { IconicMomentsSection } from "@/components/sections/IconicMomentsSection";
 import { IndiaCsSection } from "@/components/sections/IndiaCsSection";
-import { HeatmapVenuesSection } from "@/components/sections/HeatmapVenuesSection";
+import { CareerMatrixSection } from "@/components/sections/CareerMatrixSection";
 import { DhoniVsEraSection } from "@/components/sections/DhoniVsEraSection";
 import { PersonalTributeSection } from "@/components/sections/PersonalTributeSection";
 import { TheLegacySection } from "@/components/sections/TheLegacySection";
@@ -23,138 +23,62 @@ import { TheLegacySection } from "@/components/sections/TheLegacySection";
 import { TriviaCheckpoint, TriviaQuestion } from "@/components/interactive/TriviaCheckpoint";
 import { Number7Modal } from "@/components/easter-eggs/Number7Modal";
 import { MahiFanBadgeModal } from "@/components/easter-eggs/MahiFanBadgeModal";
-import { HelicopterAnimation } from "@/components/easter-eggs/HelicopterAnimation";
+import { CinematicHelicopterModal } from "@/components/easter-eggs/CinematicHelicopterModal";
+import { StoryActOpener } from "@/components/story/StoryActOpener";
+import { StoryBridge } from "@/components/story/StoryBridge";
+import { StoryChapterSidebar } from "@/components/story/StoryChapterSidebar";
+import { STORY_ACTS } from "@/config/storySpine";
+import { useActiveStoryChapter } from "@/hooks/useActiveStoryChapter";
+import triviaBankData from "@/data/trivia_bank.json";
 
-const TRIVIA_QUESTIONS: TriviaQuestion[] = [
-  {
-    id: 1,
-    level: "1 / 7",
-    difficulty: "EASY",
-    question: "Which country did MS Dhoni make his international debut against in December 2004?",
-    options: ["Pakistan", "Bangladesh", "Sri Lanka", "Zimbabwe"],
-    correctAnswer: "Bangladesh",
-    explanation: "Dhoni made his ODI debut on December 23, 2004 vs Bangladesh at Chattogram."
-  },
-  {
-    id: 2,
-    level: "2 / 7",
-    difficulty: "EASY",
-    question: "Against which team did MS Dhoni score his career-highest ODI score of 183* (145 balls) in 2005?",
-    options: ["Sri Lanka", "Pakistan", "Australia", "England"],
-    correctAnswer: "Sri Lanka",
-    explanation: "Scored at Jaipur on October 31, 2005 — the highest individual ODI score by a wicketkeeper in cricket history."
-  },
-  {
-    id: 3,
-    level: "3 / 7",
-    difficulty: "MEDIUM",
-    question: "In the 2016 T20 World Cup 1-run thriller in Bengaluru, whom did Dhoni run out on the final ball after sprinting 25m with his glove off?",
-    options: ["Mushfiqur Rahim", "Mahmudullah", "Mustafizur Rahman", "Shakib Al Hasan"],
-    correctAnswer: "Mustafizur Rahman",
-    explanation: "Dhoni removed his right glove beforehand and broke the stumps by inches to seal a 1-run victory."
-  },
-  {
-    id: 4,
-    level: "4 / 7",
-    difficulty: "HARD",
-    question: "Whom did MS Dhoni hand the ball to for the final over of the 2007 ICC World Twenty20 Final in Johannesburg?",
-    options: ["Harbhajan Singh", "Joginder Sharma", "RP Singh", "S. Sreesanth"],
-    correctAnswer: "Joginder Sharma",
-    explanation: "Joginder Sharma dismissed Misbah-ul-Haq (caught by Sreesanth) to win India the inaugural T20 World Cup."
-  },
-  {
-    id: 5,
-    level: "5 / 7",
-    difficulty: "HARD",
-    question: "In the iconic 2011 ICC Cricket World Cup Final at Wankhede, whom did MS Dhoni promote himself ahead of in the batting order to counter Muralitharan?",
-    options: ["Suresh Raina", "Yuvraj Singh", "Virat Kohli", "Harbhajan Singh"],
-    correctAnswer: "Yuvraj Singh",
-    explanation: "Dhoni promoted himself to No. 5 to maintain a right-left combination and scored 91* to win Player of the Match."
-  },
-  {
-    id: 6,
-    level: "6 / 7",
-    difficulty: "EXPERT",
-    question: "MS Dhoni completed the unprecedented ICC White-Ball Trophy Trifecta by winning the 2013 Champions Trophy in which English city?",
-    options: ["London (Lord's)", "Birmingham (Edgbaston)", "Manchester (Old Trafford)", "Cardiff (Sophia Gardens)"],
-    correctAnswer: "Birmingham (Edgbaston)",
-    explanation: "India defended 129 in a rain-reduced 20-over final against England at Edgbaston, Birmingham."
-  },
-  {
-    id: 7,
-    level: "7 / 7",
-    difficulty: "LEGENDARY",
-    question: "In the dramatic 3:00 AM rain-affected IPL 2023 Final in Ahmedabad, how many runs did CSK need off the final 2 balls before Jadeja hit a 6 and 4?",
-    options: ["8 runs", "10 runs", "12 runs", "6 runs"],
-    correctAnswer: "10 runs",
-    explanation: "CSK needed 10 runs off 2 balls off Mohit Sharma; Jadeja smashed a straight 6 followed by a fine-leg 4 to seal CSK's 5th title!"
-  }
-];
-
-const QUESTION_BADGE_MAP: Record<number, string> = {
-  1: "timeline",
-  2: "batsman",
-  3: "keeper",
-  4: "captain",
-  5: "finisher",
-  6: "csk",
-  7: "trivia_master"
-};
+// Default initial question set for SSR hydration
+const INITIAL_QUESTIONS: TriviaQuestion[] = triviaBankData.map((levelGroup) => {
+  const q = levelGroup.questions[0];
+  return {
+    id: q.id,
+    level: `Level ${levelGroup.level} / 7`,
+    difficulty: q.difficulty as "EASY" | "MEDIUM" | "HARD" | "EXPERT" | "LEGENDARY",
+    question: q.question,
+    options: q.options,
+    correctAnswer: q.correctAnswer,
+    explanation: q.explanation
+  };
+});
 
 export default function Home() {
   const [isNo7Open, setIsNo7Open] = useState(false);
   const [isBadgeOpen, setIsBadgeOpen] = useState(false);
-  const [isHelicopterActive, setIsHelicopterActive] = useState(false);
-  const [answeredTriviaIds, setAnsweredTriviaIds] = useState<number[]>([]);
+  const [isCinematicModalOpen, setIsCinematicModalOpen] = useState(false);
+  const [activeQuestions, setActiveQuestions] = useState<TriviaQuestion[]>(INITIAL_QUESTIONS);
+  const [answeredLevels, setAnsweredLevels] = useState<number[]>([]);
   const [unlockedList, setUnlockedList] = useState<string[]>([]);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { activeId, chapter, scrolled } = useActiveStoryChapter();
 
-  // Load persistence from localStorage on mount
+  // On client mount, randomly sample 1 question per level from the 42+ question bank
   useEffect(() => {
     try {
-      const savedBadges = localStorage.getItem("captain_cool_badges");
-      const savedTrivia = localStorage.getItem("captain_cool_trivia");
+      localStorage.removeItem("captain_cool_badges");
+      localStorage.removeItem("captain_cool_trivia");
+    } catch {}
 
-      if (savedBadges) {
-        setUnlockedList(JSON.parse(savedBadges));
-      } else {
-        // Initial exploration badges
-        const initialBadges = ["timeline", "batsman", "keeper"];
-        setUnlockedList(initialBadges);
-        localStorage.setItem("captain_cool_badges", JSON.stringify(initialBadges));
-      }
-
-      if (savedTrivia) {
-        setAnsweredTriviaIds(JSON.parse(savedTrivia));
-      }
-    } catch {
-      setUnlockedList(["timeline", "batsman", "keeper"]);
-    } finally {
-      setIsLoaded(true);
+    if (triviaBankData && triviaBankData.length > 0) {
+      const sampled = triviaBankData.map((levelGroup) => {
+        const randomIndex = Math.floor(Math.random() * levelGroup.questions.length);
+        const q = levelGroup.questions[randomIndex];
+        return {
+          id: q.id,
+          level: `Level ${levelGroup.level} / 7`,
+          difficulty: q.difficulty as "EASY" | "MEDIUM" | "HARD" | "EXPERT" | "LEGENDARY",
+          question: q.question,
+          options: q.options,
+          correctAnswer: q.correctAnswer,
+          explanation: q.explanation
+        };
+      });
+      setActiveQuestions(sampled);
     }
   }, []);
-
-  // Save badges to localStorage whenever unlockedList changes
-  useEffect(() => {
-    if (isLoaded && typeof window !== "undefined") {
-      try {
-        localStorage.setItem("captain_cool_badges", JSON.stringify(unlockedList));
-      } catch (e) {
-        console.error("Failed to save badges to localStorage", e);
-      }
-    }
-  }, [unlockedList, isLoaded]);
-
-  // Save trivia to localStorage whenever answeredTriviaIds changes
-  useEffect(() => {
-    if (isLoaded && typeof window !== "undefined") {
-      try {
-        localStorage.setItem("captain_cool_trivia", JSON.stringify(answeredTriviaIds));
-      } catch (e) {
-        console.error("Failed to save trivia to localStorage", e);
-      }
-    }
-  }, [answeredTriviaIds, isLoaded]);
 
   const handleEnterJourney = () => {
     if (!unlockedList.includes("timeline")) {
@@ -163,10 +87,12 @@ export default function Home() {
   };
 
   const handleHelicopterShot = () => {
-    setIsHelicopterActive(true);
+    setIsCinematicModalOpen(true);
   };
 
   const handleTriviaCorrect = (questionId: number) => {
+    const levelNumber = Math.floor(questionId / 100);
+
     // Confetti celebration
     try {
       confetti({
@@ -177,34 +103,24 @@ export default function Home() {
       });
     } catch {}
 
-    setAnsweredTriviaIds((prev) => {
-      if (prev.includes(questionId)) return prev;
-      const updated = [...prev, questionId];
+    setAnsweredLevels((prev) => {
+      if (prev.includes(levelNumber)) return prev;
+      const updated = [...prev, levelNumber];
       
-      // Auto-unlock corresponding badge for this question
-      const mappedBadge = QUESTION_BADGE_MAP[questionId];
-      setUnlockedList((uPrev) => {
-        const nextList = new Set(uPrev);
-        if (mappedBadge) nextList.add(mappedBadge);
-
-        // If all 7 are answered, unlock the 7th crown badge & trigger 07 Mahi Fan badge celebration!
-        if (updated.length === TRIVIA_QUESTIONS.length) {
-          nextList.add("trivia_master");
-          try {
-            confetti({
-              particleCount: 150,
-              spread: 100,
-              origin: { y: 0.6 },
-              colors: ["#FDB913", "#FFD700", "#0081E9", "#FFFFFF"]
-            });
-          } catch {}
-          setTimeout(() => {
-            setIsBadgeOpen(true);
-          }, 600);
-        }
-        return Array.from(nextList);
-      });
-
+      // If all 7 are answered, trigger full 7-level mastery celebration & badge modal!
+      if (updated.length === 7) {
+        try {
+          confetti({
+            particleCount: 160,
+            spread: 110,
+            origin: { y: 0.6 },
+            colors: ["#FDB913", "#FFD700", "#0081E9", "#FFFFFF"]
+          });
+        } catch {}
+        setTimeout(() => {
+          setIsBadgeOpen(true);
+        }, 600);
+      }
       return updated;
     });
   };
@@ -213,7 +129,7 @@ export default function Home() {
     if (confirm("Reset all exploration badges and trivia answers?")) {
       const resetBadges: string[] = [];
       setUnlockedList(resetBadges);
-      setAnsweredTriviaIds([]);
+      setAnsweredLevels([]);
       try {
         localStorage.removeItem("captain_cool_badges");
         localStorage.removeItem("captain_cool_trivia");
@@ -223,105 +139,139 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-surface-dark text-slate-100 selection:bg-csk-gold selection:text-black relative overflow-x-hidden">
-      {/* Dynamic Animated Ambient Stadium Background */}
       <CinematicBackground />
 
-      {/* Global Navigation Header */}
-      <Navbar 
-        onTriggerNo7={() => setIsNo7Open(true)} 
-        onTriggerBadge={() => setIsBadgeOpen(true)}
-        unlockedAchievementsCount={answeredTriviaIds.length} 
+      <StoryChapterSidebar
+        open={sidebarOpen}
+        onOpenChange={setSidebarOpen}
+        activeId={activeId}
       />
 
-      {/* Section 1: Hero Decoded */}
+      <Navbar
+        onTriggerNo7={() => setIsNo7Open(true)}
+        onTrigger3DHelicopter={() => setIsCinematicModalOpen(true)}
+        onTriggerBadge={() => setIsBadgeOpen(true)}
+        unlockedAchievementsCount={answeredLevels.length}
+        activeChapter={chapter}
+        onToggleSidebar={() => setSidebarOpen((o) => !o)}
+        scrolled={scrolled}
+      />
+
       <HeroSection 
         onEnterJourney={handleEnterJourney} 
         onTriggerNo7={() => setIsNo7Open(true)} 
       />
 
-      {/* Trivia Checkpoint 1 (Debut Era 2004) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[0]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(1)}
-      />
+      <StoryBridge label="First turn">
+        The tale opens in December 2004—before the hair was cut, before the trophies filled the shelf.
+      </StoryBridge>
 
-      {/* Section 2: Career Journey (2004–2024 Timeline) */}
+      <StoryActOpener act={STORY_ACTS[0]} />
+
+      {activeQuestions[0] && (
+        <TriviaCheckpoint
+          question={activeQuestions[0]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(1)}
+        />
+      )}
+
       <CareerTimelineSection />
 
-      {/* Trivia Checkpoint 2 (183* vs Sri Lanka in 2005) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[1]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(2)}
-      />
+      {/* Trivia Checkpoint 2 (The Blade & 183* Jaipur) */}
+      {activeQuestions[1] && (
+        <TriviaCheckpoint
+          question={activeQuestions[1]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(2)}
+        />
+      )}
 
-      {/* Section 3: The Batsman */}
+      <StoryActOpener act={STORY_ACTS[1]} />
+
       <TheBatsmanSection />
 
-      {/* Trivia Checkpoint 3 (2016 T20 WC 1-Run Thriller Sprint) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[2]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(3)}
-      />
+      {/* Trivia Checkpoint 3 (Lightning Gloves & 0.08s Reflexes) */}
+      {activeQuestions[2] && (
+        <TriviaCheckpoint
+          question={activeQuestions[2]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(3)}
+        />
+      )}
 
-      {/* Section 4: The Keeper */}
+      <StoryBridge label="Behind the stumps">
+        The bat speaks loudly; the gloves answer in milliseconds.
+      </StoryBridge>
+
       <TheKeeperSection />
 
-      {/* Trivia Checkpoint 4 (2007 T20 World Cup Final Over Joginder) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[3]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(4)}
-      />
+      {/* Trivia Checkpoint 4 (Captain Cool's Mind & 2007 T20 WC) */}
+      {activeQuestions[3] && (
+        <TriviaCheckpoint
+          question={activeQuestions[3]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(4)}
+        />
+      )}
 
-      {/* Section 5: The Captain */}
+      <StoryActOpener act={STORY_ACTS[2]} />
+
       <TheCaptainSection />
 
-      {/* Trivia Checkpoint 5 (2011 CWC Final No. 5 Promotion) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[4]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(5)}
-      />
+      {/* Trivia Checkpoint 5 (The Immortal Finisher & 2011 WC Final) */}
+      {activeQuestions[4] && (
+        <TriviaCheckpoint
+          question={activeQuestions[4]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(5)}
+        />
+      )}
 
-      {/* Section 6: The Finisher */}
       <TheFinisherSection />
 
-      {/* Trivia Checkpoint 6 (2013 Champions Trophy Trifecta Edgbaston) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[5]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(6)}
-      />
+      {/* Trivia Checkpoint 6 (White-Ball Emperor & ICC Trifecta) */}
+      {activeQuestions[5] && (
+        <TriviaCheckpoint
+          question={activeQuestions[5]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(6)}
+        />
+      )}
 
-      {/* Section 7: The Golden Vault (Trophy Cabinet) */}
+      <StoryActOpener act={STORY_ACTS[3]} />
+
       <TrophyCabinetSection />
 
       {/* Section 8: Iconic Moments */}
       <IconicMomentsSection />
 
-      {/* Trivia Checkpoint 7 (2023 IPL Final 3:00 AM Thriller) */}
-      <TriviaCheckpoint
-        question={TRIVIA_QUESTIONS[6]}
-        onAnswerCorrect={handleTriviaCorrect}
-        isAnsweredCorrect={answeredTriviaIds.includes(7)}
-      />
+      {/* Trivia Checkpoint 7 (07 Mahi Legend & 5x IPL Titles) */}
+      {activeQuestions[6] && (
+        <TriviaCheckpoint
+          question={activeQuestions[6]}
+          onAnswerCorrect={handleTriviaCorrect}
+          isAnsweredCorrect={answeredLevels.includes(7)}
+        />
+      )}
 
-      {/* Section 9: India × CSK Dual Universe */}
+      <StoryBridge label="Two jerseys">
+        Same composure—nation on his chest, yellow in his veins.
+      </StoryBridge>
+
       <IndiaCsSection />
 
-      {/* Section 10: Global Venues Heatmap */}
-      <HeatmapVenuesSection />
+      <StoryActOpener act={STORY_ACTS[4]} />
+
+      <CareerMatrixSection />
 
       {/* Section 11: Dhoni vs Era Neutral Comparison */}
       <DhoniVsEraSection />
 
-      {/* Section 12: Personal Tribute */}
+      <StoryActOpener act={STORY_ACTS[5]} />
+
       <PersonalTributeSection />
 
-      {/* Section 16: The Legacy & Career Summary */}
       <TheLegacySection />
 
       {/* Footer */}
@@ -331,21 +281,20 @@ export default function Home() {
       <Number7Modal
         isOpen={isNo7Open}
         onClose={() => setIsNo7Open(false)}
-        onTriggerHelicopter={handleHelicopterShot}
       />
 
-      {/* Easter Egg 2: 07 Mahi Fan Official Badge Modal (Triggered by 7/7 Tracker) */}
+      {/* 7 Stage Career Badges Progress Modal (Triggered by 0/7 on Navbar) */}
       <MahiFanBadgeModal
         isOpen={isBadgeOpen}
         onClose={() => setIsBadgeOpen(false)}
-        onTriggerHelicopter={handleHelicopterShot}
-        unlockedCount={answeredTriviaIds.length}
+        answeredTriviaIds={answeredLevels}
+        unlockedCount={answeredLevels.length}
       />
 
-      {/* Easter Egg 3: Helicopter Shot Fireworks Canvas */}
-      <HelicopterAnimation
-        isActive={isHelicopterActive}
-        onComplete={() => setIsHelicopterActive(false)}
+      {/* 3D Cinematic Helicopter Shot Modal with Interactive Three.js Scene */}
+      <CinematicHelicopterModal
+        isOpen={isCinematicModalOpen}
+        onClose={() => setIsCinematicModalOpen(false)}
       />
     </main>
   );

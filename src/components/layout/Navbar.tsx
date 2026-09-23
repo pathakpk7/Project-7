@@ -1,168 +1,115 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { Shield, Sparkles, Menu, X, Trophy, Compass, Activity, Target, Zap, ChevronRight } from "lucide-react";
+import React from "react";
+import Image from "next/image";
+import { Sparkles, Menu, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
+import type { StoryChapter } from "@/config/storySpine";
 
 interface NavbarProps {
   onTriggerNo7: () => void;
+  onTrigger3DHelicopter: () => void;
   onTriggerBadge?: () => void;
   unlockedAchievementsCount: number;
+  activeChapter: StoryChapter;
+  onToggleSidebar: () => void;
+  scrolled: boolean;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ 
-  onTriggerNo7, 
+export const Navbar: React.FC<NavbarProps> = ({
+  onTriggerNo7,
+  onTrigger3DHelicopter,
   onTriggerBadge,
-  unlockedAchievementsCount 
+  unlockedAchievementsCount,
+  activeChapter,
+  onToggleSidebar,
+  scrolled,
 }) => {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
-      
-      const sections = [
-        "hero", "journey", "batsman", "keeper", "captain",
-        "finisher", "trophies", "moments", "india-csk", "venues", "era"
-      ];
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 250 && rect.bottom >= 250) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const navItems = [
-    { id: "journey", label: "JOURNEY", icon: Compass },
-    { id: "batsman", label: "BATSMAN", icon: Activity },
-    { id: "keeper", label: "KEEPER", icon: Shield },
-    { id: "captain", label: "CAPTAIN", icon: Trophy },
-    { id: "finisher", label: "FINISHER", icon: Zap },
-    { id: "trophies", label: "TROPHIES", icon: Trophy },
-    { id: "moments", label: "MOMENTS", icon: Sparkles },
-    { id: "india-csk", label: "INDIA × CSK", icon: Target },
-  ];
-
   return (
-    <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-      scrolled 
-        ? "bg-surface/90 backdrop-blur-2xl border-b border-white/10 py-2.5 shadow-2xl" 
-        : "bg-gradient-to-b from-black/80 via-black/40 to-transparent py-4"
-    )}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        
-        {/* Brand Logo */}
-        <a href="#hero" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-csk-gold/20 via-surface to-csk-yellow/30 border border-csk-gold/40 flex items-center justify-center font-mono font-black text-csk-yellow group-hover:border-csk-gold transition-all shadow-glow-gold">
-            07
-            <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-csk-yellow animate-ping" />
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-[background,border] duration-300",
+        scrolled
+          ? "bg-[#0a0b0f]/95 border-b border-white/10 py-2"
+          : "bg-gradient-to-b from-black/90 via-black/40 to-transparent py-2.5"
+      )}
+    >
+      <div className="max-w-7xl mx-auto px-3 sm:px-5 flex items-center gap-2 sm:gap-3">
+        <button
+          type="button"
+          onClick={onToggleSidebar}
+          className="p-2 rounded-lg border border-white/10 text-slate-300 hover:text-csk-yellow hover:border-csk-gold/40 shrink-0"
+          aria-label="Open chapters sidebar"
+        >
+          <Menu className="w-5 h-5" />
+        </button>
+
+        <a href="#hero" className="flex items-center gap-2.5 shrink-0 min-w-0 group">
+          <div className="relative w-8 h-8 rounded-full overflow-hidden border border-csk-gold/60 group-hover:border-csk-gold transition-all shadow-glow-gold bg-black shrink-0">
+            <Image
+              src="/images/brand/dhoni_icon.jpg"
+              alt="MS Dhoni Captain Cool 07 Icon"
+              fill
+              sizes="32px"
+              className="object-cover"
+              priority
+            />
           </div>
-          <div>
-            <div className="font-extrabold text-sm sm:text-base tracking-wider uppercase text-white flex items-center gap-1.5">
-              <span>CAPTAIN COOL</span>
-              <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-csk-gold/20 border border-csk-gold/30 text-csk-yellow font-mono font-semibold">DECODED</span>
-            </div>
-            <div className="text-[9px] sm:text-[10px] text-slate-400 tracking-widest uppercase hidden sm:block">
-              THE NUMBERS. THE DECISIONS. THE MOMENTS.
-            </div>
-          </div>
+          <span className="hidden md:inline font-display text-sm text-white group-hover:text-csk-yellow transition-colors truncate">Captain Cool</span>
         </a>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden xl:flex items-center gap-1 bg-surface-raised/60 p-1 rounded-full border border-white/10 backdrop-blur-md">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className={cn(
-                "px-3 py-1.5 rounded-full text-[11px] font-mono font-medium tracking-wider uppercase transition-all duration-300 flex items-center gap-1.5",
-                activeSection === item.id 
-                  ? "bg-csk-gold/20 text-csk-yellow font-bold border border-csk-gold/40 shadow-glow-gold" 
-                  : "text-slate-300 hover:text-white hover:bg-white/10"
-              )}
-            >
-              <span>{item.label}</span>
-            </a>
-          ))}
-        </nav>
+        <a
+          href={`#${activeChapter.id}`}
+          className="flex-1 min-w-0 flex justify-center sm:justify-start sm:pl-2"
+          title={activeChapter.tagline}
+        >
+          <span className="inline-flex items-center gap-2 max-w-full px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] hover:border-csk-gold/30 transition-colors">
+            <span className="text-[10px] font-mono text-slate-500 shrink-0">{activeChapter.index}</span>
+            <span className="text-[11px] sm:text-xs font-mono uppercase tracking-wide text-slate-200 truncate">
+              {activeChapter.title}
+            </span>
+          </span>
+        </a>
 
-        {/* Actions (Easter Egg Trigger & Badges) */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          {/* Number 7 Surprise Trigger Button */}
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          <button
+            onClick={onTrigger3DHelicopter}
+            title="3D Helicopter Shot · Signature Weapon"
+            className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-csk-gold/25 to-csk-yellow/20 border border-csk-gold/50 text-csk-yellow hover:border-csk-gold hover:bg-csk-gold/30 hover:scale-105 active:scale-95 transition-all text-[10px] sm:text-xs font-mono font-bold shadow-glow-gold cursor-pointer"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-csk-yellow animate-pulse" />
+            <span className="hidden md:inline">3D HELICOPTER SHOT</span>
+            <span className="md:hidden">3D SHOT</span>
+          </button>
+
           <button
             onClick={onTriggerNo7}
-            title="Helicopter Shot Me! • Surprise MS Dhoni Stats"
-            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-csk-gold/25 via-csk-yellow/20 to-amber-500/20 border border-csk-gold/50 text-csk-yellow text-xs font-mono font-bold hover:scale-105 active:scale-95 transition-all shadow-glow-gold cursor-pointer"
+            title="Surprise MS Dhoni Stats"
+            className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 rounded-full bg-csk-gold/10 border border-csk-gold/40 text-csk-yellow text-[10px] font-mono font-bold hover:bg-csk-gold/20 transition-colors cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5 text-csk-gold animate-spin-slow" />
-            <span>NO. 7</span>
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>No. 7</span>
           </button>
 
-          {/* Badges Counter Pill (Clickable trigger for 07 Mahi Fan Badge modal) */}
           <button
-            onClick={onTriggerBadge || onTriggerNo7}
-            title={unlockedAchievementsCount === 7 ? "Click to view 07 Mahi Fan Badge!" : `${unlockedAchievementsCount} of 7 Trivia Checkpoints Solved - Click to view Badge`}
-            className={cn(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-all text-xs font-mono font-bold cursor-pointer",
+            onClick={onTriggerBadge}
+            title={
               unlockedAchievementsCount === 7
-                ? "bg-gradient-to-r from-csk-gold/30 to-amber-500/30 border-csk-yellow text-csk-yellow shadow-glow-gold animate-pulse hover:scale-105"
-                : "bg-surface-raised/80 border-white/10 text-slate-300 hover:border-csk-gold/40 hover:text-white"
+                ? "All 7 Chapter Badges Unlocked! View 7 Stage Badges"
+                : `View 7 Stage Badges (${unlockedAchievementsCount}/7 Unlocked)`
+            }
+            className={cn(
+              "flex items-center gap-1 px-2.5 sm:px-3 py-1.5 rounded-full border transition-colors text-[10px] font-mono font-bold cursor-pointer",
+              unlockedAchievementsCount === 7
+                ? "bg-csk-gold/20 border-csk-yellow text-csk-yellow shadow-glow-gold"
+                : "bg-black/40 border-white/10 text-slate-300 hover:border-csk-gold/40 hover:text-white"
             )}
           >
-            <Trophy className={cn("w-3.5 h-3.5", unlockedAchievementsCount === 7 ? "text-csk-yellow" : "text-csk-gold")} />
-            <span>{unlockedAchievementsCount} / 7</span>
-          </button>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 rounded-xl bg-surface-raised/90 border border-white/10 text-slate-300 hover:text-white hover:border-white/30 transition-all"
-            aria-label="Toggle Navigation Menu"
-          >
-            {mobileMenuOpen ? <X className="w-5 h-5 text-csk-yellow" /> : <Menu className="w-5 h-5" />}
+            <Trophy className="w-3.5 h-3.5" />
+            <span>{unlockedAchievementsCount}/7 Badges</span>
           </button>
         </div>
       </div>
-
-      {/* Mobile Drawer */}
-      {mobileMenuOpen && (
-        <div className="xl:hidden bg-surface/98 backdrop-blur-2xl border-b border-white/10 px-4 pt-3 pb-6 space-y-1.5 shadow-2xl transition-all">
-          <div className="grid grid-cols-2 gap-2 pb-2">
-            {navItems.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                onClick={() => setMobileMenuOpen(false)}
-                className={cn(
-                  "flex items-center gap-2 px-3 py-2.5 rounded-xl text-xs font-mono tracking-wide uppercase transition-all",
-                  activeSection === item.id 
-                    ? "bg-csk-gold/20 text-csk-yellow font-bold border border-csk-gold/40" 
-                    : "bg-surface-raised/60 text-slate-300 hover:bg-white/10 border border-white/5"
-                )}
-              >
-                <item.icon className="w-3.5 h-3.5 text-csk-gold shrink-0" />
-                <span className="truncate">{item.label}</span>
-              </a>
-            ))}
-          </div>
-
-          <div className="pt-2 border-t border-white/10 flex items-center justify-between">
-            <span className="text-xs font-mono text-slate-400">BADGES WON</span>
-            <span className="text-xs font-mono font-bold text-csk-yellow">{unlockedAchievementsCount} / 7 UNLOCKED</span>
-          </div>
-        </div>
-      )}
     </header>
   );
 };

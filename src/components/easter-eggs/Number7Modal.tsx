@@ -9,17 +9,12 @@ import { cn } from "@/lib/utils";
 interface Number7ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onHelicopterShot?: () => void;
-  onTriggerHelicopter?: () => void;
 }
 
 export const Number7Modal: React.FC<Number7ModalProps> = ({
   isOpen,
   onClose,
-  onHelicopterShot,
-  onTriggerHelicopter,
 }) => {
-  const triggerShot = onTriggerHelicopter || onHelicopterShot || (() => {});
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isRotating, setIsRotating] = useState<boolean>(false);
 
@@ -166,26 +161,15 @@ export const Number7Modal: React.FC<Number7ModalProps> = ({
         <div className="flex flex-col sm:flex-row items-center gap-2.5 justify-center">
           <button
             onClick={rollSurprise}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-csk-gold via-csk-yellow to-amber-400 text-black font-mono font-black text-xs uppercase tracking-wider hover:scale-105 active:scale-95 transition-all shadow-glow-gold flex items-center justify-center gap-2 cursor-pointer"
+            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-csk-gold via-csk-yellow to-amber-400 text-black font-mono font-black text-xs uppercase tracking-wider hover:scale-105 active:scale-95 transition-all shadow-glow-gold flex items-center justify-center gap-2 cursor-pointer"
           >
             <Dices className="w-4 h-4" />
-            <span>SURPRISE ME AGAIN ⚡ (NEXT SHOT)</span>
-          </button>
-
-          <button
-            onClick={() => {
-              triggerShot();
-              onClose();
-            }}
-            className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-sky-500/20 border border-sky-500/40 text-sky-400 hover:bg-sky-500/30 font-mono text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
-          >
-            <Zap className="w-3.5 h-3.5" />
-            <span>LAUNCH HELICOPTER SHOT</span>
+            <span>SURPRISE ME AGAIN ⚡</span>
           </button>
 
           <button
             onClick={onClose}
-            className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase tracking-wider transition-colors cursor-pointer"
+            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase tracking-wider transition-colors cursor-pointer"
           >
             CLOSE
           </button>

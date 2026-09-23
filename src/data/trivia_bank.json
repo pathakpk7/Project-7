@@ -1,0 +1,401 @@
+[
+  {
+    "level": 1,
+    "levelName": "Stage 1: The Debut & Roots (2004-2005)",
+    "badgeTitle": "The Debut Spark",
+    "tierName": "Gully Cricket Observer",
+    "percentile": "Top 95%",
+    "questions": [
+      {
+        "id": 101,
+        "difficulty": "EASY",
+        "question": "Which country did MS Dhoni make his international debut against in December 2004?",
+        "options": ["Pakistan", "Bangladesh", "Sri Lanka", "Zimbabwe"],
+        "correctAnswer": "Bangladesh",
+        "explanation": "Dhoni made his ODI debut on December 23, 2004 vs Bangladesh at MA Aziz Stadium, Chattogram."
+      },
+      {
+        "id": 102,
+        "difficulty": "EASY",
+        "question": "Before breaking into international cricket, at which railway station did MS Dhoni work as a Train Ticket Examiner (TTE)?",
+        "options": ["Ranchi", "Kharagpur", "Asansol", "Howrah"],
+        "correctAnswer": "Kharagpur",
+        "explanation": "Dhoni worked as a Traveling Ticket Examiner (TTE) at Kharagpur railway station in West Bengal from 2001 to 2003."
+      },
+      {
+        "id": 103,
+        "difficulty": "MEDIUM",
+        "question": "Which state did MS Dhoni represent when he made his Ranji Trophy debut in the 1999–2000 season?",
+        "options": ["Jharkhand", "Bihar", "Railways", "Bengal"],
+        "correctAnswer": "Bihar",
+        "explanation": "Dhoni made his first-class Ranji Trophy debut for Bihar in the 1999–2000 season (before Jharkhand was carved out as a separate state)."
+      },
+      {
+        "id": 104,
+        "difficulty": "MEDIUM",
+        "question": "In which domestic tournament for India A in Kenya (2004) did Dhoni smash multiple centuries to earn his national call-up?",
+        "options": ["Tri-Nation Tournament", "Challenger Trophy", "Duleep Trophy", "Deodhar Trophy"],
+        "correctAnswer": "Tri-Nation Tournament",
+        "explanation": "Dhoni scored 362 runs in 6 innings with two centuries against Pakistan A and Kenya in the 2004 Kenya Tri-Series."
+      },
+      {
+        "id": 105,
+        "difficulty": "EASY",
+        "question": "How was MS Dhoni dismissed on his international debut match against Bangladesh in 2004?",
+        "options": ["Bowled", "Run out for 0", "Caught Behind", "LBW"],
+        "correctAnswer": "Run out for 0",
+        "explanation": "Dhoni was unfortunately run out for a golden duck (0 off 1 ball) in his debut ODI on December 23, 2004."
+      },
+      {
+        "id": 106,
+        "difficulty": "MEDIUM",
+        "question": "Who was India's regular captain who backed young MS Dhoni during his initial 2004-2005 international appearances?",
+        "options": ["Rahul Dravid", "Sourav Ganguly", "Sachin Tendulkar", "Virender Sehwag"],
+        "correctAnswer": "Sourav Ganguly",
+        "explanation": "Captain Sourav Ganguly recognized Dhoni's raw power and famously surrendered his own No. 3 batting position for him."
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "levelName": "Stage 2: The Swashbuckler (183* & The Blade)",
+    "badgeTitle": "Master of the Blade",
+    "tierName": "Bleed Blue Follower",
+    "percentile": "Top 75%",
+    "questions": [
+      {
+        "id": 201,
+        "difficulty": "EASY",
+        "question": "Against which team did MS Dhoni score his career-highest ODI score of 183* (145 balls) in 2005?",
+        "options": ["Sri Lanka", "Pakistan", "Australia", "England"],
+        "correctAnswer": "Sri Lanka",
+        "explanation": "Scored at Sawai Mansingh Stadium, Jaipur on October 31, 2005 — the highest individual ODI score by a wicketkeeper in history."
+      },
+      {
+        "id": 202,
+        "difficulty": "EASY",
+        "question": "In which city did MS Dhoni smash his maiden international century (148 off 123 balls) against Pakistan in April 2005?",
+        "options": ["Visakhapatnam (Vizag)", "Jaipur", "Kolkata", "Rawalpindi"],
+        "correctAnswer": "Visakhapatnam (Vizag)",
+        "explanation": "Dhoni announced himself to the world with a blistering 148 off 123 balls (15 fours, 4 sixes) in Vizag on April 5, 2005."
+      },
+      {
+        "id": 203,
+        "difficulty": "MEDIUM",
+        "question": "How many sixes did MS Dhoni smash during his immortal 183* innings against Sri Lanka in Jaipur (2005)?",
+        "options": ["8 sixes", "10 sixes", "12 sixes", "6 sixes"],
+        "correctAnswer": "10 sixes",
+        "explanation": "Dhoni blasted 10 sixes and 15 boundaries in his iconic 183* off 145 balls to chase down 299 with 23 balls to spare."
+      },
+      {
+        "id": 204,
+        "difficulty": "MEDIUM",
+        "question": "Where did MS Dhoni score his maiden Test century (148 off 153 balls) in January 2006?",
+        "options": ["Lahore", "Faisalabad", "Karachi", "Chennai"],
+        "correctAnswer": "Faisalabad",
+        "explanation": "Dhoni scored his maiden Test century (148 off 153 balls) with breathtaking counter-attacking strokes in Faisalabad, Pakistan in 2006."
+      },
+      {
+        "id": 205,
+        "difficulty": "HARD",
+        "question": "In how many innings from his debut did MS Dhoni claim the ICC World No. 1 ODI Batsman ranking in April 2006 (a world record)?",
+        "options": ["42 innings", "60 innings", "28 innings", "75 innings"],
+        "correctAnswer": "42 innings",
+        "explanation": "Dhoni reached the No. 1 spot in the ICC ODI Batting Rankings in just 42 innings, the fastest in cricket history."
+      },
+      {
+        "id": 206,
+        "difficulty": "MEDIUM",
+        "question": "What was MS Dhoni's career-highest individual score in Test match cricket (scored vs Australia in Chennai, 2013)?",
+        "options": ["183", "224", "148", "201*"],
+        "correctAnswer": "224",
+        "explanation": "Dhoni hit a dominant 224 off 265 balls at Chepauk in February 2013, the highest Test score by an Indian wicketkeeper."
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "levelName": "Stage 3: The Gloves (Lightning Stumps & Reflexes)",
+    "badgeTitle": "Lightning Gloves (0.08s)",
+    "tierName": "Tactical Keeper Analyst",
+    "percentile": "Top 55%",
+    "questions": [
+      {
+        "id": 301,
+        "difficulty": "MEDIUM",
+        "question": "In the 2016 T20 World Cup 1-run thriller in Bengaluru, whom did Dhoni run out on the final ball after sprinting 25m with his glove off?",
+        "options": ["Mushfiqur Rahim", "Mahmudullah", "Mustafizur Rahman", "Shakib Al Hasan"],
+        "correctAnswer": "Mustafizur Rahman",
+        "explanation": "Dhoni took off his right glove beforehand, sprinted like a sprinter, and broke the stumps by inches to seal an unbelievable 1-run win."
+      },
+      {
+        "id": 302,
+        "difficulty": "EASY",
+        "question": "What is the all-time world record number of international stumpings held exclusively by MS Dhoni?",
+        "options": ["195 stumpings", "161 stumpings", "139 stumpings", "220 stumpings"],
+        "correctAnswer": "195 stumpings",
+        "explanation": "Dhoni holds the world record for the most stumpings in international cricket: 195 (123 ODI, 38 Test, 34 T20I)."
+      },
+      {
+        "id": 303,
+        "difficulty": "MEDIUM",
+        "question": "What is MS Dhoni's record fastest recorded stumping reaction time, measured by broadcast telemetry?",
+        "options": ["0.08 seconds", "0.25 seconds", "0.15 seconds", "0.40 seconds"],
+        "correctAnswer": "0.08 seconds",
+        "explanation": "Dhoni stumped West Indies' Keemo Paul in just 0.08 seconds (faster than the blink of a human eye at 0.10s)."
+      },
+      {
+        "id": 304,
+        "difficulty": "HARD",
+        "question": "How many total dismissals (catches + stumpings) did MS Dhoni complete across all international cricket?",
+        "options": ["829 dismissals", "998 dismissals", "750 dismissals", "642 dismissals"],
+        "correctAnswer": "829 dismissals",
+        "explanation": "Dhoni finished with 829 international dismissals (634 catches, 195 stumpings), ranking 3rd in all-time world cricket history."
+      },
+      {
+        "id": 305,
+        "difficulty": "MEDIUM",
+        "question": "Which trademark wicketkeeping innovation is Dhoni famous for creating to effect run-outs without looking at the stumps?",
+        "options": ["No-look back flick", "Underarm slide", "Drop kick throw", "Over-the-shoulder flick"],
+        "correctAnswer": "No-look back flick",
+        "explanation": "Dhoni pioneered the blind deflection/no-look back flick between his legs directly onto the stumps without turning his head."
+      },
+      {
+        "id": 306,
+        "difficulty": "HARD",
+        "question": "How many dismissals did MS Dhoni effect in a single Test match against Australia at Melbourne in 2014?",
+        "options": ["9 dismissals", "8 dismissals", "6 dismissals", "10 dismissals"],
+        "correctAnswer": "9 dismissals",
+        "explanation": "Dhoni took 8 catches and 1 stumping (9 dismissals) in his final Test match at the Melbourne Cricket Ground in December 2014."
+      }
+    ]
+  },
+  {
+    "level": 4,
+    "levelName": "Stage 4: The Mind (2007 T20 World Cup & Leadership)",
+    "badgeTitle": "Captain Cool's Mind",
+    "tierName": "Tactical Strategist",
+    "percentile": "Top 35%",
+    "questions": [
+      {
+        "id": 401,
+        "difficulty": "HARD",
+        "question": "Whom did MS Dhoni hand the ball to for the final over of the 2007 ICC World Twenty20 Final in Johannesburg?",
+        "options": ["Harbhajan Singh", "Joginder Sharma", "RP Singh", "S. Sreesanth"],
+        "correctAnswer": "Joginder Sharma",
+        "explanation": "Joginder Sharma dismissed Misbah-ul-Haq (caught by Sreesanth at short fine-leg) to win India the inaugural T20 World Cup."
+      },
+      {
+        "id": 402,
+        "difficulty": "MEDIUM",
+        "question": "In the famous 2007 T20 World Cup bowl-out against Pakistan, which non-regular bowler did Dhoni pick to hit the stumps?",
+        "options": ["Robin Uthappa", "Virender Sehwag", "Yuvraj Singh", "Rohit Sharma"],
+        "correctAnswer": "Robin Uthappa",
+        "explanation": "Dhoni picked Sehwag, Harbhajan, and Uthappa (who had practiced aim), and crouched right behind the stumps to give them a direct target."
+      },
+      {
+        "id": 403,
+        "difficulty": "HARD",
+        "question": "In which year did MS Dhoni lead India to the historic CB Tri-Series triumph on Australian soil against Ricky Ponting's Australia?",
+        "options": ["2008", "2007", "2010", "2012"],
+        "correctAnswer": "2008",
+        "explanation": "Dhoni led a young Indian squad to a historic 2-0 finals victory over Australia in the best-of-three Commonwealth Bank Series in March 2008."
+      },
+      {
+        "id": 404,
+        "difficulty": "MEDIUM",
+        "question": "How many total international matches did MS Dhoni captain Team India across Test, ODI, and T20I cricket (a world record)?",
+        "options": ["332 matches", "300 matches", "275 matches", "350 matches"],
+        "correctAnswer": "332 matches",
+        "explanation": "Dhoni captained India in an astonishing 332 international matches (60 Tests, 200 ODIs, 72 T20Is) — the most by any captain in cricket history."
+      },
+      {
+        "id": 405,
+        "difficulty": "HARD",
+        "question": "In the 2008 CB Series final, what famous instruction did Dhoni give to his teammates when hitting the winning runs?",
+        "options": ["No wild celebrations on the balcony", "Run a lap of honor", "Do a team huddle", "Wave jerseys"],
+        "correctAnswer": "No wild celebrations on the balcony",
+        "explanation": "Dhoni ordered no excessive balcony celebrations to show the world and Australia that winning against them was not a fluke, but the new standard."
+      },
+      {
+        "id": 406,
+        "difficulty": "EXPERT",
+        "question": "Against which country did MS Dhoni captain India for the very first time in an international game in 2006?",
+        "options": ["South Africa (T20I)", "Scotland (ODI)", "England (ODI)", "Pakistan (T20I)"],
+        "correctAnswer": "South Africa (T20I)",
+        "explanation": "Dhoni led India in their first-ever T20I match vs South Africa at Johannesburg on December 1, 2006."
+      }
+    ]
+  },
+  {
+    "level": 5,
+    "levelName": "Stage 5: The Calm (2011 World Cup & The Finisher Engine)",
+    "badgeTitle": "The Immortal Finisher",
+    "tierName": "Ice-Cold Pressure Master",
+    "percentile": "Top 20%",
+    "questions": [
+      {
+        "id": 501,
+        "difficulty": "HARD",
+        "question": "In the iconic 2011 ICC Cricket World Cup Final at Wankhede, whom did MS Dhoni promote himself ahead of in the batting order?",
+        "options": ["Suresh Raina", "Yuvraj Singh", "Virat Kohli", "Harbhajan Singh"],
+        "correctAnswer": "Yuvraj Singh",
+        "explanation": "Dhoni promoted himself to No. 5 to face Sri Lanka's Muttiah Muralitharan and scored 91* to win Player of the Match."
+      },
+      {
+        "id": 502,
+        "difficulty": "EASY",
+        "question": "Which Sri Lankan fast bowler did MS Dhoni hit for the immortal match-winning six over long-on in the 2011 World Cup Final?",
+        "options": ["Lasith Malinga", "Nuwan Kulasekara", "Thisara Perera", "Suraj Randiv"],
+        "correctAnswer": "Nuwan Kulasekara",
+        "explanation": "Dhoni lofted Nuwan Kulasekara high over long-on into the Wankhede crowd to seal India's second ODI World Cup."
+      },
+      {
+        "id": 503,
+        "difficulty": "MEDIUM",
+        "question": "What is MS Dhoni's staggering career batting average in successful ODI run-chases for Team India?",
+        "options": ["102.71", "75.40", "50.58", "88.25"],
+        "correctAnswer": "102.71",
+        "explanation": "In 116 successful ODI run-chases, Dhoni scored 2,876 runs with an astronomical average of 102.71 and 47 not outs."
+      },
+      {
+        "id": 504,
+        "difficulty": "HARD",
+        "question": "How many times did MS Dhoni finish an ODI match for India by hitting a six on the final or penultimate ball?",
+        "options": ["9 times", "4 times", "15 times", "6 times"],
+        "correctAnswer": "9 times",
+        "explanation": "Dhoni sealed victory for India with a six on 9 distinct occasions in ODI cricket history."
+      },
+      {
+        "id": 505,
+        "difficulty": "HARD",
+        "question": "In Dharamsala IPL 2010 vs Kings XI Punjab, CSK needed 16 runs in the final over from Irfan Pathan. How did Dhoni finish it?",
+        "options": ["4, 2, 6, 6 with helmet punch", "6, 6, 4 with fist pump", "Single, 4, 6, 6", "4, 4, 4, 4"],
+        "correctAnswer": "4, 2, 6, 6 with helmet punch",
+        "explanation": "Dhoni blasted 4, 2, 6, 6 to score 54* (29) and punched his helmet in an ultra-rare display of raw emotion to send CSK to the semi-finals."
+      },
+      {
+        "id": 506,
+        "difficulty": "EXPERT",
+        "question": "In the Celkon Mobile Cup Tri-Series Final (2013) in Port of Spain vs Sri Lanka, how many runs did Dhoni score in the final over off Shaminda Eranga to win the trophy?",
+        "options": ["15 runs (0, 6, 4, 6)", "12 runs (4, 4, 4)", "16 runs (6, 4, 6)", "10 runs (6, 4)"],
+        "correctAnswer": "15 runs (0, 6, 4, 6)",
+        "explanation": "With India 9 wickets down needing 15 off the last over, Dhoni hit 0, 6, 4, 6 to claim the trophy from the jaws of defeat."
+      }
+    ]
+  },
+  {
+    "level": 6,
+    "levelName": "Stage 6: The Trifecta (2013 Champions Trophy & Test #1)",
+    "badgeTitle": "White-Ball Emperor",
+    "tierName": "Dhoniologist",
+    "percentile": "Top 8%",
+    "questions": [
+      {
+        "id": 601,
+        "difficulty": "EXPERT",
+        "question": "MS Dhoni completed the unprecedented ICC White-Ball Trophy Trifecta by winning the 2013 Champions Trophy in which English city?",
+        "options": ["London (Lord's)", "Birmingham (Edgbaston)", "Manchester (Old Trafford)", "Cardiff (Sophia Gardens)"],
+        "correctAnswer": "Birmingham (Edgbaston)",
+        "explanation": "India defended a low total of 129 in a rain-reduced 20-over final against England at Edgbaston, Birmingham."
+      },
+      {
+        "id": 602,
+        "difficulty": "HARD",
+        "question": "In the 2013 Champions Trophy Final, which bowler did Dhoni bring back in the 18th over to dismiss Eoin Morgan and Ravi Bopara on consecutive balls?",
+        "options": ["Ishant Sharma", "Ravindra Jadeja", "Ravichandran Ashwin", "Umesh Yadav"],
+        "correctAnswer": "Ishant Sharma",
+        "explanation": "Despite going for runs earlier, Dhoni backed Ishant Sharma for the 18th over, who struck twice in two balls to turn the final on its head."
+      },
+      {
+        "id": 603,
+        "difficulty": "MEDIUM",
+        "question": "Under MS Dhoni's captaincy, in which year did Team India achieve the ICC Test Championship No. 1 ranking (Test Mace) for the first time in history?",
+        "options": ["December 2009", "March 2007", "April 2011", "November 2013"],
+        "correctAnswer": "December 2009",
+        "explanation": "India defeated Sri Lanka 2-0 at Brabourne Stadium in December 2009 to claim the #1 ICC Test ranking for the first time."
+      },
+      {
+        "id": 604,
+        "difficulty": "HARD",
+        "question": "How many total ICC Trophies did MS Dhoni win as India captain during his international career?",
+        "options": ["3 ICC Trophies", "4 ICC Trophies", "2 ICC Trophies", "5 ICC Trophies"],
+        "correctAnswer": "3 ICC Trophies",
+        "explanation": "Dhoni won the 2007 T20 World Cup, 2011 Cricket World Cup, and 2013 Champions Trophy (the only captain to win all three)."
+      },
+      {
+        "id": 605,
+        "difficulty": "EXPERT",
+        "question": "Who bowled the tense final over of the 2013 Champions Trophy Final at Edgbaston where England needed 15 runs to win?",
+        "options": ["Ravichandran Ashwin", "Ravindra Jadeja", "Ishant Sharma", "Bhuvneshwar Kumar"],
+        "correctAnswer": "Ravichandran Ashwin",
+        "explanation": "Ashwin bowled a magical final over, conceding just 9 runs and beating James Tredwell on the last ball as Dhoni jumped in delight."
+      },
+      {
+        "id": 606,
+        "difficulty": "EXPERT",
+        "question": "In which city did MS Dhoni play his 90th and final Test match in December 2014 before retiring from Test cricket?",
+        "options": ["Melbourne (MCG)", "Sydney (SCG)", "Brisbane (Gabba)", "Adelaide Oval"],
+        "correctAnswer": "Melbourne (MCG)",
+        "explanation": "Dhoni retired from Test cricket on December 30, 2014 immediately following the drawn Boxing Day Test at Melbourne."
+      }
+    ]
+  },
+  {
+    "level": 7,
+    "levelName": "Stage 7: Yellow Kingdom (5x IPL & 07 Mahi Legend)",
+    "badgeTitle": "07 Mahi Legend (The Crown)",
+    "tierName": "Immortal Mahi Demi-God",
+    "percentile": "Top 1%",
+    "questions": [
+      {
+        "id": 701,
+        "difficulty": "LEGENDARY",
+        "question": "In the dramatic 3:00 AM rain-affected IPL 2023 Final in Ahmedabad, how many runs did CSK need off the final 2 balls before Jadeja hit a 6 and 4?",
+        "options": ["8 runs", "10 runs", "12 runs", "6 runs"],
+        "correctAnswer": "10 runs",
+        "explanation": "CSK needed 10 runs off 2 balls from Mohit Sharma; Ravindra Jadeja hit a straight 6 followed by a fine-leg 4 to seal CSK's 5th title!"
+      },
+      {
+        "id": 702,
+        "difficulty": "HARD",
+        "question": "How many IPL titles and Champions League T20 (CLT20) titles has MS Dhoni won as captain of Chennai Super Kings (CSK)?",
+        "options": ["5 IPL + 2 CLT20 (7 Titles)", "4 IPL + 1 CLT20", "5 IPL + 1 CLT20", "6 IPL + 2 CLT20"],
+        "correctAnswer": "5 IPL + 2 CLT20 (7 Titles)",
+        "explanation": "Dhoni led CSK to 5 IPL titles (2010, 2011, 2018, 2021, 2023) and 2 CLT20 titles (2010, 2014) — matching his iconic jersey number 7!"
+      },
+      {
+        "id": 703,
+        "difficulty": "LEGENDARY",
+        "question": "What was MS Dhoni's highest individual score in the Indian Premier League (IPL)?",
+        "options": ["84*", "79*", "91*", "88"],
+        "correctAnswer": "84*",
+        "explanation": "Dhoni blasted an unbelievable 84* off 48 balls with 7 sixes and 5 fours vs RCB in 2019 at Chinnaswamy, nearly pulling off a miraculous 26-run final over chase."
+      },
+      {
+        "id": 704,
+        "difficulty": "EXPERT",
+        "question": "In IPL 2018 at the Chinnaswamy Stadium, CSK chased 206 against RCB. With how many balls to spare did Dhoni hit Corey Anderson for the match-winning six (70* off 34)?",
+        "options": ["2 balls to spare", "1 ball to spare", "Last ball", "4 balls to spare"],
+        "correctAnswer": "2 balls to spare",
+        "explanation": "Dhoni smashed a majestic wide-swinging six over wide long-on off Corey Anderson with 2 balls remaining to finish on 70* (34)."
+      },
+      {
+        "id": 705,
+        "difficulty": "HARD",
+        "question": "In how many IPL Finals has MS Dhoni appeared as a player and captain (an all-time IPL record)?",
+        "options": ["11 Finals", "8 Finals", "10 Finals", "13 Finals"],
+        "correctAnswer": "11 Finals",
+        "explanation": "Dhoni has played in a record 11 IPL Finals (10 with CSK in 2008, 2010, 2011, 2012, 2013, 2015, 2018, 2019, 2021, 2023 and 1 with RPSG in 2017)."
+      },
+      {
+        "id": 706,
+        "difficulty": "LEGENDARY",
+        "question": "Against Mumbai Indians at Wankhede in IPL 2024, how many runs did MS Dhoni score in the final 4 balls of the 20th over off Hardik Pandya?",
+        "options": ["20* runs (6, 6, 6, 2)", "18 runs (6, 6, 6)", "16 runs (4, 6, 6)", "24 runs (6, 6, 6, 6)"],
+        "correctAnswer": "20* runs (6, 6, 6, 2)",
+        "explanation": "Dhoni came out in the 20th over and smashed Hardik Pandya for a hat-trick of sixes (6, 6, 6) and 2 runs to finish 20* off 4 balls — the exact 20-run margin CSK won by!"
+      }
+    ]
+  }
+]

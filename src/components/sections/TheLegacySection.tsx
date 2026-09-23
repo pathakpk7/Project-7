@@ -18,15 +18,14 @@ export const TheLegacySection: React.FC = () => {
 
         {/* Grand Manifesto Headlines */}
         <div className="space-y-4">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight text-white leading-tight">
-            THE NUMBERS TELL THE STORY.
+          <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide text-white leading-tight">
+            The numbers tell the story.
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-csk-yellow via-amber-200 to-amber-500">
-              THE MOMENTS MADE THE LEGACY.
-            </span>
+            <span className="text-csk-yellow">The moments made the legacy.</span>
           </h2>
-          <p className="text-sm sm:text-base text-slate-300 font-mono tracking-widest uppercase max-w-xl mx-auto">
-            FROM RANCHI TO CRICKET IMMORTALITY
+          <div className="story-ornament mx-auto opacity-70" />
+          <p className="text-sm sm:text-base text-slate-400 font-story italic max-w-xl mx-auto">
+            From Ranchi to cricket immortality
           </p>
         </div>
 
