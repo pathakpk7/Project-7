@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
-import { ArrowDown, Compass, Activity, Database, Sparkles, Trophy } from "lucide-react";
-import { useCinemaMode } from "@/components/cinematic/CinemaModeProvider";
+import { ArrowDown, Compass, Activity, Database, Sparkles } from "lucide-react";
 
 interface HeroSectionProps {
   onEnterJourney: () => void;
@@ -16,59 +15,34 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onTriggerNo7,
   onOpenAskMahi,
 }) => {
-  const { isCinemaMode } = useCinemaMode();
-  const [prologueBeat, setPrologueBeat] = useState(0);
-
-  // Cinematic opening beats on mount
-  useEffect(() => {
-    const t1 = setTimeout(() => setPrologueBeat(1), 300);
-    const t2 = setTimeout(() => setPrologueBeat(2), 1200);
-    const t3 = setTimeout(() => setPrologueBeat(3), 2200);
-
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-      clearTimeout(t3);
-    };
-  }, []);
-
   return (
     <section
       id="hero"
-      className="relative min-h-[100vh] flex flex-col items-center justify-center text-center px-4 pt-28 pb-20 overflow-hidden"
+      className="relative min-h-[95vh] flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 overflow-hidden z-10"
     >
-      {/* Cinematic Background Atmosphere */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_50%_15%,rgba(0,119,182,0.16),transparent_65%)] pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_85%,rgba(253,185,19,0.08),transparent_70%)] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
+      {/* High-visibility atmospheric glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_20%,rgba(0,119,182,0.18),transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_80%,rgba(253,185,19,0.10),transparent_65%)] pointer-events-none" />
 
-      <div className="relative z-10 max-w-4xl mx-auto space-y-7">
-        {/* Prologue Atmosphere Pacing */}
-        <div className="flex flex-col items-center gap-2 transition-all duration-1000">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-black/60 backdrop-blur-md">
+      <div className="relative z-20 max-w-4xl mx-auto space-y-6">
+        {/* Prologue Badge & Quote */}
+        <div className="flex flex-col items-center gap-3">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-csk-gold/40 bg-black/80 shadow-lg backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-csk-gold animate-pulse" />
-            <span className="text-[10px] sm:text-xs font-mono uppercase tracking-[0.35em] text-slate-300">
+            <span className="text-[11px] sm:text-xs font-mono uppercase tracking-[0.3em] text-csk-yellow font-semibold">
               RANCHI 2004 — CHENNAI 2024
             </span>
           </div>
 
-          <p
-            className={`font-story text-xl sm:text-2xl md:text-3xl text-slate-300 italic leading-snug max-w-2xl mx-auto transition-opacity duration-1000 ${
-              prologueBeat >= 1 ? "opacity-100" : "opacity-0"
-            }`}
-          >
+          <p className="font-story text-xl sm:text-2xl md:text-3xl text-slate-200 italic leading-snug max-w-2xl mx-auto drop-shadow-md">
             &ldquo;Before Captain Cool... there was just Mahi.&rdquo;
           </p>
         </div>
 
         {/* Hero Title & Golden Emblem */}
-        <div
-          className={`space-y-3 pt-1 transition-all duration-1000 ${
-            prologueBeat >= 2 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          <div className="flex items-center justify-center gap-3">
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-2xl overflow-hidden border border-csk-gold/50 shadow-glow-gold bg-black/80">
+        <div className="space-y-3 pt-1">
+          <div className="flex items-center justify-center gap-3 sm:gap-4">
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-2xl overflow-hidden border-2 border-csk-gold shadow-glow-gold bg-black/90 shrink-0">
               <Image
                 src="/images/brand/dhoni_icon.jpg"
                 alt="MS Dhoni No. 7 Emblem"
@@ -78,21 +52,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 priority
               />
             </div>
-            <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-wide text-white">
+            <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-wide text-white drop-shadow-lg">
               Captain <span className="text-csk-yellow">Cool</span>
             </h1>
           </div>
 
-          <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.45em] text-slate-400">
+          <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.4em] text-slate-300 font-semibold">
             DECODED · The Numbers · The Decisions · The Moments
           </p>
         </div>
 
-        <p
-          className={`text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed font-sans transition-opacity duration-1000 ${
-            prologueBeat >= 3 ? "opacity-100" : "opacity-0"
-          }`}
-        >
+        {/* Hero Description */}
+        <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed font-sans drop-shadow">
           From a raw Railway ticket collector hitting balls out of Kharagpur to cricket&apos;s most decorated white-ball tactician.
           Journey through the verified data warehouse of sports&apos; greatest finisher.
         </p>
@@ -111,53 +82,53 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {onOpenAskMahi && (
             <button
               onClick={onOpenAskMahi}
-              className="w-full sm:w-auto px-7 py-4 rounded-full border border-csk-gold/40 bg-csk-gold/10 hover:bg-csk-gold/20 text-csk-yellow font-mono text-xs uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-7 py-4 rounded-full border border-csk-gold/50 bg-csk-gold/15 hover:bg-csk-gold/25 text-csk-yellow font-mono text-xs uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
             >
-              <Database className="w-4 h-4" />
+              <Database className="w-4 h-4 text-csk-yellow" />
               <span>Ask Mahi Warehouse</span>
             </button>
           )}
 
           <a
             href="#batsman"
-            className="w-full sm:w-auto px-7 py-4 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] text-slate-200 font-mono text-xs uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 cursor-pointer"
+            className="w-full sm:w-auto px-7 py-4 rounded-full border border-white/20 bg-white/[0.06] hover:bg-white/[0.12] text-slate-100 font-mono text-xs uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
             <Activity className="w-4 h-4 text-sky-400" />
             <span>The Blade (1–7)</span>
           </a>
         </div>
 
-        {/* Core Pillar Numbers (Strictly Verified) */}
-        <div className="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
-          <div className="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-sm">
+        {/* Core Pillar Numbers (Always Visible & Highly Legible) */}
+        <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+          <div className="p-4 rounded-2xl bg-[#0e111a]/90 border border-white/15 backdrop-blur-md shadow-lg">
             <div className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">Intl Runs</div>
             <div className="text-2xl sm:text-3xl font-display text-white mt-1">17,266</div>
-            <div className="text-[11px] text-sky-400/90 font-mono mt-1">Avg 44.96 • 538 Matches</div>
+            <div className="text-[11px] text-sky-400 font-mono mt-1 font-medium">Avg 44.96 • 538 Matches</div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-black/40 border border-csk-gold/30 backdrop-blur-sm">
+          <div className="p-4 rounded-2xl bg-[#0e111a]/90 border border-csk-gold/40 backdrop-blur-md shadow-glow-gold">
             <div className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">ICC White-Ball Cups</div>
             <div className="text-2xl sm:text-3xl font-display text-csk-yellow mt-1">3 / 3</div>
-            <div className="text-[11px] text-csk-gold/90 font-mono mt-1">T20 WC, CWC, CT (Only Captain)</div>
+            <div className="text-[11px] text-csk-gold font-mono mt-1 font-medium">T20 WC, CWC, CT (Only Captain)</div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-sm">
+          <div className="p-4 rounded-2xl bg-[#0e111a]/90 border border-white/15 backdrop-blur-md shadow-lg">
             <div className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">IPL Titles (CSK)</div>
             <div className="text-2xl sm:text-3xl font-display text-white mt-1">5 Titles</div>
-            <div className="text-[11px] text-emerald-400/90 font-mono mt-1">11 Finals • 264 Matches</div>
+            <div className="text-[11px] text-emerald-400 font-mono mt-1 font-medium">11 Finals • 264 Matches</div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-sm">
+          <div className="p-4 rounded-2xl bg-[#0e111a]/90 border border-white/15 backdrop-blur-md shadow-lg">
             <div className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">Wicketkeeping</div>
             <div className="text-2xl sm:text-3xl font-display text-white mt-1">829</div>
-            <div className="text-[11px] text-purple-400/90 font-mono mt-1">195 Stumpings (World Record)</div>
+            <div className="text-[11px] text-purple-300 font-mono mt-1 font-medium">195 Stumpings (World Record)</div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-none">
-        <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-slate-500">Scroll down to enter the documentary</span>
-        <ArrowDown className="w-4 h-4 text-csk-gold/70 animate-bounce" />
+      <div className="mt-8 flex flex-col items-center gap-1.5 pointer-events-none">
+        <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-slate-400">Scroll down to enter the documentary</span>
+        <ArrowDown className="w-4 h-4 text-csk-gold animate-bounce" />
       </div>
     </section>
   );
