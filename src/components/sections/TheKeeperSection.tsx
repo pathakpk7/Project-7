@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { KpiCard } from "@/components/ui/KpiCard";
 import wkStatsData from "@/data/wicketkeeping_stats.json";
@@ -43,13 +44,29 @@ export const TheKeeperSection: React.FC = () => {
   const iplWk = wkStatsData.find((w) => w.format === "IPL") || { catches: "142", stumpings: "42", total_dismissals: "184" };
 
   return (
-    <section id="keeper" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <SectionHeader
-        badge="THE WICKETKEEPER"
-        title="LIGHTNING BEHIND THE STUMPS"
-        subtitle="Unorthodox technique, zero-backlift collection, blind flicks, and an undisputed world record 195 stumpings."
-        accentColor="blue"
-      />
+    <section id="keeper" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden">
+      {/* Dhoni Gloves & Insignia Background with Low Fade */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+        <Image
+          src="/images/keeper/dhoni_gloves_bg.webp"
+          alt="MS Dhoni Balidan Insignia Keeping Gloves Background"
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-30 sm:opacity-25 scale-100"
+        />
+        {/* Soft Vignette and Contrast Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/85 to-[#08090C]/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_65%_at_50%_45%,transparent_20%,#08090C_90%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_70%_40%,rgba(0,119,182,0.15),transparent_70%)]" />
+      </div>
+
+      <div className="relative z-10">
+        <SectionHeader
+          badge="THE WICKETKEEPER"
+          title="LIGHTNING BEHIND THE STUMPS"
+          subtitle="Unorthodox technique, zero-backlift collection, blind flicks, and an undisputed world record 195 stumpings."
+          accentColor="blue"
+        />
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
@@ -250,8 +267,8 @@ export const TheKeeperSection: React.FC = () => {
             </div>
           </div>
         </div>
-
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 };
