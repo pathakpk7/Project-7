@@ -20,7 +20,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       id="hero"
       className="relative min-h-[95vh] flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 overflow-hidden z-10"
     >
-      {/* Subtle Low-Fade Dual Dhoni Hero Background Image */}
+      {/* Dual Dhoni Hero Background Image - Vibrant & Balanced Visibility */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
         <Image
           src="/images/hero/hero_dhoni_duo.jpg"
@@ -28,16 +28,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-[0.15] mix-blend-luminosity scale-105"
+          className="object-cover object-center opacity-45 sm:opacity-40 scale-100 transition-opacity duration-700"
         />
-        {/* Soft vignette and contrast gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_45%,transparent_25%,#08090C_85%)]" />
+        {/* Cinematic Vignette & Bottom/Top Fade */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/40 to-[#08090C]/75" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_65%_at_50%_45%,rgba(8,9,12,0.45)_0%,rgba(8,9,12,0.2)_50%,rgba(8,9,12,0.85)_100%)]" />
       </div>
 
-      {/* High-visibility atmospheric glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_20%,rgba(0,119,182,0.18),transparent_70%)] pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_80%,rgba(253,185,19,0.10),transparent_65%)] pointer-events-none" />
+      {/* Atmospheric team color aura */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_25%_40%,rgba(0,119,182,0.22),transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_75%_40%,rgba(253,185,19,0.18),transparent_70%)] pointer-events-none" />
 
       <div className="relative z-20 max-w-4xl mx-auto space-y-6">
         {/* Prologue Badge & Quote */}
@@ -49,7 +49,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </span>
           </div>
 
-          <p className="font-story text-xl sm:text-2xl md:text-3xl text-slate-200 italic leading-snug max-w-2xl mx-auto drop-shadow-md">
+          <p className="font-story text-xl sm:text-2xl md:text-3xl text-slate-100 italic leading-snug max-w-2xl mx-auto drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
             &ldquo;Before Captain Cool... there was just Mahi.&rdquo;
           </p>
         </div>
@@ -67,18 +67,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 priority
               />
             </div>
-            <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-wide text-white drop-shadow-lg">
+            <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-wide text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)]">
               Captain <span className="text-csk-yellow">Cool</span>
             </h1>
           </div>
 
-          <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.4em] text-slate-300 font-semibold">
+          <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.4em] text-slate-200 font-semibold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
             DECODED · The Numbers · The Decisions · The Moments
           </p>
         </div>
 
         {/* Hero Description */}
-        <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed font-sans drop-shadow">
+        <p className="text-sm sm:text-base text-slate-100 max-w-2xl mx-auto leading-relaxed font-sans drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
           From a raw Railway ticket collector hitting balls out of Kharagpur to cricket&apos;s most decorated white-ball tactician.
           Journey through the verified data warehouse of sports&apos; greatest finisher.
         </p>
