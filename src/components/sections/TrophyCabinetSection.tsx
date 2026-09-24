@@ -87,6 +87,8 @@ export const TrophyCabinetSection: React.FC = () => {
         title="THE SILVERWARE CABINET"
         subtitle="“Silverware earned, not borrowed. Trophies gleam, reels loop forever, and Chennai yellow meets India blue.”"
         accentColor="gold"
+        bgImage="/images/trophies/dhoni_icc_trifecta_vault.jpg"
+        bgOpacity="opacity-40 sm:opacity-35"
       />
 
       {/* Filter Tabs */}

@@ -76,6 +76,8 @@ export const TheFinisherSection: React.FC = () => {
         title="THE DEATH-OVERS ENGINE"
         subtitle="“Death overs, ice in the veins. How MS Dhoni turned impossible high-pressure math into inevitable victories.”"
         accentColor="emerald"
+        bgImage="/images/finisher/dhoni_finisher_celebration.jpg"
+        bgOpacity="opacity-40 sm:opacity-35"
       />
 
       {/* Hero Finishing Highlight Banner */}

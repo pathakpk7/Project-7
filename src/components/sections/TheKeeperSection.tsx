@@ -66,6 +66,8 @@ export const TheKeeperSection: React.FC = () => {
           title="LIGHTNING BEHIND THE STUMPS"
           subtitle="“Reflex, zero-backlift collection, blind flicks, and an undisputed world record 195 stumpings.”"
           accentColor="blue"
+          bgImage="/images/keeper/dhoni_gloves_bg.webp"
+          bgOpacity="opacity-40 sm:opacity-35"
         />
 
       {/* KPI Cards */}

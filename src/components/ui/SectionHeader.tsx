@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export type SectionAccentColor = "gold" | "blue" | "navy" | "emerald" | "purple" | "amber" | "silver";
@@ -8,6 +9,8 @@ interface SectionHeaderProps {
   title: string;
   subtitle?: React.ReactNode;
   accentColor?: SectionAccentColor;
+  bgImage?: string;
+  bgOpacity?: string;
   className?: string;
 }
 
@@ -16,6 +19,8 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
   subtitle,
   accentColor = "gold",
+  bgImage,
+  bgOpacity,
   className,
 }) => {
   const colorThemes: Record<SectionAccentColor, {
@@ -96,35 +101,54 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
 
   return (
     <div className={cn("text-center max-w-4xl mx-auto mb-12 sm:mb-16 relative", className)}>
-      <div className={cn("p-6 sm:p-8 rounded-3xl border backdrop-blur-md shadow-2xl transition-all", theme.cardBg)}>
-        {/* Top accent line */}
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <span className={cn("h-px w-10 sm:w-16 bg-gradient-to-r", theme.line, "opacity-70")} />
-          <span className={cn("w-2 h-2 rounded-full shrink-0 shadow-sm animate-pulse", theme.dot)} />
-          <span className={cn("h-px w-10 sm:w-16 bg-gradient-to-l", theme.line, "opacity-70")} />
-        </div>
-
-        {/* Badge Pill */}
-        <div className={cn("inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-[11px] sm:text-xs font-mono font-bold uppercase tracking-[0.25em] mb-4 shadow-sm backdrop-blur-sm", theme.badgeBg)}>
-          <span>{badge}</span>
-        </div>
-
-        {/* Section Title */}
-        <h2 className={cn("font-display text-3xl sm:text-5xl font-bold tracking-wide mb-3 leading-tight", theme.titleGlow)}>
-          {title}
-        </h2>
-
-        {/* Ornament */}
-        <div className={cn("story-ornament mx-auto mb-4 opacity-80", theme.ornament)} />
-
-        {/* Subtitle / Hook */}
-        {subtitle && (
-          <p className={cn("font-story text-base sm:text-lg leading-relaxed max-w-2xl mx-auto italic", theme.subtitleText)}>
-            {subtitle}
-          </p>
+      <div className={cn("p-6 sm:p-8 rounded-3xl border backdrop-blur-md shadow-2xl transition-all relative overflow-hidden", theme.cardBg)}>
+        {/* Optional Custom Background Image with Low Fade */}
+        {bgImage && (
+          <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+            <Image
+              src={bgImage}
+              alt={`${title} Header Background`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 896px"
+              className={cn("object-cover object-center", bgOpacity || "opacity-30 sm:opacity-25")}
+            />
+            {/* Soft Contrast & Vignette Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/75 to-[#08090C]/85" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_65%_at_50%_45%,transparent_20%,#08090C_90%)]" />
+          </div>
         )}
+
+        <div className="relative z-10">
+          {/* Top accent line */}
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className={cn("h-px w-10 sm:w-16 bg-gradient-to-r", theme.line, "opacity-70")} />
+            <span className={cn("w-2 h-2 rounded-full shrink-0 shadow-sm animate-pulse", theme.dot)} />
+            <span className={cn("h-px w-10 sm:w-16 bg-gradient-to-l", theme.line, "opacity-70")} />
+          </div>
+
+          {/* Badge Pill */}
+          <div className={cn("inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-[11px] sm:text-xs font-mono font-bold uppercase tracking-[0.25em] mb-4 shadow-sm backdrop-blur-sm", theme.badgeBg)}>
+            <span>{badge}</span>
+          </div>
+
+          {/* Section Title */}
+          <h2 className={cn("font-display text-3xl sm:text-5xl font-bold tracking-wide mb-3 leading-tight", theme.titleGlow)}>
+            {title}
+          </h2>
+
+          {/* Ornament */}
+          <div className={cn("story-ornament mx-auto mb-4 opacity-80", theme.ornament)} />
+
+          {/* Subtitle / Hook */}
+          {subtitle && (
+            <p className={cn("font-story text-base sm:text-lg leading-relaxed max-w-2xl mx-auto italic", theme.subtitleText)}>
+              {subtitle}
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
 };
+
 

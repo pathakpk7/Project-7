@@ -140,6 +140,8 @@ export const TheBatsmanSection: React.FC = () => {
           title="THE RUN MACHINE DECONSTRUCTED"
           subtitle="“Positions 1–4 vs the finisher's 5–7. Three crafts in one body—bat, gloves, and the quiet chessboard.”"
           accentColor="gold"
+          bgImage="/images/batsman/dhoni_signed_bat.jpg"
+          bgOpacity="opacity-40 sm:opacity-35"
         />
 
       {/* Format Selector Pills */}

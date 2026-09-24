@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Trophy, Shield, Activity, Target, Crown, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -45,6 +46,9 @@ export const IndiaCsSection: React.FC = () => {
   };
 
   const current = activeUniverse === "india" ? indiaData : cskData;
+  const currentBgImage = activeUniverse === "india" 
+    ? "/images/two-worlds/dhoni_india_jersey7_back.jpg" 
+    : "/images/two-worlds/dhoni_csk_action_shot.jpg";
 
   return (
     <section id="india-csk" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
@@ -53,6 +57,8 @@ export const IndiaCsSection: React.FC = () => {
         title="INDIA BLUE & CSK YELLOW"
         subtitle="“One heartbeat, two immortal jerseys. Same composure—nation on his chest, yellow in his veins.”"
         accentColor={activeUniverse === "india" ? "blue" : "gold"}
+        bgImage={currentBgImage}
+        bgOpacity={activeUniverse === "india" ? "opacity-45 sm:opacity-35" : "opacity-35 sm:opacity-30"}
       />
 
       {/* Universe Switcher Tabs */}
@@ -60,7 +66,7 @@ export const IndiaCsSection: React.FC = () => {
         <button
           onClick={() => setActiveUniverse("india")}
           className={cn(
-            "px-6 sm:px-8 py-3 rounded-2xl text-xs sm:text-sm font-mono font-bold tracking-wider uppercase transition-all duration-300 flex items-center gap-2",
+            "px-6 sm:px-8 py-3 rounded-2xl text-xs sm:text-sm font-mono font-bold tracking-wider uppercase transition-all duration-300 flex items-center gap-2 cursor-pointer",
             activeUniverse === "india"
               ? "bg-gradient-to-r from-sky-600 to-blue-700 text-white shadow-glow-blue scale-105"
               : "bg-surface-raised border border-white/10 text-slate-400 hover:text-white"
@@ -72,9 +78,9 @@ export const IndiaCsSection: React.FC = () => {
         <button
           onClick={() => setActiveUniverse("csk")}
           className={cn(
-            "px-6 sm:px-8 py-3 rounded-2xl text-xs sm:text-sm font-mono font-bold tracking-wider uppercase transition-all duration-300 flex items-center gap-2",
+            "px-6 sm:px-8 py-3 rounded-2xl text-xs sm:text-sm font-mono font-bold tracking-wider uppercase transition-all duration-300 flex items-center gap-2 cursor-pointer",
             activeUniverse === "csk"
-              ? "bg-gradient-to-r from-csk-gold to-csk-yellow text-black shadow-glow-gold scale-105"
+              ? "bg-gradient-to-r from-csk-gold to-csk-yellow text-black shadow-glow-gold scale-105 font-bold"
               : "bg-surface-raised border border-white/10 text-slate-400 hover:text-white"
           )}
         >
@@ -87,26 +93,44 @@ export const IndiaCsSection: React.FC = () => {
         "rounded-3xl bg-surface/90 border p-6 sm:p-10 backdrop-blur-xl shadow-2xl transition-all duration-500 relative overflow-hidden",
         activeUniverse === "india" ? "border-sky-500/30 shadow-glow-blue" : "border-csk-gold/30 shadow-glow-gold"
       )}>
+        {/* Dynamic Low-Fade Background Image inside Showcase Card */}
+        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+          <Image
+            key={activeUniverse}
+            src={currentBgImage}
+            alt={`${current.title} Showcase Background`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 1200px"
+            className={cn(
+              "object-cover object-center transition-opacity duration-700",
+              activeUniverse === "india" ? "opacity-25 sm:opacity-20 object-top" : "opacity-25 sm:opacity-20 object-center"
+            )}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/85 to-[#08090C]/90" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_65%_at_50%_45%,transparent_20%,#08090C_90%)]" />
+        </div>
+
         {/* Dynamic ambient backdrop */}
         <div className={cn(
-          "absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl pointer-events-none opacity-30 transition-colors",
+          "absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl pointer-events-none opacity-20 transition-colors z-0",
           activeUniverse === "india" ? "bg-sky-500" : "bg-csk-gold"
         )} />
 
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-white/10">
-          <div>
-            <div className="text-xs font-mono uppercase tracking-widest text-slate-400 mb-1">
-              {current.tagline}
+        <div className="relative z-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-white/10">
+            <div>
+              <div className="text-xs font-mono uppercase tracking-widest text-slate-400 mb-1">
+                {current.tagline}
+              </div>
+              <h3 className="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white font-mono">
+                {current.title}
+              </h3>
             </div>
-            <h3 className="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white font-mono">
-              {current.title}
-            </h3>
-          </div>
 
-          <div className="px-4 py-2 rounded-2xl bg-white/5 border border-white/10 font-mono text-xs text-slate-300">
-            <span>Career Span: {activeUniverse === "india" ? "2004 — 2019" : "2008 — Present"}</span>
+            <div className="px-4 py-2 rounded-2xl bg-white/5 border border-white/10 font-mono text-xs text-slate-300">
+              <span>Career Span: {activeUniverse === "india" ? "2004 — 2019" : "2008 — Present"}</span>
+            </div>
           </div>
-        </div>
 
         {/* Metrics Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 font-mono">
@@ -166,6 +190,7 @@ export const IndiaCsSection: React.FC = () => {
           <p className="text-sm text-slate-200 leading-relaxed font-semibold">
             {current.trophies}
           </p>
+        </div>
         </div>
       </div>
     </section>

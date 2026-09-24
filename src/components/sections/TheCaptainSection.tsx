@@ -89,6 +89,8 @@ export const TheCaptainSection: React.FC = () => {
           title="THE MIND OF CAPTAIN COOL"
           subtitle="“When the crowd roars, he listens for the silence between heartbeats. Calls that changed matches—and history.”"
           accentColor="navy"
+          bgImage="/images/captain/dhoni_armband_calm.webp"
+          bgOpacity="opacity-40 sm:opacity-35"
         />
 
       {/* Team Filter Pills */}
