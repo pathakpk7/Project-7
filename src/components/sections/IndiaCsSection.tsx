@@ -49,9 +49,9 @@ export const IndiaCsSection: React.FC = () => {
   return (
     <section id="india-csk" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <SectionHeader
-        badge="DUAL UNIVERSE COMPARISON"
-        title="INDIA × CHENNAI SUPER KINGS"
-        subtitle="Two legendary chapters. Two iconic jerseys. One unwavering Captain Cool."
+        badge="CHAPTER VIII · TWO WORLDS"
+        title="INDIA BLUE & CSK YELLOW"
+        subtitle="“One heartbeat, two immortal jerseys. Same composure—nation on his chest, yellow in his veins.”"
         accentColor={activeUniverse === "india" ? "blue" : "gold"}
       />
 

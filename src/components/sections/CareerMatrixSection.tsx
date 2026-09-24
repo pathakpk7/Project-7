@@ -19,6 +19,7 @@ import {
 import { MatrixCard } from "./CareerMatrix/MatrixCard";
 import { MatrixTable } from "./CareerMatrix/MatrixTable";
 import { MatchDrilldownModal } from "./CareerMatrix/MatchDrilldownModal";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   Search,
   LayoutGrid,
@@ -127,20 +128,12 @@ export const CareerMatrixSection: React.FC = () => {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-csk-gold/10 via-sky-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />
 
       {/* Section Header */}
-      <div className="text-center mb-10 sm:mb-14 relative z-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-csk-gold/30 bg-csk-gold/10 text-csk-yellow text-xs font-mono tracking-widest uppercase mb-4">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>COMPREHENSIVE CRICKET ARCHIVE</span>
-        </div>
-
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white font-display mb-4">
-          THE DHONI <span className="text-gradient-gold">CAREER MATRIX</span>
-        </h2>
-
-        <p className="text-sm sm:text-base text-slate-400 font-mono max-w-2xl mx-auto">
-          One career. Every format. Every opponent. Every ground.
-        </p>
-      </div>
+      <SectionHeader
+        badge="CHAPTER IX · THE ARCHIVE"
+        title="THE RECORD ROOM & WAREHOUSE"
+        subtitle="“Pull the files. Compare the eras. Every opponent, ground, and season verified in data.”"
+        accentColor="silver"
+      />
 
       {/* KPI Career Summary Bar */}
       <div className="mb-8 p-4 sm:p-5 rounded-2xl bg-surface/90 border border-white/10 shadow-2xl">

@@ -72,10 +72,10 @@ export const TheFinisherSection: React.FC = () => {
   return (
     <section id="finisher" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <SectionHeader
-        badge="THE FINISHER & DEATH OVERS"
-        title="ICE IN THE VEINS: TAKING IT DEEP"
-        subtitle="Unraveling the arithmetic of run-chases, death-over strike rates, and nerve management in the final over."
-        accentColor="gold"
+        badge="CHAPTER V · THE CALM"
+        title="THE DEATH-OVERS ENGINE"
+        subtitle="“Death overs, ice in the veins. How MS Dhoni turned impossible high-pressure math into inevitable victories.”"
+        accentColor="emerald"
       />
 
       {/* Hero Finishing Highlight Banner */}

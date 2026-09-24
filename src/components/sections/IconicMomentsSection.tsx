@@ -62,10 +62,10 @@ export const IconicMomentsSection: React.FC = () => {
   return (
     <section id="moments" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <SectionHeader
-        badge="ICONIC MOMENTS"
-        title="THE MOMENTS THAT DEFINED CRICKET"
-        subtitle="Step inside the high-stakes decisions, impossible chases, and clutch masterstrokes etched in cricket folklore."
-        accentColor="gold"
+        badge="CHAPTER VII · THE REELS"
+        title="MOMENTS ETCHED IN HISTORY"
+        subtitle="“Scenes you still replay at midnight—from Johannesburg 2007 to Wankhede 2011.”"
+        accentColor="amber"
       />
 
       {/* Category Filter Pills */}

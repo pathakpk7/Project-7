@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { KpiCard } from "@/components/ui/KpiCard";
 import capStatsData from "@/data/captaincy_stats.json";
@@ -66,13 +67,29 @@ export const TheCaptainSection: React.FC = () => {
   const currentGambit = TACTICAL_GAMBITS.find((g) => g.id === activeGambit) || TACTICAL_GAMBITS[0];
 
   return (
-    <section id="captain" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <SectionHeader
-        badge="THE CAPTAIN & TACTICIAN"
-        title="THE MIND OF CAPTAIN COOL"
-        subtitle="Unshakable composure, gut instinct backed by data, high-pressure clarity, and an unprecedented ICC trophy clean sweep."
-        accentColor="gold"
-      />
+    <section id="captain" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden">
+      {/* Dhoni Armband Composure Background with Low Fade */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+        <Image
+          src="/images/captain/dhoni_armband_calm.webp"
+          alt="MS Dhoni Captaincy Composure Background"
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-30 sm:opacity-25 scale-100"
+        />
+        {/* Soft Vignette and Contrast Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/85 to-[#08090C]/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_65%_at_50%_45%,transparent_20%,#08090C_90%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_70%_40%,rgba(0,119,182,0.15),transparent_70%)]" />
+      </div>
+
+      <div className="relative z-10">
+        <SectionHeader
+          badge="CHAPTER IV · WEIGHT OF THE ARMBAND"
+          title="THE MIND OF CAPTAIN COOL"
+          subtitle="“When the crowd roars, he listens for the silence between heartbeats. Calls that changed matches—and history.”"
+          accentColor="navy"
+        />
 
       {/* Team Filter Pills */}
       <div className="flex items-center justify-center gap-3 mb-10 flex-wrap">
@@ -299,6 +316,8 @@ export const TheCaptainSection: React.FC = () => {
           </a>
         </div>
       </div>
+      </div>
     </section>
   );
 };
+

@@ -17,10 +17,10 @@ export const DhoniVsEraSection: React.FC = () => {
   return (
     <section id="era" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <SectionHeader
-        badge="DHONI VS THE ERA"
-        title="NEUTRAL STATISTICAL COMPARISON"
-        subtitle="Objective side-by-side career metrics comparing MS Dhoni against other legendary titans of the modern cricketing era."
-        accentColor="silver"
+        badge="CHAPTER X · THE MIRROR"
+        title="DHONI AGAINST HIS OWN ERA"
+        subtitle="“Objective side-by-side career metrics comparing MS Dhoni against other titans of the modern era.”"
+        accentColor="amber"
       />
 
       {/* Select Peer Player Pills */}

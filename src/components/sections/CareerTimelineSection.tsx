@@ -132,10 +132,10 @@ export const CareerTimelineSection: React.FC = () => {
   return (
     <section id="journey" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <SectionHeader
-        badge="CAREER JOURNEY (2004 — 2024)"
-        title="THE TIMELINE OF A LEGEND"
-        subtitle="Explore two decades of leadership, evolution, trophies, and milestones across international cricket and the IPL."
-        accentColor="gold"
+        badge="CHAPTER I · THE YEARS (2004 — 2024)"
+        title="AWAKENING OF A LEGEND"
+        subtitle="“A debut flickers on TV screens in December 2004. A nation doesn't know it yet, but the script has begun.”"
+        accentColor="amber"
       />
 
       {/* Filter Tabs */}

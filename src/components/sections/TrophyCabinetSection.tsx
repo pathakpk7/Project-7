@@ -83,16 +83,9 @@ export const TrophyCabinetSection: React.FC = () => {
   return (
     <section id="trophies" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <SectionHeader
-        badge="THE TROPHY CABINET"
-        title="THE GOLDEN VAULT"
-        subtitle={
-          <>
-            <span>Every major ICC, continental, and franchise trophy lifted under the leadership of Captain Cool.</span>
-            <span className="block font-mono text-xs sm:text-sm font-bold text-csk-yellow tracking-widest uppercase mt-2">
-              7 INTL AND 7 LEAGUE TITLES
-            </span>
-          </>
-        }
+        badge="CHAPTER VI · THE VAULT"
+        title="THE SILVERWARE CABINET"
+        subtitle="“Silverware earned, not borrowed. Trophies gleam, reels loop forever, and Chennai yellow meets India blue.”"
         accentColor="gold"
       />
 

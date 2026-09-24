@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { KpiCard } from "@/components/ui/KpiCard";
 import formatStatsData from "@/data/format_stats.json";
@@ -117,13 +118,29 @@ export const TheBatsmanSection: React.FC = () => {
   const maxYearlyRuns = Math.max(...yearlyTrend.map((y) => Number(y.runs) || 0), 1);
 
   return (
-    <section id="batsman" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
-      <SectionHeader
-        badge="THE BATSMAN & POSITIONS"
-        title="THE RUN MACHINE DECONSTRUCTED"
-        subtitle="Explore MS Dhoni's batting career across formats with deep position-level breakdown (1–4 vs 5–7)."
-        accentColor="gold"
-      />
+    <section id="batsman" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden">
+      {/* MS Dhoni Signed Bat Background with Low Fade */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+        <Image
+          src="/images/batsman/dhoni_signed_bat.jpg"
+          alt="MS Dhoni Signed Reebok Bat Background"
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-30 sm:opacity-25 scale-100"
+        />
+        {/* Soft Vignette and Contrast Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/85 to-[#08090C]/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_65%_at_50%_45%,transparent_20%,#08090C_90%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_40%,rgba(253,185,19,0.12),transparent_70%)]" />
+      </div>
+
+      <div className="relative z-10">
+        <SectionHeader
+          badge="CHAPTER II · THE BLADE"
+          title="THE RUN MACHINE DECONSTRUCTED"
+          subtitle="“Positions 1–4 vs the finisher's 5–7. Three crafts in one body—bat, gloves, and the quiet chessboard.”"
+          accentColor="gold"
+        />
 
       {/* Format Selector Pills */}
       <div className="flex items-center justify-center gap-2 mb-10 flex-wrap">
@@ -441,6 +458,7 @@ export const TheBatsmanSection: React.FC = () => {
           </div>
         </div>
       )}
+      </div>
     </section>
   );
 };

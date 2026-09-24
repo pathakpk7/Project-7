@@ -7,11 +7,18 @@ import { Heart, Sparkles, Quote, Terminal } from "lucide-react";
 export const PersonalTributeSection: React.FC = () => {
   return (
     <section id="tribute" className="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto relative">
-      <div className="rounded-3xl bg-surface/90 border border-csk-gold/30 p-8 sm:p-12 backdrop-blur-xl shadow-2xl relative overflow-hidden text-center space-y-6">
-        {/* Subtle background glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-csk-gold/10 rounded-full blur-3xl pointer-events-none" />
+      <SectionHeader
+        badge="CHAPTER XI · A FAN'S NOTE"
+        title="WHY THIS STORY EXISTS"
+        subtitle="“A personal word before the final page—honoring the composure, the leadership, and the memories of No. 7.”"
+        accentColor="purple"
+      />
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-csk-gold/10 border border-csk-gold/30 text-csk-yellow text-xs font-mono font-bold">
+      <div className="rounded-3xl bg-surface/90 border border-purple-500/30 p-8 sm:p-12 backdrop-blur-xl shadow-2xl relative overflow-hidden text-center space-y-6">
+        {/* Subtle background glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono font-bold">
           <Heart className="w-3.5 h-3.5 fill-rose-500 text-rose-500" />
           <span>CREATOR&apos;S NOTE</span>
         </div>

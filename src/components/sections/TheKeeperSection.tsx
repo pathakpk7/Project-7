@@ -62,9 +62,9 @@ export const TheKeeperSection: React.FC = () => {
 
       <div className="relative z-10">
         <SectionHeader
-          badge="THE WICKETKEEPER"
+          badge="CHAPTER III · THE GLOVES"
           title="LIGHTNING BEHIND THE STUMPS"
-          subtitle="Unorthodox technique, zero-backlift collection, blind flicks, and an undisputed world record 195 stumpings."
+          subtitle="“Reflex, zero-backlift collection, blind flicks, and an undisputed world record 195 stumpings.”"
           accentColor="blue"
         />
 

@@ -167,8 +167,6 @@ function MainAppContent() {
         The tale opens in December 2004—before the hair was cut, before the trophies filled the shelf.
       </StoryBridge>
 
-      <StoryActOpener act={STORY_ACTS[0]} />
-
       {/* Trivia Checkpoint 1 (Debut & Roots) */}
       {activeQuestions[0] && (
         <TriviaCheckpoint
@@ -198,8 +196,6 @@ function MainAppContent() {
         />
       )}
 
-      <StoryActOpener act={STORY_ACTS[1]} />
-
       {/* Chapter 2: The Batsman & Position Deconstruction */}
       <TheBatsmanSection />
 
@@ -228,8 +224,6 @@ function MainAppContent() {
         />
       )}
 
-      <StoryActOpener act={STORY_ACTS[2]} />
-
       {/* Chapter 4: The Captain & Tactical Masterclass */}
       <TheCaptainSection />
 
@@ -253,8 +247,6 @@ function MainAppContent() {
           isAnsweredCorrect={answeredLevels.includes(6)}
         />
       )}
-
-      <StoryActOpener act={STORY_ACTS[3]} />
 
       {/* Chapter 6: The Trophy Cabinet & Silverware Vault */}
       <TrophyCabinetSection />
@@ -286,15 +278,11 @@ function MainAppContent() {
       {/* Chapter 8: India vs CSK Identity Comparison */}
       <IndiaCsSection />
 
-      <StoryActOpener act={STORY_ACTS[4]} />
-
       {/* Chapter 9: The Archive & Multi-Dimensional Matrix */}
       <CareerMatrixSection />
 
       {/* Chapter 10: Dhoni vs Era Neutral Matrix */}
       <DhoniVsEraSection />
-
-      <StoryActOpener act={STORY_ACTS[5]} />
 
       {/* Chapter 11: Personal Fan Tribute */}
       <PersonalTributeSection />
