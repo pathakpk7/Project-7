@@ -20,6 +20,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       id="hero"
       className="relative min-h-[95vh] flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 overflow-hidden z-10"
     >
+      {/* Subtle Low-Fade Dual Dhoni Hero Background Image */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+        <Image
+          src="/images/hero/hero_dhoni_duo.jpg"
+          alt="MS Dhoni India Blue and CSK Yellow Dual Background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-[0.15] mix-blend-luminosity scale-105"
+        />
+        {/* Soft vignette and contrast gradients */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_45%,transparent_25%,#08090C_85%)]" />
+      </div>
+
       {/* High-visibility atmospheric glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_20%,rgba(0,119,182,0.18),transparent_70%)] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_80%,rgba(253,185,19,0.10),transparent_65%)] pointer-events-none" />
